@@ -2482,7 +2482,8 @@ MonoBehaviour:
   projectileSpeed: 10
   projectile: {fileID: 905072091424754200, guid: d3868cec0be7e974386c2f774a1b452b, type: 3}
   firePoint: {fileID: 1139835992117465231}
-  screenMargin: 3
+  screenMargin: 15.54
+  spriteBuffer: 0.5
   maxWorldY: 20
   minWorldY: -20
 --- !u!114 &8003896141600300795
