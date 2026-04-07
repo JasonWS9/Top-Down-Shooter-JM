@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a1ef2983fb7c24c873744598aabef4, type: 3}
+  m_Name: Data_BuildUpChaser
+  m_EditorClassIdentifier: Assembly-CSharp::MNEnemyData
+  enemyName: 
+  maxHealth: 10
+  damageToPlayer: 1
+  baseSpeed: 3
+  behaviorType: 1
+  minBurstInterval: 2
+  maxBurstInterval: 5
+  burstForce: 15
+  burstDrag: 2
+  turnSpeed: 2
+  acceleration: 5
+  momentumLossMultiplier: 0.5
+  projectilePrefab: {fileID: 905072091424754200, guid: a0c5873cc8ef99b489ccf78e4ed42fcb, type: 3}
+  minShootInterval: 1.5
+  maxShootInterval: 4
+  changeDirectionTime: 2
