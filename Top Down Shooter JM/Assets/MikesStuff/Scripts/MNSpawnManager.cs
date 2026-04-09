@@ -1,19 +1,32 @@
 using UnityEngine;
+using System;
+using Random = UnityEngine.Random;
 
 public class MNSpawnManager : MonoBehaviour
 {
     public static MNSpawnManager Instance;
 
     [Header("Corporate Assets")]
-    public GameObject alienInterceptorPrefab; // Drops from Stratosphere
-    public GameObject planetaryDefensePrefab; // Launches from Surface
-    public GameObject irsDronePrefab;         // Enters from sides
-    public GameObject civilianTransportPrefab;// Enters from sides
-    public GameObject rivalAgentPrefab;       // Enters from sides
+    public GameObject alienInterceptorPrefab; 
+    public GameObject planetaryDefensePrefab; 
+    public GameObject irsDronePrefab;         
+    public GameObject civilianTransportPrefab;
+    public GameObject rivalAgentPrefab;       
 
     [Header("Spawn Settings")]
     public float baseSpawnInterval = 1.5f;
     private float spawnTimer;
+
+    // --- NEW INVASION QUOTA LOGIC ---
+    [Header("Invasion Quota")]
+    [Tooltip("How many aliens make up this wave before the spawner stops?")]
+    public int totalInvasionForce = 100;
+    private int aliensSpawned = 0;
+    public int aliensRemaining;
+
+    // The event your UI is listening for
+    public static event Action<int> OnInvasionCountUpdated; 
+    // --------------------------------
 
     [Header("Spawning Margins")]
     public float verticalSpawnBuffer = 5f; 
@@ -23,10 +36,20 @@ public class MNSpawnManager : MonoBehaviour
     {
         Instance = this;
         spawnTimer = baseSpawnInterval;
+        aliensRemaining = totalInvasionForce; // Set the starting count
+    }
+
+    void Start()
+    {
+        // Broadcast the starting number to the UI the moment the game loads
+        OnInvasionCountUpdated?.Invoke(aliensRemaining);
     }
 
     void Update()
     {
+        // If we've spawned the entire alien army, stop the spawner!
+        if (aliensSpawned >= totalInvasionForce) return;
+
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
@@ -40,6 +63,25 @@ public class MNSpawnManager : MonoBehaviour
         GameObject prefabToSpawn = SelectAssetToDeploy();
         Vector2 spawnPos = GetTacticalSpawnPoint(prefabToSpawn);
         Instantiate(prefabToSpawn, spawnPos, Quaternion.identity);
+
+        // Only count ACTUAL aliens against the quota (ignore IRS drones, defenders, etc.)
+        if (prefabToSpawn == alienInterceptorPrefab)
+        {
+            aliensSpawned++;
+        }
+    }
+
+    // --- NEW METHOD TO DECREMENT THE COUNTER ---
+    public void RecordAlienDeath()
+    {
+        aliensRemaining--;
+        OnInvasionCountUpdated?.Invoke(aliensRemaining);
+
+        if (aliensRemaining <= 0)
+        {
+            Debug.Log("INVASION DEFEATED! The planet is saved (and highly audited).");
+            // You can trigger your Win Screen or Next Wave logic here!
+        }
     }
 
     GameObject SelectAssetToDeploy()

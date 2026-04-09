@@ -22,6 +22,7 @@ public class MNEnemyController : MonoBehaviour, IDamageable
     
     // Tower specific
     private bool isBoltedToGround = false;
+    private bool lastHitByPlayer = false;
 
     void Start()
     {
@@ -139,7 +140,8 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
             if (enemyData.faction == FactionType.Alien)
             {
-                if (hit.CompareTag("Defender"))
+                // Aliens prioritize shooting back at Defenders (Turrets) OR wrecking Structures
+                if (hit.CompareTag("Defender") || hit.CompareTag("Structure"))
                 {
                     if (dist < closestDist || !foundPriorityTarget) 
                     {
@@ -280,9 +282,17 @@ public class MNEnemyController : MonoBehaviour, IDamageable
     }
 
     // --- IDAMAGEABLE ---
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool fromPlayer = false)
     {
         currentHealth -= damage;
+
+        if (fromPlayer)
+        {
+            lastHitByPlayer = true;
+            // Give the player a tiny bit of XP just for landing a shot
+            MNLiabilityManager.Instance.AddAssistXP(5); 
+        }
+
         if (currentHealth <= 0)
         {
             Die();
@@ -291,6 +301,8 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
     void Die()
     {
+        // Tell the Liability Manager who died and if the player gets the credit
+        MNLiabilityManager.Instance.RecordKill(enemyData.faction, lastHitByPlayer);
         Destroy(gameObject);
     }
     

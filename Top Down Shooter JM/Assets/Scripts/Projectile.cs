@@ -33,11 +33,12 @@ public class Projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         IDamageable damageable = collision.GetComponent<IDamageable>();
-
         if (damageable != null)
         {
-            damageable.TakeDamage(damage);
+            // Tell the enemy the player shot them!
+            damageable.TakeDamage(damage, true); 
         }
+        Destroy(gameObject);
     }
     
     void OnEnable()

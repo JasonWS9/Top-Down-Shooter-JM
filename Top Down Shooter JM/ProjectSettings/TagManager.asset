@@ -9,6 +9,7 @@ TagManager:
   - Hazard
   - Defender
   - Alien
+  - Structure
   layers:
   - Default
   - TransparentFX

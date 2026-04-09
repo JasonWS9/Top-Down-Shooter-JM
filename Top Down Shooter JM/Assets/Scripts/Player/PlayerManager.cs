@@ -26,7 +26,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool fromPlayer = false)
     {
         currentHealth -= damage;
     }
