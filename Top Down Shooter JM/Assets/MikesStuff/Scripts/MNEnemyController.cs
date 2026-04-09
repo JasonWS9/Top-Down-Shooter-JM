@@ -7,7 +7,10 @@ public class MNEnemyController : MonoBehaviour, IDamageable
     
     private int currentHealth;
     private Rigidbody2D rb;
-    private Transform player;
+
+    // Targeting
+    private Transform currentTarget;
+    private float radarTimer = 0f;
 
     // State Timers
     private float actionTimer;
@@ -16,31 +19,33 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
     // Momentum specific
     private float currentMomentumSpeed;
+    
+    // Tower specific
+    private bool isBoltedToGround = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentHealth = enemyData.maxHealth;
-        
-        // Find player (assuming your player has the MNPlayerManager tag or instance)
-        if (MNPlayerManager.Instance != null)
-        {
-            player = MNPlayerManager.Instance.transform;
-        }
 
         InitializeBehavior();
+        
+        // Lock planetary defender towers to the surface
+        if (enemyData.faction == FactionType.Defender && enemyData.behaviorType == EnemyBehaviorType.StaticTurret)
+        {
+            isBoltedToGround = true;
+        }
     }
 
     void InitializeBehavior()
     {
         if (enemyData.behaviorType == EnemyBehaviorType.BurstChaser)
         {
-            rb.linearDamping = enemyData.burstDrag; // Use linearDamping instead of drag in newer Unity versions
+            rb.linearDamping = enemyData.burstDrag; 
             actionTimer = Random.Range(enemyData.minBurstInterval, enemyData.maxBurstInterval);
         }
         else if (enemyData.behaviorType == EnemyBehaviorType.SlowShooter || enemyData.behaviorType == EnemyBehaviorType.StaticTurret)
         {
-            // Both mobile shooters and static turrets use the shoot timer
             shootTimer = Random.Range(enemyData.minShootInterval, enemyData.maxShootInterval);
         }
         else if (enemyData.behaviorType == EnemyBehaviorType.WandererErratic || enemyData.behaviorType == EnemyBehaviorType.WandererSmooth)
@@ -52,7 +57,13 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
     void Update()
     {
-        if (player == null) return;
+        // Radar pulse every 0.5 seconds
+        radarTimer -= Time.deltaTime;
+        if (radarTimer <= 0)
+        {
+            FindTarget();
+            radarTimer = 0.5f;
+        }
 
         actionTimer -= Time.deltaTime;
         shootTimer -= Time.deltaTime;
@@ -61,17 +72,31 @@ public class MNEnemyController : MonoBehaviour, IDamageable
         {
             Shoot();
         }
+
+        // =======================================
+        // THE BOLT LOGIC
+        // =======================================
+        if (isBoltedToGround && MNPlayerMovement.Instance != null)
+        {
+            float trueSurfaceY = MNPlayerMovement.Instance.minWorldY - MNPlayerMovement.Instance.currentTreadmillY;
+            
+            if (rb != null)
+            {
+                rb.position = new Vector2(rb.position.x, trueSurfaceY);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x, trueSurfaceY, transform.position.z);
+            }
+        }
     }
 
     void FixedUpdate()
     {
-        if (player == null) return;
-
         switch (enemyData.behaviorType)
         {
             case EnemyBehaviorType.StaticTurret:
-                // Ensure they absolutely do not move or get pushed by physics
-                rb.linearVelocity = Vector2.zero; 
+                if (!isBoltedToGround) rb.linearVelocity = Vector2.zero; 
                 rb.angularVelocity = 0f;
                 break;
             case EnemyBehaviorType.BurstChaser:
@@ -92,59 +117,115 @@ public class MNEnemyController : MonoBehaviour, IDamageable
         }
     }
 
+    // --- TARGETING LOGIC ---
+
+    void FindTarget()
+    {
+        if (enemyData.faction == FactionType.Rival)
+        {
+            if (MNPlayerMovement.Instance != null)
+                currentTarget = MNPlayerMovement.Instance.transform;
+            return;
+        }
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, enemyData.radarRange);
+        Transform bestTarget = null;
+        float closestDist = Mathf.Infinity;
+        bool foundPriorityTarget = false; 
+
+        foreach (var hit in hits)
+        {
+            float dist = Vector2.Distance(transform.position, hit.transform.position);
+
+            if (enemyData.faction == FactionType.Alien)
+            {
+                if (hit.CompareTag("Defender"))
+                {
+                    if (dist < closestDist || !foundPriorityTarget) 
+                    {
+                        bestTarget = hit.transform;
+                        closestDist = dist;
+                        foundPriorityTarget = true;
+                    }
+                }
+                else if (hit.CompareTag("Player") && !foundPriorityTarget)
+                {
+                    if (dist < closestDist)
+                    {
+                        bestTarget = hit.transform;
+                        closestDist = dist;
+                    }
+                }
+            }
+            else if (enemyData.faction == FactionType.Defender)
+            {
+                if (hit.CompareTag("Alien"))
+                {
+                    if (dist < closestDist)
+                    {
+                        bestTarget = hit.transform;
+                        closestDist = dist;
+                    }
+                }
+            }
+        }
+
+        currentTarget = bestTarget;
+    }
+
+    Vector2 GetTargetDirection()
+    {
+        if (currentTarget != null)
+        {
+            return (currentTarget.position - transform.position).normalized;
+        }
+        
+        if (enemyData.faction == FactionType.Alien) return Vector2.down;
+        if (enemyData.faction == FactionType.Defender) return Vector2.up;
+        return transform.up; 
+    }
+
     // --- BEHAVIOR LOGIC ---
 
     void HandleBurstChaser()
     {
-        // Always face the player
-        Vector2 directionToPlayer = (player.position - transform.position).normalized;
-        transform.up = directionToPlayer;
+        Vector2 direction = GetTargetDirection();
+        transform.up = direction;
 
         if (actionTimer <= 0)
         {
-            // BURST! Add instant force towards the player
-            rb.AddForce(directionToPlayer * enemyData.burstForce, ForceMode2D.Impulse);
-            
-            // Reset timer
+            rb.AddForce(direction * enemyData.burstForce, ForceMode2D.Impulse);
             actionTimer = Random.Range(enemyData.minBurstInterval, enemyData.maxBurstInterval);
         }
     }
 
     void HandleMomentumChaser()
     {
-        Vector2 directionToPlayer = (player.position - transform.position).normalized;
+        Vector2 direction = GetTargetDirection();
+        float angleToTarget = Vector2.SignedAngle(transform.up, direction);
         
-        // Calculate how much we need to turn
-        float angleToPlayer = Vector2.SignedAngle(transform.up, directionToPlayer);
-        
-        // If we are turning sharply, lose momentum
-        if (Mathf.Abs(angleToPlayer) > 10f) 
+        if (Mathf.Abs(angleToTarget) > 10f) 
         {
             currentMomentumSpeed -= enemyData.momentumLossMultiplier * Time.fixedDeltaTime;
-            currentMomentumSpeed = Mathf.Max(currentMomentumSpeed, 0.5f); // Don't stop completely
+            currentMomentumSpeed = Mathf.Max(currentMomentumSpeed, 0.5f);
         }
         else
         {
-            // Speed up if going straight
             currentMomentumSpeed += enemyData.acceleration * Time.fixedDeltaTime;
             currentMomentumSpeed = Mathf.Min(currentMomentumSpeed, enemyData.baseSpeed);
         }
 
-        // Rotate smoothly
         float step = enemyData.turnSpeed * Time.fixedDeltaTime;
-        transform.up = Vector3.RotateTowards(transform.up, directionToPlayer, step, 0.0f);
+        transform.up = Vector3.RotateTowards(transform.up, direction, step, 0.0f);
 
-        // Move forward
-        rb.linearVelocity = transform.up * currentMomentumSpeed; // Use linearVelocity in newer Unity
+        rb.linearVelocity = transform.up * currentMomentumSpeed; 
     }
 
     void HandleSlowShooter()
     {
-        Vector2 directionToPlayer = (player.position - transform.position).normalized;
-        transform.up = directionToPlayer;
-        
-        // Move constantly but slowly
-        rb.linearVelocity = directionToPlayer * enemyData.baseSpeed;
+        Vector2 direction = GetTargetDirection();
+        transform.up = direction;
+        rb.linearVelocity = direction * enemyData.baseSpeed;
     }
 
     void Shoot()
@@ -155,29 +236,20 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
             if (enemyData.behaviorType == EnemyBehaviorType.StaticTurret)
             {
-                // Turrets fire straight up
                 bullet = Instantiate(enemyData.projectilePrefab, transform.position, Quaternion.identity);
-                bullet.transform.up = Vector2.up; 
+                bullet.transform.up = GetTargetDirection(); 
             }
             else
             {
-                // Slow shooters fire at the player (they are already rotated to face the player in Update)
                 bullet = Instantiate(enemyData.projectilePrefab, transform.position, transform.rotation);
             }
 
-            // --- THE FIX: MAKE IT MOVE ---
             Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
             if (bulletRB != null)
             {
-                // We push it in its local "up" direction, multiplied by the speed from the ScriptableObject
                 bulletRB.AddForce(bullet.transform.up * enemyData.projectileSpeed, ForceMode2D.Impulse);
             }
-            else
-            {
-                Debug.LogWarning("Enemy projectile prefab is missing a Rigidbody2D component!");
-            }
         }
-        
         shootTimer = Random.Range(enemyData.minShootInterval, enemyData.maxShootInterval);
     }
 
@@ -194,23 +266,20 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
         if (erratic)
         {
-            // Erratic changes speed randomly
             rb.linearVelocity = directionToTarget * (enemyData.baseSpeed * Random.Range(0.5f, 1.5f));
         }
         else
         {
-            // Smooth is a constant drift
             rb.linearVelocity = directionToTarget * enemyData.baseSpeed;
         }
     }
 
     void PickNewWanderTarget()
     {
-        // Pick a random point within a radius
         wanderTarget = (Vector2)transform.position + Random.insideUnitCircle * 5f;
     }
 
-    // --- IDAMAGEABLE IMPLEMENTATION ---
+    // --- IDAMAGEABLE ---
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -222,7 +291,29 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
     void Die()
     {
-        // Play explosion, add score, trigger AI events, etc.
         Destroy(gameObject);
+    }
+    
+    // --- TREADMILL SHIFT ---
+    void OnEnable()
+    {
+        MNPlayerMovement.OnWorldShift += ShiftWithTreadmill;
+    }
+
+    void OnDisable()
+    {
+        MNPlayerMovement.OnWorldShift -= ShiftWithTreadmill;
+    }
+
+    void ShiftWithTreadmill(Vector3 shiftAmount)
+    {
+        if (rb != null)
+        {
+            rb.position += (Vector2)shiftAmount; // Fixes physics stutter
+        }
+        else
+        {
+            transform.position += shiftAmount;
+        }
     }
 }

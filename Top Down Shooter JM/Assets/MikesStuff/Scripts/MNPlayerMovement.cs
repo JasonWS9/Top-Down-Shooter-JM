@@ -9,23 +9,23 @@ public class MNPlayerMovement : MonoBehaviour
     [Header("Speed & Projectiles")]
     public float speed = 5f;
     public float projectileSpeed = 10f;
-    [SerializeField] public GameObject projectile;
-    [SerializeField] public Transform firePoint;
+    public GameObject projectile;
+    public Transform firePoint;
 
-    [Header("Screen Boundaries")]
-    [Tooltip("Distance from the edge of the screen before the camera acts like a treadmill")]
-    public float screenMargin = 3f; 
-    [Tooltip("Buffer distance to ensure half your ship doesn't clip off-screen")]
-    public float spriteBuffer = 0.5f;
-    
-    [Header("World Limits (Vertical Only)")]
-    [Tooltip("The highest the camera can go (Stratosphere)")]
+    [Header("Treadmill Boundaries")]
+    [Tooltip("Keep this small, like 2 or 3")]
+    public float screenMargin = 2f; 
     public float maxWorldY = 20f; 
-    [Tooltip("The lowest the camera can go (Planet Surface)")]
     public float minWorldY = -20f;
+
+    // Tracks how far the "treadmill" has rolled vertically to know when we hit the stratosphere/surface
+    public float currentTreadmillY = 0f; 
 
     private InputAction moveAction;
     private InputAction shootAction;
+    
+    // THE MAGIC EVENT: Tells the rest of the game to move backward
+    public static event Action<Vector3> OnWorldShift;
     public static event Action onFireProjectile;
 
     void Start()
@@ -37,164 +37,98 @@ public class MNPlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Aiming
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 direction = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
-        transform.up = direction;
+        transform.up = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
 
-        // Shooting
-        if (shootAction.WasPressedThisFrame())
-        {
-            FireProjectile();
-        }
+        if (shootAction.WasPressedThisFrame()) FireProjectile();
         
-        HandleMovement();
+        HandleTreadmillMovement();
     }
 
-    void HandleMovement()
+    void HandleTreadmillMovement()
     {
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
-        // 1. Send Telemetry if moving
         if (moveInput.magnitude > 0.01f && MNAiUpdater.Instance != null)
         {
             MNAiUpdater.Instance.PlayerMoving();
         }
 
-        // 2. Setup Camera and Movement Math
-        Camera mainCam = Camera.main;
-        float camHeight = mainCam.orthographicSize;
-        float camWidth = camHeight * mainCam.aspect;
-
-        Vector3 currentCamPos = mainCam.transform.position;
-        Vector3 currentPlayerPos = transform.position;
-
-        // How much the player wants to move this frame
         Vector3 intendedMove = new Vector3(moveInput.x, moveInput.y, 0) * speed * Time.deltaTime;
-        
-        // ==========================================
-        // X-AXIS: INFINITE HORIZONTAL TREADMILL
-        // ==========================================
-        float targetPlayerX = currentPlayerPos.x + intendedMove.x;
-        float playerOffsetX = targetPlayerX - currentCamPos.x;
+        Vector3 newPlayerPos = transform.position + intendedMove;
+        Vector3 worldShiftAmount = Vector3.zero; // How much the universe needs to move
 
-        if (playerOffsetX > (camWidth - screenMargin))
+        Camera cam = Camera.main;
+        float camHeight = cam.orthographicSize;
+        float camWidth = camHeight * cam.aspect;
+
+        // ==========================================
+        // X-AXIS: INFINITE TREADMILL
+        // ==========================================
+        float rightBound = cam.transform.position.x + camWidth - screenMargin;
+        float leftBound = cam.transform.position.x - camWidth + screenMargin;
+
+        if (newPlayerPos.x > rightBound)
         {
-            // Pushing the right detector area. Lock player to the margin, move the world.
-            currentPlayerPos.x = currentCamPos.x + (camWidth - screenMargin);
-            currentCamPos.x += intendedMove.x;
-            currentPlayerPos.x += intendedMove.x; // Keep player locked to the moving camera
+            worldShiftAmount.x = newPlayerPos.x - rightBound; // Measure the overlap
+            newPlayerPos.x = rightBound; // Lock player to the margin
         }
-        else if (playerOffsetX < -(camWidth - screenMargin))
+        else if (newPlayerPos.x < leftBound)
         {
-            // Pushing the left detector area.
-            currentPlayerPos.x = currentCamPos.x - (camWidth - screenMargin);
-            currentCamPos.x += intendedMove.x;
-            currentPlayerPos.x += intendedMove.x;
-        }
-        else
-        {
-            // Free movement within the safe box
-            currentPlayerPos.x += intendedMove.x;
+            worldShiftAmount.x = newPlayerPos.x - leftBound;
+            newPlayerPos.x = leftBound;
         }
 
         // ==========================================
-        // Y-AXIS: CLAMPED VERTICAL TREADMILL
+        // Y-AXIS: CLAMPED TREADMILL
         // ==========================================
-        float targetPlayerY = currentPlayerPos.y + intendedMove.y;
-        float playerOffsetY = targetPlayerY - currentCamPos.y;
+        float topBound = cam.transform.position.y + camHeight - screenMargin;
+        float bottomBound = cam.transform.position.y - camHeight + screenMargin;
 
-        if (playerOffsetY > (camHeight - screenMargin))
+        if (newPlayerPos.y > topBound)
         {
-            // Pushing the top detector area
-            if (currentCamPos.y < maxWorldY)
+            float push = newPlayerPos.y - topBound;
+            if (currentTreadmillY + push < maxWorldY)
             {
-                // Push camera up until it hits the Stratosphere limit
-                float pushAmount = Mathf.Min(intendedMove.y, maxWorldY - currentCamPos.y);
-                currentCamPos.y += pushAmount;
-                currentPlayerPos.y = currentCamPos.y + (camHeight - screenMargin);
-                
-                // If camera stopped, let the player move the leftover distance toward the edge of the screen
-                currentPlayerPos.y += (intendedMove.y - pushAmount);
-            }
-            else
-            {
-                // Camera is maxed out. Player just moves freely toward the top of the screen.
-                currentPlayerPos.y += intendedMove.y;
+                worldShiftAmount.y = push;
+                newPlayerPos.y = topBound;
+                currentTreadmillY += push; // Track how high we've climbed
             }
         }
-        else if (playerOffsetY < -(camHeight - screenMargin))
+        else if (newPlayerPos.y < bottomBound)
         {
-            // Pushing the bottom detector area
-            if (currentCamPos.y > minWorldY)
+            float push = newPlayerPos.y - bottomBound;
+            if (currentTreadmillY + push > minWorldY)
             {
-                // Push camera down until it hits the Surface limit
-                float pushAmount = Mathf.Max(intendedMove.y, minWorldY - currentCamPos.y); 
-                currentCamPos.y += pushAmount;
-                currentPlayerPos.y = currentCamPos.y - (camHeight - screenMargin);
-
-                currentPlayerPos.y += (intendedMove.y - pushAmount);
-            }
-            else
-            {
-                currentPlayerPos.y += intendedMove.y;
+                worldShiftAmount.y = push;
+                newPlayerPos.y = bottomBound;
+                currentTreadmillY += push; // Track how low we've descended
             }
         }
-        else
+
+        // Apply Player Position. Hard clamp to ensure they never visually pop off screen.
+        newPlayerPos.x = Mathf.Clamp(newPlayerPos.x, cam.transform.position.x - camWidth + 0.5f, cam.transform.position.x + camWidth - 0.5f);
+        newPlayerPos.y = Mathf.Clamp(newPlayerPos.y, cam.transform.position.y - camHeight + 0.5f, cam.transform.position.y + camHeight - 0.5f);
+        transform.position = newPlayerPos;
+
+        // ==========================================
+        // SHIFT THE WORLD
+        // ==========================================
+        if (worldShiftAmount != Vector3.zero)
         {
-            currentPlayerPos.y += intendedMove.y;
+            // We send the NEGATIVE shift amount, so the world moves opposite to the player
+            OnWorldShift?.Invoke(-worldShiftAmount);
         }
-
-        // ==========================================
-        // THE ULTIMATE SCREEN CLAMP (THE WALL)
-        // ==========================================
-        // Regardless of all the math above, absolutely guarantee the player's 
-        // position can never, ever fly outside the physical camera lens.
-        
-        currentPlayerPos.x = Mathf.Clamp(currentPlayerPos.x, 
-            currentCamPos.x - camWidth + spriteBuffer, 
-            currentCamPos.x + camWidth - spriteBuffer);
-            
-        currentPlayerPos.y = Mathf.Clamp(currentPlayerPos.y, 
-            currentCamPos.y - camHeight + spriteBuffer, 
-            currentCamPos.y + camHeight - spriteBuffer);
-
-        // 3. Apply the final calculated positions
-        mainCam.transform.position = currentCamPos;
-        transform.position = currentPlayerPos;
     }
 
     void FireProjectile()
     {
-        if (projectile == null)
+        if (projectile != null && firePoint != null)
         {
-            Debug.LogError("Projectile prefab is missing! Assign it in the Inspector.");
-            return;
+            GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
+            bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * projectileSpeed, ForceMode2D.Impulse);
+            if (MNAiUpdater.Instance != null) MNAiUpdater.Instance.Fire();
+            onFireProjectile?.Invoke();
         }
-
-        if (firePoint == null)
-        {
-            Debug.LogError("FirePoint is missing! Assign it in the Inspector.");
-            return;
-        }
-
-        GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-        
-        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
-        if (bulletRB != null)
-        {
-            bulletRB.AddForce(firePoint.up * projectileSpeed, ForceMode2D.Impulse);
-        }
-        else
-        {
-            Debug.LogError("The bullet prefab needs a Rigidbody2D component!");
-        }
-
-        if (MNAiUpdater.Instance != null)
-        {
-            MNAiUpdater.Instance.Fire();
-        }
-        
-        onFireProjectile?.Invoke();
     }
 }

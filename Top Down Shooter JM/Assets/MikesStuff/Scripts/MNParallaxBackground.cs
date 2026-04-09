@@ -1,62 +1,52 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class MNParallaxBackground : MonoBehaviour
 {
-    [Header("Parallax Settings")]
-    [Tooltip("0 = Moves with camera (Foreground). 1 = Static (Deep Background).")]
     [Range(0f, 1f)]
     public float parallaxFactor;
 
-    [Header("Cluster Settings")]
-    [Tooltip("Check this if this object is an empty parent with multiple child sprites.")]
-    public bool isCluster = false;
-    
-    [Tooltip("If it's a cluster, how wide is this 'chunk' of space?")]
-    public float clusterWidth = 30f; 
-
-    private float length;
+    private float singleImageLength; // The width of ONE image
     private float startPosX;
-    private Transform mainCam;
 
     void Start()
     {
-        mainCam = Camera.main.transform;
         startPosX = transform.position.x;
-        
-        // Determine the length based on what type of object this is
-        if (isCluster)
-        {
-            length = clusterWidth;
-        }
-        else
-        {
-            // Fallback to the automatic method if it's just a single sprite
-            SpriteRenderer sr = GetComponent<SpriteRenderer>();
-            if (sr != null)
-            {
-                length = sr.bounds.size.x;
-            }
-            else
-            {
-                Debug.LogError($"[{gameObject.name}] Missing SpriteRenderer! Check 'Is Cluster' or add a SpriteRenderer.");
-            }
-        }
+
+        // Measure the width of the original sprite (e.g., 18.78)
+        singleImageLength = GetComponent<SpriteRenderer>().sprite.bounds.size.x * transform.localScale.x;
     }
 
-    void Update()
+    void OnEnable()
     {
-        float temp = (mainCam.position.x * (1 - parallaxFactor));
-        float dist = (mainCam.position.x * parallaxFactor);
+        MNPlayerMovement.OnWorldShift += ShiftBackground;
+    }
 
-        transform.position = new Vector3(startPosX + dist, transform.position.y, transform.position.z);
+    void OnDisable()
+    {
+        MNPlayerMovement.OnWorldShift -= ShiftBackground;
+    }
 
-        if (temp > startPosX + length)
+    void ShiftBackground(Vector3 shiftAmount)
+    {
+        float newX = transform.position.x + (shiftAmount.x * parallaxFactor);
+        float newY = transform.position.y + shiftAmount.y;
+        transform.position = new Vector3(newX, newY, transform.position.z);
+    }
+
+    void LateUpdate()
+    {
+        float distFromStart = transform.position.x - startPosX;
+
+        // Because we have two images side-by-side, we teleport when we've moved the length of ONE image.
+        // This makes the second image slide into the first image's original position!
+        if (distFromStart < -singleImageLength)
         {
-            startPosX += length;
+            transform.position = new Vector3(transform.position.x + singleImageLength, transform.position.y, transform.position.z);
         }
-        else if (temp < startPosX - length)
+        else if (distFromStart > singleImageLength)
         {
-            startPosX -= length;
+            transform.position = new Vector3(transform.position.x - singleImageLength, transform.position.y, transform.position.z);
         }
     }
 }

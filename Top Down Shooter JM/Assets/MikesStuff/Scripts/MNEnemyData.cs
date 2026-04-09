@@ -1,5 +1,7 @@
 using UnityEngine;
 
+public enum FactionType { Alien, Defender, Rival, Neutral }
+
 public enum EnemyBehaviorType 
 { 
     BurstChaser, 
@@ -7,7 +9,7 @@ public enum EnemyBehaviorType
     SlowShooter, 
     WandererErratic, 
     WandererSmooth,
-    StaticTurret // NEW: For Planetary Defense Towers
+    StaticTurret // For Planetary Defense Towers
 }
 
 [CreateAssetMenu(fileName = "NewEnemyData", menuName = "VoidAudit/Enemy Data")]
@@ -18,6 +20,10 @@ public class MNEnemyData : ScriptableObject
     public int maxHealth = 10;
     public int damageToPlayer = 1;
     public float baseSpeed = 3f;
+
+    [Header("Faction & Targeting")]
+    public FactionType faction;
+    public float radarRange = 15f; 
 
     [Header("Behavior Type")]
     public EnemyBehaviorType behaviorType;
