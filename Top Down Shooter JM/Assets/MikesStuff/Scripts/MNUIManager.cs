@@ -1,9 +1,17 @@
 using UnityEngine;
 using TMPro; // Required for TextMeshPro
 using System;
+using UnityEngine.UI;
 
 public class MNUIManager : MonoBehaviour
 {
+    [Header("Alignment Gauge")]
+    public Slider alignmentSlider;
+    public Image alignmentFill; // Drag the "Fill" object here so we can change its color!
+    public Color alienColor = Color.red;
+    public Color defenderColor = Color.green;
+    public Color corporateColor = Color.yellow;
+    
     [Header("Invasion Metrics")]
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI aliensLeftText;
@@ -27,9 +35,8 @@ public class MNUIManager : MonoBehaviour
         MNLiabilityManager.OnDestructionUpdated += UpdateDestruction;
         MNLiabilityManager.OnStatsUpdated += UpdateCombatStats;
         MNSpawnManager.OnInvasionCountUpdated += UpdateAliensLeft;
-        
-        // Assuming your PlayerManager has a health update event
-        MNPlayerManager.OnHealthUpdated += UpdateHealth; 
+        MNPlayerManager.OnHealthUpdated += UpdateHealth;
+        MNAlignmentManager.OnAlignmentChanged += UpdateAlignmentGauge;
     }
 
     void OnDisable()
@@ -40,6 +47,7 @@ public class MNUIManager : MonoBehaviour
         MNLiabilityManager.OnStatsUpdated -= UpdateCombatStats;
         MNSpawnManager.OnInvasionCountUpdated -= UpdateAliensLeft;
         MNPlayerManager.OnHealthUpdated -= UpdateHealth;
+        MNAlignmentManager.OnAlignmentChanged -= UpdateAlignmentGauge;
     }
 
     void Start()
@@ -91,5 +99,33 @@ public class MNUIManager : MonoBehaviour
     void UpdateAliensLeft(int count)
     {
         aliensLeftText.text = $"INVASION FORCES REMAINING: {count}";
+    }
+    
+    void UpdateAlignmentGauge(float newAlignment)
+    {
+        if (alignmentSlider != null)
+        {
+            // Move the slider bar
+            alignmentSlider.value = newAlignment;
+        }
+
+        if (alignmentFill != null)
+        {
+            // Dynamically blend the colors!
+            // If the score is positive, blend from Corporate to Defender (Green)
+            if (newAlignment > 0)
+            {
+                alignmentFill.color = Color.Lerp(corporateColor, defenderColor, newAlignment / 100f);
+            }
+            // If the score is negative, blend from Corporate to Alien (Red)
+            else if (newAlignment < 0)
+            {
+                alignmentFill.color = Color.Lerp(corporateColor, alienColor, Mathf.Abs(newAlignment) / 100f);
+            }
+            else
+            {
+                alignmentFill.color = corporateColor;
+            }
+        }
     }
 }

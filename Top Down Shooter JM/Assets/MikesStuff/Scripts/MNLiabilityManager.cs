@@ -101,24 +101,42 @@ public class MNLiabilityManager : MonoBehaviour, IDamageable
     // --- NEW METHOD FOR XP AND KILLS ---
     public void RecordKill(FactionType killedFaction, bool killedByPlayer)
     {
+        if (killedByPlayer)
+        {
+            // 1. Tell the Moral Compass to shift the gauge!
+            if (MNAlignmentManager.Instance != null) 
+            {
+                MNAlignmentManager.Instance.EvaluateAction(killedFaction, true);
+            }
+
+            // 2. Distribute rewards based on your active track
+            if (MNAlignmentManager.Instance.currentTrack == MNAlignmentManager.PlayTrack.Corporate)
+            {
+                // CORPORATE TRACK REWARDS
+                if (killedFaction == FactionType.Alien) MNAlignmentManager.Instance.corporateMoney += 500f;
+                if (killedFaction == FactionType.Defender) IncreaseLiability(50000f); // Still getting fined!
+            }
+            else 
+            {
+                // HERO TRACK REWARDS
+                MNAlignmentManager.Instance.heroXP += 100;
+                
+                // You only get reputation if you kill the ENEMY of your chosen faction
+                if (MNAlignmentManager.Instance.currentTrack == MNAlignmentManager.PlayTrack.HeroDefender && killedFaction == FactionType.Alien)
+                {
+                    MNAlignmentManager.Instance.heroReputation += 10;
+                }
+                else if (MNAlignmentManager.Instance.currentTrack == MNAlignmentManager.PlayTrack.HeroAlien && killedFaction == FactionType.Defender)
+                {
+                    MNAlignmentManager.Instance.heroReputation += 10;
+                }
+            }
+        }
+
         if (killedFaction == FactionType.Alien)
         {
             totalAlienKills++;
-            
-            int xpGained = killedByPlayer ? 100 : 25; 
-            currentXP += xpGained;
-
-            // ---> ADD THIS LINE <---
-            // Tell the Spawner to tick down the "Aliens Remaining" UI clock!
             if (MNSpawnManager.Instance != null) MNSpawnManager.Instance.RecordAlienDeath(); 
-        }
-        else if (killedFaction == FactionType.Defender || killedFaction == FactionType.Neutral)
-        {
-            if (killedByPlayer)
-            {
-                totalPenaltyKills++;
-                IncreaseLiability(50000f); 
-            }
         }
 
         OnStatsUpdated?.Invoke(totalAlienKills, totalPenaltyKills, currentXP);
