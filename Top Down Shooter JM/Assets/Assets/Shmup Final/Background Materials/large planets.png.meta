@@ -1,0 +1,2431 @@
+fileFormatVersion: 2
+guid: b5802e0d4f1c816438b74c71ce184aac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3191289200314007647
+    second: large planets_0
+  - first:
+      213: -5344638642283571534
+    second: large planets_1
+  - first:
+      213: 1595158503969874155
+    second: large planets_2
+  - first:
+      213: 5323752011724361575
+    second: large planets_3
+  - first:
+      213: -8022864814979113736
+    second: large planets_4
+  - first:
+      213: -8559985758036995321
+    second: large planets_5
+  - first:
+      213: -744970354648408716
+    second: large planets_6
+  - first:
+      213: 2205430534975250023
+    second: large planets_7
+  - first:
+      213: 871994903816679535
+    second: large planets_8
+  - first:
+      213: 34255541673405510
+    second: large planets_9
+  - first:
+      213: 3285114091428081068
+    second: large planets_10
+  - first:
+      213: 1696271394532856376
+    second: large planets_11
+  - first:
+      213: -8990472497369327294
+    second: large planets_12
+  - first:
+      213: 4504819667676989034
+    second: large planets_13
+  - first:
+      213: 8270736995209162924
+    second: large planets_14
+  - first:
+      213: -1447943502000686828
+    second: large planets_15
+  - first:
+      213: -7288154132885254361
+    second: large planets_16
+  - first:
+      213: 8082655410178760821
+    second: large planets_17
+  - first:
+      213: -5717564196308918773
+    second: large planets_18
+  - first:
+      213: 7840987096690030909
+    second: large planets_19
+  - first:
+      213: -7774015965211673606
+    second: large planets_20
+  - first:
+      213: 7838502650865982887
+    second: large planets_21
+  - first:
+      213: -8495195430861728526
+    second: large planets_22
+  - first:
+      213: -2553514148644008697
+    second: large planets_23
+  - first:
+      213: -8094991441226353043
+    second: large planets_24
+  - first:
+      213: 3147722790370900634
+    second: large planets_25
+  - first:
+      213: 5029594468939343336
+    second: large planets_26
+  - first:
+      213: 1844164375169796244
+    second: large planets_27
+  - first:
+      213: -2979700846488286600
+    second: large planets_28
+  - first:
+      213: -674308158350517101
+    second: large planets_29
+  - first:
+      213: -1332704520347076607
+    second: large planets_30
+  - first:
+      213: -847773615171697339
+    second: large planets_31
+  - first:
+      213: -4946538974505155535
+    second: large planets_32
+  - first:
+      213: 5806170315031288681
+    second: large planets_33
+  - first:
+      213: 4730619703372772576
+    second: large planets_34
+  - first:
+      213: -5424112696465703420
+    second: large planets_35
+  - first:
+      213: 4843121222825254662
+    second: large planets_36
+  - first:
+      213: -260347193300814978
+    second: large planets_37
+  - first:
+      213: -1761345034138846823
+    second: large planets_38
+  - first:
+      213: 8832750219166415428
+    second: large planets_39
+  - first:
+      213: 1568701473560180437
+    second: large planets_40
+  - first:
+      213: -6484960681652845917
+    second: large planets_41
+  - first:
+      213: -8495317995460267468
+    second: large planets_42
+  - first:
+      213: 3300011812583161706
+    second: large planets_43
+  - first:
+      213: 844642041785929220
+    second: large planets_44
+  - first:
+      213: -8216620030808047673
+    second: large planets_45
+  - first:
+      213: -3744120332832358240
+    second: large planets_46
+  - first:
+      213: 7781060089273804635
+    second: large planets_47
+  - first:
+      213: -8769988986348003520
+    second: large planets_48
+  - first:
+      213: 2621119430805502652
+    second: large planets_49
+  - first:
+      213: -2398529225209803689
+    second: large planets_50
+  - first:
+      213: -4162923689433619035
+    second: large planets_51
+  - first:
+      213: -8448219359607594454
+    second: large planets_52
+  - first:
+      213: 3840365744016069727
+    second: large planets_53
+  - first:
+      213: -986748086428970891
+    second: large planets_54
+  - first:
+      213: -1086763744580504015
+    second: large planets_55
+  - first:
+      213: 5175670245448272219
+    second: large planets_56
+  - first:
+      213: -2517897458368473802
+    second: large planets_57
+  - first:
+      213: 6337174965560622841
+    second: large planets_58
+  - first:
+      213: -4117811717984306921
+    second: large planets_59
+  - first:
+      213: 2395743835689382780
+    second: large planets_60
+  - first:
+      213: -646815855436893216
+    second: large planets_61
+  - first:
+      213: -1492512837882714353
+    second: large planets_62
+  - first:
+      213: 4618421458765196526
+    second: large planets_63
+  - first:
+      213: -460677730090223104
+    second: large planets_64
+  - first:
+      213: 1865564982494748531
+    second: large planets_65
+  - first:
+      213: 115977068037202118
+    second: large planets_66
+  - first:
+      213: 1386714432580979182
+    second: large planets_67
+  - first:
+      213: 1613228118541377535
+    second: large planets_68
+  - first:
+      213: 6685367531293794036
+    second: large planets_69
+  - first:
+      213: 5619910157116401788
+    second: large planets_70
+  - first:
+      213: 6081273653693219696
+    second: large planets_71
+  - first:
+      213: 1708655703775931224
+    second: large planets_72
+  - first:
+      213: 1963288631842721629
+    second: large planets_73
+  - first:
+      213: -3525847368180485099
+    second: large planets_74
+  - first:
+      213: 7900601572547632844
+    second: large planets_75
+  - first:
+      213: 6676660262520720601
+    second: large planets_76
+  - first:
+      213: -6278972866590909708
+    second: large planets_77
+  - first:
+      213: 8526485116714373090
+    second: large planets_78
+  - first:
+      213: -6317581118966637653
+    second: large planets_79
+  - first:
+      213: -4748388782289859982
+    second: large planets_80
+  - first:
+      213: 771345210537067027
+    second: large planets_81
+  - first:
+      213: -3117592897298288733
+    second: large planets_82
+  - first:
+      213: -8406767798676240578
+    second: large planets_83
+  - first:
+      213: -8964560246283819190
+    second: large planets_84
+  - first:
+      213: -7568349408236719833
+    second: large planets_85
+  - first:
+      213: 415211317801996419
+    second: large planets_86
+  - first:
+      213: -8168628680250592799
+    second: large planets_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: large planets_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 591
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af3eb7616346b3d0800000000000000
+      internalID: -3191289200314007647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_1
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 623
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b69cd1d87704d5b0800000000000000
+      internalID: -5344638642283571534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 623
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be061953534232610800000000000000
+      internalID: 1595158503969874155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f0a1b8f34c1e940800000000000000
+      internalID: 5323752011724361575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 575
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc903e25fe09a090800000000000000
+      internalID: -8022864814979113736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_5
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 612
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7035dc94e42d43980800000000000000
+      internalID: -8559985758036995321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_6
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 612
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d1cf2d86559a5f0800000000000000
+      internalID: -744970354648408716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_7
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 594
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76edffdf2634b9e10800000000000000
+      internalID: 2205430534975250023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 594
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60b1f7beb2f91c00800000000000000
+      internalID: 871994903816679535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 596
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c2801db33b97000800000000000000
+      internalID: 34255541673405510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 596
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad63326cd1179d20800000000000000
+      internalID: 3285114091428081068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 511
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83299c998dd5a8710800000000000000
+      internalID: 1696271394532856376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 543
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249d16fa5ec6b3380800000000000000
+      internalID: -8990472497369327294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_13
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 543
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a668415ce95548e30800000000000000
+      internalID: 4504819667676989034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0bf161a7f87c270800000000000000
+      internalID: 8270736995209162924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 495
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419f9647e0fd7ebe0800000000000000
+      internalID: -1447943502000686828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_16
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 532
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f44113e664bda90800000000000000
+      internalID: -7288154132885254361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_17
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 532
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5702895954c5b2070800000000000000
+      internalID: 8082655410178760821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_18
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 514
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ed38a08a127a0b0800000000000000
+      internalID: -5717564196308918773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_19
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 514
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3971aa9838c0dc60800000000000000
+      internalID: 7840987096690030909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbb75b0ba52d1490800000000000000
+      internalID: -7774015965211673606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_21
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 516
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad13db71a4f7cc60800000000000000
+      internalID: 7838502650865982887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_22
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 431
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f417fdd3c00b1a80800000000000000
+      internalID: -8495195430861728526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dc3213968109cd0800000000000000
+      internalID: -2553514148644008697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_24
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 463
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6630ed5c20d8af80800000000000000
+      internalID: -8094991441226353043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 432
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a75735335feab20800000000000000
+      internalID: 3147722790370900634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_26
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 415
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e526658585bcc540800000000000000
+      internalID: 5029594468939343336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_27
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 452
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4980d697ab9c79910800000000000000
+      internalID: 1844164375169796244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_28
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 452
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a82240ed9f5a6d0800000000000000
+      internalID: -2979700846488286600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_29
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 434
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c9e587d4064a6f0800000000000000
+      internalID: -674308158350517101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_30
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 434
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108b72abc48418de0800000000000000
+      internalID: -1332704520347076607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_31
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 436
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5450eb1836a1c34f0800000000000000
+      internalID: -847773615171697339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_32
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 436
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134cef4b20d5a5bb0800000000000000
+      internalID: -4946538974505155535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_33
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 351
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b9bdc9329a39050800000000000000
+      internalID: 5806170315031288681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_34
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 383
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e47ffa6e8986a140800000000000000
+      internalID: 4730619703372772576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_35
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 383
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40eb971ad3ea9b4b0800000000000000
+      internalID: -5424112696465703420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f97aa9719363340800000000000000
+      internalID: 4843121222825254662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_37
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 335
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73f8096b9f036cf0800000000000000
+      internalID: -260347193300814978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_38
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 372
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999714106027e87e0800000000000000
+      internalID: -1761345034138846823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_39
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 372
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44afa23c68b349a70800000000000000
+      internalID: 8832750219166415428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_40
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 354
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6bf2acda525c510800000000000000
+      internalID: 1568701473560180437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_41
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 354
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a205bb6e9ac006a0800000000000000
+      internalID: -6484960681652845917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_42
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 356
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4327b921b419a1a80800000000000000
+      internalID: -8495317995460267468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_43
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 356
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fbc93624ffbcd20800000000000000
+      internalID: 3300011812583161706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_44
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 271
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ec20f3675c8bb00800000000000000
+      internalID: 844642041785929220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_45
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 303
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfb3519d93b8fd80800000000000000
+      internalID: -8216620030808047673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_46
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 303
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0c53df4663a0cc0800000000000000
+      internalID: -3744120332832358240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_47
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b576225ece0ebfb60800000000000000
+      internalID: 7781060089273804635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_48
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 255
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f93a87b7dba4680800000000000000
+      internalID: -8769988986348003520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_49
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 292
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba390b2c36106420800000000000000
+      internalID: 2621119430805502652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_50
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 292
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c0afba066b6bed0800000000000000
+      internalID: -2398529225209803689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_51
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 274
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a52048e5f25a36c0800000000000000
+      internalID: -4162923689433619035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_52
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 274
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22e206c045e1ca80800000000000000
+      internalID: -8448219359607594454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_53
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5418ab0c48bb4530800000000000000
+      internalID: 3840365744016069727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_54
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 276
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570da99e7dd5e42f0800000000000000
+      internalID: -986748086428970891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_55
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 191
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1367189d12a0be0f0800000000000000
+      internalID: -1086763744580504015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_56
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 223
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59c0869aaca3d740800000000000000
+      internalID: 5175670245448272219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_57
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 223
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635961d1a91ae0dd0800000000000000
+      internalID: -2517897458368473802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_58
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe3dbd2e0b22f750800000000000000
+      internalID: 6337174965560622841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_59
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 175
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719ba914f089ad6c0800000000000000
+      internalID: -4117811717984306921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_60
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 212
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73f81b43546f3120800000000000000
+      internalID: 2395743835689382780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_61
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 212
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3f79d086c0607f0800000000000000
+      internalID: -646815855436893216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_62
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 194
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f076a4b4b77894be0800000000000000
+      internalID: -1492512837882714353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_63
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 194
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecadb8e8dde71040800000000000000
+      internalID: 4618421458765196526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_64
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 196
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00af9069b085b99f0800000000000000
+      internalID: -460677730090223104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_65
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 196
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fd107a771d3e910800000000000000
+      internalID: 1865564982494748531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_66
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0e27667880c9100800000000000000
+      internalID: 115977068037202118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_67
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 143
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee985e6ed699e3310800000000000000
+      internalID: 1386714432580979182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_68
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 143
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff94533d66536610800000000000000
+      internalID: 1613228118541377535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_69
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe52bf595237cc50800000000000000
+      internalID: 6685367531293794036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_70
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 95
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c786888238eedfd40800000000000000
+      internalID: 5619910157116401788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_71
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 132
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07383560b26056450800000000000000
+      internalID: 6081273653693219696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_72
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 132
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b620b4f4d56b710800000000000000
+      internalID: 1708655703775931224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_73
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 114
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f4c84db900f3b10800000000000000
+      internalID: 1963288631842721629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_74
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 114
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5143b57df7ca11fc0800000000000000
+      internalID: -3525847368180485099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_75
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 116
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce1893654394ad60800000000000000
+      internalID: 7900601572547632844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_76
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 116
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc8381622348ac50800000000000000
+      internalID: 6676660262520720601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_77
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 322
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa588cf17b9cd8a0800000000000000
+      internalID: -6278972866590909708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_78
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 63
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef4a64d909245670800000000000000
+      internalID: 8526485116714373090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_79
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 63
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab574cb1717358a0800000000000000
+      internalID: -6317581118966637653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ac9208f855a1eb0800000000000000
+      internalID: -4748388782289859982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_81
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 15
+        width: 169
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312c249d16e54ba00800000000000000
+      internalID: 771345210537067027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_82
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 52
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af214217c51cb4d0800000000000000
+      internalID: -3117592897298288733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_83
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 52
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37c5b26a39255b80800000000000000
+      internalID: -8406767798676240578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_84
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 34
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a472aa8c3fb779380800000000000000
+      internalID: -8964560246283819190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_85
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 34
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7213302ef42d7f690800000000000000
+      internalID: -7568349408236719833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_86
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3805f406e7023c500800000000000000
+      internalID: 415211317801996419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large planets_87
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 36
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1789b9e7333ae80800000000000000
+      internalID: -8168628680250592799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      large planets_0: -3191289200314007647
+      large planets_1: -5344638642283571534
+      large planets_10: 3285114091428081068
+      large planets_11: 1696271394532856376
+      large planets_12: -8990472497369327294
+      large planets_13: 4504819667676989034
+      large planets_14: 8270736995209162924
+      large planets_15: -1447943502000686828
+      large planets_16: -7288154132885254361
+      large planets_17: 8082655410178760821
+      large planets_18: -5717564196308918773
+      large planets_19: 7840987096690030909
+      large planets_2: 1595158503969874155
+      large planets_20: -7774015965211673606
+      large planets_21: 7838502650865982887
+      large planets_22: -8495195430861728526
+      large planets_23: -2553514148644008697
+      large planets_24: -8094991441226353043
+      large planets_25: 3147722790370900634
+      large planets_26: 5029594468939343336
+      large planets_27: 1844164375169796244
+      large planets_28: -2979700846488286600
+      large planets_29: -674308158350517101
+      large planets_3: 5323752011724361575
+      large planets_30: -1332704520347076607
+      large planets_31: -847773615171697339
+      large planets_32: -4946538974505155535
+      large planets_33: 5806170315031288681
+      large planets_34: 4730619703372772576
+      large planets_35: -5424112696465703420
+      large planets_36: 4843121222825254662
+      large planets_37: -260347193300814978
+      large planets_38: -1761345034138846823
+      large planets_39: 8832750219166415428
+      large planets_4: -8022864814979113736
+      large planets_40: 1568701473560180437
+      large planets_41: -6484960681652845917
+      large planets_42: -8495317995460267468
+      large planets_43: 3300011812583161706
+      large planets_44: 844642041785929220
+      large planets_45: -8216620030808047673
+      large planets_46: -3744120332832358240
+      large planets_47: 7781060089273804635
+      large planets_48: -8769988986348003520
+      large planets_49: 2621119430805502652
+      large planets_5: -8559985758036995321
+      large planets_50: -2398529225209803689
+      large planets_51: -4162923689433619035
+      large planets_52: -8448219359607594454
+      large planets_53: 3840365744016069727
+      large planets_54: -986748086428970891
+      large planets_55: -1086763744580504015
+      large planets_56: 5175670245448272219
+      large planets_57: -2517897458368473802
+      large planets_58: 6337174965560622841
+      large planets_59: -4117811717984306921
+      large planets_6: -744970354648408716
+      large planets_60: 2395743835689382780
+      large planets_61: -646815855436893216
+      large planets_62: -1492512837882714353
+      large planets_63: 4618421458765196526
+      large planets_64: -460677730090223104
+      large planets_65: 1865564982494748531
+      large planets_66: 115977068037202118
+      large planets_67: 1386714432580979182
+      large planets_68: 1613228118541377535
+      large planets_69: 6685367531293794036
+      large planets_7: 2205430534975250023
+      large planets_70: 5619910157116401788
+      large planets_71: 6081273653693219696
+      large planets_72: 1708655703775931224
+      large planets_73: 1963288631842721629
+      large planets_74: -3525847368180485099
+      large planets_75: 7900601572547632844
+      large planets_76: 6676660262520720601
+      large planets_77: -6278972866590909708
+      large planets_78: 8526485116714373090
+      large planets_79: -6317581118966637653
+      large planets_8: 871994903816679535
+      large planets_80: -4748388782289859982
+      large planets_81: 771345210537067027
+      large planets_82: -3117592897298288733
+      large planets_83: -8406767798676240578
+      large planets_84: -8964560246283819190
+      large planets_85: -7568349408236719833
+      large planets_86: 415211317801996419
+      large planets_87: -8168628680250592799
+      large planets_9: 34255541673405510
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 0b4c35ca8d2c2af4c9c67ab2f5d7c7ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5813382866837028962
+    second: player ship - bank left_0
+  - first:
+      213: -1248225435659290751
+    second: player ship - bank left_1
+  - first:
+      213: -6491717642252115983
+    second: player ship - bank left_2
+  - first:
+      213: -3908331588972172137
+    second: player ship - bank left_3
+  - first:
+      213: 2260301186416558128
+    second: player ship - bank left_4
+  - first:
+      213: 2515384053107633559
+    second: player ship - bank left_5
+  - first:
+      213: -8125142211538523179
+    second: player ship - bank left_6
+  - first:
+      213: -8899090320942322981
+    second: player ship - bank left_7
+  - first:
+      213: -4259167600191118312
+    second: player ship - bank left_8
+  - first:
+      213: -1970879002525953334
+    second: player ship - bank left_9
+  - first:
+      213: -3463401674002207841
+    second: player ship - bank left_10
+  - first:
+      213: 3143014714324329067
+    second: player ship - bank left_11
+  - first:
+      213: 6817974533291182003
+    second: player ship - bank left_12
+  - first:
+      213: 9010097040732186731
+    second: player ship - bank left_13
+  - first:
+      213: 3243714433582577093
+    second: player ship - bank left_14
+  - first:
+      213: -8649987990835265387
+    second: player ship - bank left_15
+  - first:
+      213: 3079322264490753653
+    second: player ship - bank left_16
+  - first:
+      213: -260087731348034791
+    second: player ship - bank left_17
+  - first:
+      213: -370258324506210818
+    second: player ship - bank left_18
+  - first:
+      213: 5270970464497390542
+    second: player ship - bank left_19
+  - first:
+      213: -3531786178105984451
+    second: player ship - bank left_20
+  - first:
+      213: 7295682220131926579
+    second: player ship - bank left_21
+  - first:
+      213: 173138862195142737
+    second: player ship - bank left_22
+  - first:
+      213: -6386662833212627753
+    second: player ship - bank left_23
+  - first:
+      213: 4080769111985940771
+    second: player ship - bank left_24
+  - first:
+      213: 3916096923530478826
+    second: player ship - bank left_25
+  - first:
+      213: -2749361590549735879
+    second: player ship - bank left_26
+  - first:
+      213: -1453407474595077869
+    second: player ship - bank left_27
+  - first:
+      213: -5039603839407435939
+    second: player ship - bank left_28
+  - first:
+      213: 9076009369637928548
+    second: player ship - bank left_29
+  - first:
+      213: 1420780735580721412
+    second: player ship - bank left_30
+  - first:
+      213: -6264938443056638816
+    second: player ship - bank left_31
+  - first:
+      213: -2979054996463554783
+    second: player ship - bank left_32
+  - first:
+      213: -8218990315749001762
+    second: player ship - bank left_33
+  - first:
+      213: -8651455062983809077
+    second: player ship - bank left_34
+  - first:
+      213: -7812850026864367091
+    second: player ship - bank left_35
+  - first:
+      213: 3279099488567416743
+    second: player ship - bank left_36
+  - first:
+      213: -9215139801932079538
+    second: player ship - bank left_37
+  - first:
+      213: -4998978434630569600
+    second: player ship - bank left_38
+  - first:
+      213: -6500893461785228114
+    second: player ship - bank left_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player ship - bank left_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f36de4517b25fa0800000000000000
+      internalID: -5813382866837028962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187bbe364996daee0800000000000000
+      internalID: -1248225435659290751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff1d6fe239c8e5a0800000000000000
+      internalID: -6491717642252115983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c20e68021d2c9c0800000000000000
+      internalID: -3908331588972172137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030c0c514f33e5f10800000000000000
+      internalID: 2260301186416558128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79da92f187078e220800000000000000
+      internalID: 2515384053107633559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbe6bb1532bd3f80800000000000000
+      internalID: -8125142211538523179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdaad14a084108480800000000000000
+      internalID: -8899090320942322981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81461c732a564e4c0800000000000000
+      internalID: -4259167600191118312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac21a274df706a4e0800000000000000
+      internalID: -1970879002525953334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bea9207868fefc0800000000000000
+      internalID: -3463401674002207841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_11
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62a023fa3b3e9b20800000000000000
+      internalID: 3143014714324329067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_12
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b70b7007bf4e9e50800000000000000
+      internalID: 6817974533291182003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_13
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68e3a0658b4a0d70800000000000000
+      internalID: 9010097040732186731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_14
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c53f76671df30d20800000000000000
+      internalID: 3243714433582577093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_15
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5908ede70c115f780800000000000000
+      internalID: -8649987990835265387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_16
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e3cebd843fbba20800000000000000
+      internalID: 3079322264490753653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_17
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b209a169bf36cf0800000000000000
+      internalID: -260087731348034791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_18
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd0dacf3049cdaf0800000000000000
+      internalID: -370258324506210818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_19
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec351fde5bf362940800000000000000
+      internalID: 5270970464497390542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3abb57ee239cfec0800000000000000
+      internalID: -3531786178105984451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332c81533587f3560800000000000000
+      internalID: 7295682220131926579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150f4f9b0ec176200800000000000000
+      internalID: 173138862195142737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_23
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4eb2ebdf30e57a0800000000000000
+      internalID: -6386662833212627753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_24
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329ee42f2edc1a830800000000000000
+      internalID: 4080769111985940771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_25
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4c8015765c85630800000000000000
+      internalID: 3916096923530478826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_26
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9361e2c333e48d9d0800000000000000
+      internalID: -2749361590549735879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_27
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311ecd23a9574dbe0800000000000000
+      internalID: -1453407474595077869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_28
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fcc6f420bbf0ab0800000000000000
+      internalID: -5039603839407435939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_29
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46eb2675f6674fd70800000000000000
+      internalID: 9076009369637928548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_30
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401d1082d80a7b310800000000000000
+      internalID: 1420780735580721412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_31
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a49be9dda77e09a0800000000000000
+      internalID: -6264938443056638816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_32
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fef61b34548a6d0800000000000000
+      internalID: -2979054996463554783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_33
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5b7699ad740fd80800000000000000
+      internalID: -8218990315749001762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_34
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc76894257bdfe780800000000000000
+      internalID: -8651455062983809077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_35
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a29597b4e239390800000000000000
+      internalID: -7812850026864367091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_36
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7d9378c93b18d20800000000000000
+      internalID: 3279099488567416743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_37
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e564e8c2f3d1080800000000000000
+      internalID: -9215139801932079538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_38
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081b104799f00aab0800000000000000
+      internalID: -4998978434630569600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - bank left_39
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacc1a7f6df28c5a0800000000000000
+      internalID: -6500893461785228114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player ship - bank left_0: -5813382866837028962
+      player ship - bank left_1: -1248225435659290751
+      player ship - bank left_10: -3463401674002207841
+      player ship - bank left_11: 3143014714324329067
+      player ship - bank left_12: 6817974533291182003
+      player ship - bank left_13: 9010097040732186731
+      player ship - bank left_14: 3243714433582577093
+      player ship - bank left_15: -8649987990835265387
+      player ship - bank left_16: 3079322264490753653
+      player ship - bank left_17: -260087731348034791
+      player ship - bank left_18: -370258324506210818
+      player ship - bank left_19: 5270970464497390542
+      player ship - bank left_2: -6491717642252115983
+      player ship - bank left_20: -3531786178105984451
+      player ship - bank left_21: 7295682220131926579
+      player ship - bank left_22: 173138862195142737
+      player ship - bank left_23: -6386662833212627753
+      player ship - bank left_24: 4080769111985940771
+      player ship - bank left_25: 3916096923530478826
+      player ship - bank left_26: -2749361590549735879
+      player ship - bank left_27: -1453407474595077869
+      player ship - bank left_28: -5039603839407435939
+      player ship - bank left_29: 9076009369637928548
+      player ship - bank left_3: -3908331588972172137
+      player ship - bank left_30: 1420780735580721412
+      player ship - bank left_31: -6264938443056638816
+      player ship - bank left_32: -2979054996463554783
+      player ship - bank left_33: -8218990315749001762
+      player ship - bank left_34: -8651455062983809077
+      player ship - bank left_35: -7812850026864367091
+      player ship - bank left_36: 3279099488567416743
+      player ship - bank left_37: -9215139801932079538
+      player ship - bank left_38: -4998978434630569600
+      player ship - bank left_39: -6500893461785228114
+      player ship - bank left_4: 2260301186416558128
+      player ship - bank left_5: 2515384053107633559
+      player ship - bank left_6: -8125142211538523179
+      player ship - bank left_7: -8899090320942322981
+      player ship - bank left_8: -4259167600191118312
+      player ship - bank left_9: -1970879002525953334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

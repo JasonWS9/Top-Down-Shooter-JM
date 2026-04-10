@@ -1,0 +1,2847 @@
+fileFormatVersion: 2
+guid: d4d4a6bd246c47845baa37676007964f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5970498201928318669
+    second: player ship - barrel roll left_0
+  - first:
+      213: 2129814292969659623
+    second: player ship - barrel roll left_1
+  - first:
+      213: -5414730830473507071
+    second: player ship - barrel roll left_2
+  - first:
+      213: -7696879710161699848
+    second: player ship - barrel roll left_3
+  - first:
+      213: 1114601374983981021
+    second: player ship - barrel roll left_4
+  - first:
+      213: 7259810871309251937
+    second: player ship - barrel roll left_5
+  - first:
+      213: -2154228276960415936
+    second: player ship - barrel roll left_6
+  - first:
+      213: 3498433896504144655
+    second: player ship - barrel roll left_7
+  - first:
+      213: -6732907891887790538
+    second: player ship - barrel roll left_8
+  - first:
+      213: 91883237613852544
+    second: player ship - barrel roll left_9
+  - first:
+      213: 7240590881024377171
+    second: player ship - barrel roll left_10
+  - first:
+      213: 8149112300458867530
+    second: player ship - barrel roll left_11
+  - first:
+      213: 1939340623322735303
+    second: player ship - barrel roll left_12
+  - first:
+      213: -7565647234778056678
+    second: player ship - barrel roll left_13
+  - first:
+      213: -8793259670287525658
+    second: player ship - barrel roll left_14
+  - first:
+      213: -7777401196347437303
+    second: player ship - barrel roll left_15
+  - first:
+      213: 8639690615125799467
+    second: player ship - barrel roll left_16
+  - first:
+      213: 1098301167037627342
+    second: player ship - barrel roll left_17
+  - first:
+      213: 3875729167390963766
+    second: player ship - barrel roll left_18
+  - first:
+      213: 9026693919717420336
+    second: player ship - barrel roll left_19
+  - first:
+      213: -3716495379592501857
+    second: player ship - barrel roll left_20
+  - first:
+      213: 3193088970482932386
+    second: player ship - barrel roll left_21
+  - first:
+      213: 1272847902655209999
+    second: player ship - barrel roll left_22
+  - first:
+      213: -6273929732472427402
+    second: player ship - barrel roll left_23
+  - first:
+      213: -1613307595080431759
+    second: player ship - barrel roll left_24
+  - first:
+      213: 1380352519748018552
+    second: player ship - barrel roll left_25
+  - first:
+      213: 6843562888028451611
+    second: player ship - barrel roll left_26
+  - first:
+      213: 236993232582644317
+    second: player ship - barrel roll left_27
+  - first:
+      213: 3130846641738556042
+    second: player ship - barrel roll left_28
+  - first:
+      213: 9074715243843316841
+    second: player ship - barrel roll left_29
+  - first:
+      213: -8721180198169606070
+    second: player ship - barrel roll left_30
+  - first:
+      213: 5957046239555714957
+    second: player ship - barrel roll left_31
+  - first:
+      213: -884067592258174411
+    second: player ship - barrel roll left_32
+  - first:
+      213: 828539409471603883
+    second: player ship - barrel roll left_33
+  - first:
+      213: 4281197708827251933
+    second: player ship - barrel roll left_34
+  - first:
+      213: 3222905046883473269
+    second: player ship - barrel roll left_35
+  - first:
+      213: 4780997793432668775
+    second: player ship - barrel roll left_36
+  - first:
+      213: 8639859646826408475
+    second: player ship - barrel roll left_37
+  - first:
+      213: 605232840756008951
+    second: player ship - barrel roll left_38
+  - first:
+      213: -5782193641241173662
+    second: player ship - barrel roll left_39
+  - first:
+      213: -1511146776944371495
+    second: player ship - barrel roll left_40
+  - first:
+      213: 829140290179371631
+    second: player ship - barrel roll left_41
+  - first:
+      213: -1384373395074957593
+    second: player ship - barrel roll left_42
+  - first:
+      213: 3330958386034463944
+    second: player ship - barrel roll left_43
+  - first:
+      213: 4706723136684075411
+    second: player ship - barrel roll left_44
+  - first:
+      213: -79668833990302683
+    second: player ship - barrel roll left_45
+  - first:
+      213: 3015951267382777141
+    second: player ship - barrel roll left_46
+  - first:
+      213: 3432051102429117895
+    second: player ship - barrel roll left_47
+  - first:
+      213: 5883760526800897965
+    second: player ship - barrel roll left_48
+  - first:
+      213: 8798846762487491949
+    second: player ship - barrel roll left_49
+  - first:
+      213: -3065256086173165200
+    second: player ship - barrel roll left_50
+  - first:
+      213: 964825569289063030
+    second: player ship - barrel roll left_51
+  - first:
+      213: 1057754440743006542
+    second: player ship - barrel roll left_52
+  - first:
+      213: -4985459586523271350
+    second: player ship - barrel roll left_53
+  - first:
+      213: -3545859081077670324
+    second: player ship - barrel roll left_54
+  - first:
+      213: -1921615172407705561
+    second: player ship - barrel roll left_55
+  - first:
+      213: -8088965963585250535
+    second: player ship - barrel roll left_56
+  - first:
+      213: 2350252511150750545
+    second: player ship - barrel roll left_57
+  - first:
+      213: -4499060587413726340
+    second: player ship - barrel roll left_58
+  - first:
+      213: 973093500222708684
+    second: player ship - barrel roll left_59
+  - first:
+      213: -3909531168847235720
+    second: player ship - barrel roll left_60
+  - first:
+      213: 6288904887372747982
+    second: player ship - barrel roll left_61
+  - first:
+      213: 4591952178471399974
+    second: player ship - barrel roll left_62
+  - first:
+      213: -2152325294140813259
+    second: player ship - barrel roll left_63
+  - first:
+      213: 7120687357000180023
+    second: player ship - barrel roll left_64
+  - first:
+      213: -2709900168197784594
+    second: player ship - barrel roll left_65
+  - first:
+      213: 5569981817966932440
+    second: player ship - barrel roll left_66
+  - first:
+      213: 1610962648684270925
+    second: player ship - barrel roll left_67
+  - first:
+      213: 5288450831676398742
+    second: player ship - barrel roll left_68
+  - first:
+      213: 6088039282254284745
+    second: player ship - barrel roll left_69
+  - first:
+      213: -5512856482518295264
+    second: player ship - barrel roll left_70
+  - first:
+      213: 7572935833174060684
+    second: player ship - barrel roll left_71
+  - first:
+      213: 3682199321373859074
+    second: player ship - barrel roll left_72
+  - first:
+      213: -877780947044303479
+    second: player ship - barrel roll left_73
+  - first:
+      213: 7475923972816570587
+    second: player ship - barrel roll left_74
+  - first:
+      213: 7706192339636513806
+    second: player ship - barrel roll left_75
+  - first:
+      213: 5359956922447887227
+    second: player ship - barrel roll left_76
+  - first:
+      213: 1896439064003743593
+    second: player ship - barrel roll left_77
+  - first:
+      213: 5353079574627533548
+    second: player ship - barrel roll left_78
+  - first:
+      213: -1355324696750053404
+    second: player ship - barrel roll left_79
+  - first:
+      213: -4163625309254973691
+    second: player ship - barrel roll left_80
+  - first:
+      213: -6020817023482927570
+    second: player ship - barrel roll left_81
+  - first:
+      213: -3361302469704068173
+    second: player ship - barrel roll left_82
+  - first:
+      213: -1285704656005317283
+    second: player ship - barrel roll left_83
+  - first:
+      213: 8764045799316897081
+    second: player ship - barrel roll left_84
+  - first:
+      213: 1887103723967591047
+    second: player ship - barrel roll left_85
+  - first:
+      213: 8995603472663127662
+    second: player ship - barrel roll left_86
+  - first:
+      213: 4782422408445778191
+    second: player ship - barrel roll left_87
+  - first:
+      213: 304747613959054142
+    second: player ship - barrel roll left_88
+  - first:
+      213: 3241153839624658231
+    second: player ship - barrel roll left_89
+  - first:
+      213: 6030651843506416480
+    second: player ship - barrel roll left_90
+  - first:
+      213: -2672613100625620910
+    second: player ship - barrel roll left_91
+  - first:
+      213: -3123426183447796727
+    second: player ship - barrel roll left_92
+  - first:
+      213: 7566482806375500635
+    second: player ship - barrel roll left_93
+  - first:
+      213: 4676064461440439576
+    second: player ship - barrel roll left_94
+  - first:
+      213: -296852562508523321
+    second: player ship - barrel roll left_95
+  - first:
+      213: 3194969162561552055
+    second: player ship - barrel roll left_96
+  - first:
+      213: -3855529796265598957
+    second: player ship - barrel roll left_97
+  - first:
+      213: -4251304984362952067
+    second: player ship - barrel roll left_98
+  - first:
+      213: 1122581604118861070
+    second: player ship - barrel roll left_99
+  - first:
+      213: -8981227047268411462
+    second: player ship - barrel roll left_100
+  - first:
+      213: 8108108069716388987
+    second: player ship - barrel roll left_101
+  - first:
+      213: -9211831231600440360
+    second: player ship - barrel roll left_102
+  - first:
+      213: -6953512458590808296
+    second: player ship - barrel roll left_103
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player ship - barrel roll left_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 352
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33144f5b487842da0800000000000000
+      internalID: -5970498201928318669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 352
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec9102b0de9e8d10800000000000000
+      internalID: 2129814292969659623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f45478ff20bd4b0800000000000000
+      internalID: -5414730830473507071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 351
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb76e4fea03f2590800000000000000
+      internalID: -7696879710161699848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7051e8b0cd77f00800000000000000
+      internalID: 1114601374983981021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 352
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16538e8f58700c460800000000000000
+      internalID: 7259810871309251937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 352
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f2ca2bbc4aa12e0800000000000000
+      internalID: -2154228276960415936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 352
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03b057e71fec8030800000000000000
+      internalID: 3498433896504144655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636aa9ed1f7ef82a0800000000000000
+      internalID: -6732907891887790538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_9
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 351
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08759ca515f664100800000000000000
+      internalID: 91883237613852544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_10
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 351
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35104634b0fbb7460800000000000000
+      internalID: 7240590881024377171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_11
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 352
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bfd9f1676771170800000000000000
+      internalID: 8149112300458867530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_12
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 352
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2e2a7950ce9ea10800000000000000
+      internalID: 1939340623322735303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 304
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18332baceb610790800000000000000
+      internalID: -7565647234778056678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_14
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 304
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e85eb62be018f580800000000000000
+      internalID: -8793259670287525658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 303
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f430081de111490800000000000000
+      internalID: -7777401196347437303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_16
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 303
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2279d3e6d856e770800000000000000
+      internalID: 8639690615125799467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 303
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbbca5a713fd3f00800000000000000
+      internalID: 1098301167037627342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_18
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 304
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63875fba42b59c530800000000000000
+      internalID: 3875729167390963766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_19
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 304
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d6fe46b42454d70800000000000000
+      internalID: 9026693919717420336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 304
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f952202a42b5c6cc0800000000000000
+      internalID: -3716495379592501857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_21
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 303
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa5add3081205c20800000000000000
+      internalID: 3193088970482932386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_22
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 303
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f026dd27c601aa110800000000000000
+      internalID: 1272847902655209999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_23
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 303
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c283626268ee8a0800000000000000
+      internalID: -6273929732472427402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_24
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 304
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1778ac93a416c99e0800000000000000
+      internalID: -1613307595080431759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_25
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 304
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8716564ad4ff72310800000000000000
+      internalID: 1380352519748018552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_26
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 256
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b137bfa103839fe50800000000000000
+      internalID: 6843562888028451611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 256
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d529242e618f94300800000000000000
+      internalID: 236993232582644317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 255
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a822d07ce60037b20800000000000000
+      internalID: 3130846641738556042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_29
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 255
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c6a133f6ddfed70800000000000000
+      internalID: 9074715243843316841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_30
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 255
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a480ee901d428f680800000000000000
+      internalID: -8721180198169606070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 256
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f7b4b3efdaba250800000000000000
+      internalID: 5957046239555714957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 256
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532440675392bb3f0800000000000000
+      internalID: -884067592258174411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_33
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 256
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba487fff3309f7b00800000000000000
+      internalID: 828539409471603883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_34
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 255
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd45dd722aed96b30800000000000000
+      internalID: 4281197708827251933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_35
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 255
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5779d40801f0abc20800000000000000
+      internalID: 3222905046883473269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_36
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 255
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a0b7d8924895240800000000000000
+      internalID: 4780997793432668775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_37
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 256
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ae156a292f6e770800000000000000
+      internalID: 8639859646826408475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_38
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 256
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f799afdf08366800800000000000000
+      internalID: 605232840756008951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_39
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 208
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2612c47c48581cfa0800000000000000
+      internalID: -5782193641241173662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_40
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 208
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d811c44304570be0800000000000000
+      internalID: -1511146776944371495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_41
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 207
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f621b1173b2b18b00800000000000000
+      internalID: 829140290179371631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_42
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 207
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee3e0e5bb7b9cce0800000000000000
+      internalID: -1384373395074957593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_43
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 207
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c451310101f93e20800000000000000
+      internalID: 3330958386034463944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_44
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 208
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399aa2a61c3a15140800000000000000
+      internalID: 4706723136684075411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_45
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 208
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524a65a1e95f4eef0800000000000000
+      internalID: -79668833990302683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_46
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 208
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5355d30d2bfcad920800000000000000
+      internalID: 3015951267382777141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_47
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 207
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd764b3b4811af20800000000000000
+      internalID: 3432051102429117895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_48
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 207
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7ce6f860157a150800000000000000
+      internalID: 5883760526800897965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_49
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 207
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6da92f1388cb1a70800000000000000
+      internalID: 8798846762487491949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_50
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 208
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0795b0e74d50675d0800000000000000
+      internalID: -3065256086173165200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_51
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 208
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a40bf4ebfb36d00800000000000000
+      internalID: 964825569289063030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_52
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 160
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4134144f06edae00800000000000000
+      internalID: 1057754440743006542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_53
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 160
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fe63f8be610dab0800000000000000
+      internalID: -4985459586523271350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_54
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 159
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4eb5c8d3f39acec0800000000000000
+      internalID: -3545859081077670324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_55
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 159
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72043ad8e2d0555e0800000000000000
+      internalID: -1921615172407705561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_56
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 159
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b964430583ebf80800000000000000
+      internalID: -8088965963585250535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_57
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 160
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b3c9be436cd9020800000000000000
+      internalID: 2350252511150750545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_58
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 160
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b9e389b302091c0800000000000000
+      internalID: -4499060587413726340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_59
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 160
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb140ef16f118d00800000000000000
+      internalID: 973093500222708684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_60
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 159
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875fa829d1e8eb9c0800000000000000
+      internalID: -3909531168847235720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_61
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 159
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4121eccada64750800000000000000
+      internalID: 6288904887372747982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_62
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 159
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6227e575d24e9bf30800000000000000
+      internalID: 4591952178471399974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_63
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 160
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53016a96c876122e0800000000000000
+      internalID: -2152325294140813259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_64
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 160
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7316c969c63c1d260800000000000000
+      internalID: 7120687357000180023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_65
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 112
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebbcc99720846ad0800000000000000
+      internalID: -2709900168197784594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_66
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 112
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1bd41d3fc8c4d40800000000000000
+      internalID: 5569981817966932440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_67
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 111
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d459f356ef94b5610800000000000000
+      internalID: 1610962648684270925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_68
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 111
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cd032130a546940800000000000000
+      internalID: 5288450831676398742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_69
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 111
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7046da87f0d7450800000000000000
+      internalID: 6088039282254284745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_70
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 112
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d99cdcc366e73b0800000000000000
+      internalID: -5512856482518295264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_71
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 112
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eaa236409781960800000000000000
+      internalID: 7572935833174060684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_72
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 112
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d5cae06ccc91330800000000000000
+      internalID: 3682199321373859074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_73
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 111
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d71dc11ee71d3f0800000000000000
+      internalID: -877780947044303479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_74
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 111
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd80f8f7e31dfb760800000000000000
+      internalID: 7475923972816570587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_75
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 111
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ceede8a15e1fa60800000000000000
+      internalID: 7706192339636513806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_76
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 112
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bf6e53c64626a40800000000000000
+      internalID: 5359956922447887227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_77
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 112
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f0e1ce741815a10800000000000000
+      internalID: 1896439064003743593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_78
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2c214e285f94a40800000000000000
+      internalID: 5353079574627533548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_79
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e726ee7e5be03de0800000000000000
+      internalID: -1355324696750053404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_80
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507080057d4d736c0800000000000000
+      internalID: -4163625309254973691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_81
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 63
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26eca911d2c17ca0800000000000000
+      internalID: -6020817023482927570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_82
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b355a676314a51d0800000000000000
+      internalID: -3361302469704068173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_83
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dbcb46d62482ee0800000000000000
+      internalID: -1285704656005317283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_84
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93db987783520a970800000000000000
+      internalID: 8764045799316897081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_85
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782b761b6d6503a10800000000000000
+      internalID: 1887103723967591047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_86
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e662b5892bdc6dc70800000000000000
+      internalID: 8995603472663127662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_87
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 63
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09574597d39e5240800000000000000
+      internalID: 4782422408445778191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_88
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e336d2c175eaa3400800000000000000
+      internalID: 304747613959054142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_89
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 64
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d9839ae34eafc20800000000000000
+      internalID: 3241153839624658231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_90
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 64
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b214066ed21b350800000000000000
+      internalID: 6030651843506416480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_91
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250972b8b88f8ead0800000000000000
+      internalID: -2672613100625620910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_92
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904a07d4f6c57a4d0800000000000000
+      internalID: -3123426183447796727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_93
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bcc11060c810960800000000000000
+      internalID: 7566482806375500635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_94
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 15
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8155cf25ad7b4e040800000000000000
+      internalID: 4676064461440439576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_95
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d30dca2e51ebf0800000000000000
+      internalID: -296852562508523321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_96
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7befec2968fc65c20800000000000000
+      internalID: 3194969162561552055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_97
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310a7a8e3186e7ac0800000000000000
+      internalID: -3855529796265598957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_98
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ad23f14a45005c0800000000000000
+      internalID: -4251304984362952067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_99
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0594e07506349f00800000000000000
+      internalID: 1122581604118861070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_100
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 15
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab79f68c5954c5380800000000000000
+      internalID: -8981227047268411462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_101
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 15
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c6cefa459c58070800000000000000
+      internalID: 8108108069716388987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_102
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 16
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db4b9d1d40092080800000000000000
+      internalID: -9211831231600440360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player ship - barrel roll left_103
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 16
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817117c9249208f90800000000000000
+      internalID: -6953512458590808296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player ship - barrel roll left_0: -5970498201928318669
+      player ship - barrel roll left_1: 2129814292969659623
+      player ship - barrel roll left_10: 7240590881024377171
+      player ship - barrel roll left_100: -8981227047268411462
+      player ship - barrel roll left_101: 8108108069716388987
+      player ship - barrel roll left_102: -9211831231600440360
+      player ship - barrel roll left_103: -6953512458590808296
+      player ship - barrel roll left_11: 8149112300458867530
+      player ship - barrel roll left_12: 1939340623322735303
+      player ship - barrel roll left_13: -7565647234778056678
+      player ship - barrel roll left_14: -8793259670287525658
+      player ship - barrel roll left_15: -7777401196347437303
+      player ship - barrel roll left_16: 8639690615125799467
+      player ship - barrel roll left_17: 1098301167037627342
+      player ship - barrel roll left_18: 3875729167390963766
+      player ship - barrel roll left_19: 9026693919717420336
+      player ship - barrel roll left_2: -5414730830473507071
+      player ship - barrel roll left_20: -3716495379592501857
+      player ship - barrel roll left_21: 3193088970482932386
+      player ship - barrel roll left_22: 1272847902655209999
+      player ship - barrel roll left_23: -6273929732472427402
+      player ship - barrel roll left_24: -1613307595080431759
+      player ship - barrel roll left_25: 1380352519748018552
+      player ship - barrel roll left_26: 6843562888028451611
+      player ship - barrel roll left_27: 236993232582644317
+      player ship - barrel roll left_28: 3130846641738556042
+      player ship - barrel roll left_29: 9074715243843316841
+      player ship - barrel roll left_3: -7696879710161699848
+      player ship - barrel roll left_30: -8721180198169606070
+      player ship - barrel roll left_31: 5957046239555714957
+      player ship - barrel roll left_32: -884067592258174411
+      player ship - barrel roll left_33: 828539409471603883
+      player ship - barrel roll left_34: 4281197708827251933
+      player ship - barrel roll left_35: 3222905046883473269
+      player ship - barrel roll left_36: 4780997793432668775
+      player ship - barrel roll left_37: 8639859646826408475
+      player ship - barrel roll left_38: 605232840756008951
+      player ship - barrel roll left_39: -5782193641241173662
+      player ship - barrel roll left_4: 1114601374983981021
+      player ship - barrel roll left_40: -1511146776944371495
+      player ship - barrel roll left_41: 829140290179371631
+      player ship - barrel roll left_42: -1384373395074957593
+      player ship - barrel roll left_43: 3330958386034463944
+      player ship - barrel roll left_44: 4706723136684075411
+      player ship - barrel roll left_45: -79668833990302683
+      player ship - barrel roll left_46: 3015951267382777141
+      player ship - barrel roll left_47: 3432051102429117895
+      player ship - barrel roll left_48: 5883760526800897965
+      player ship - barrel roll left_49: 8798846762487491949
+      player ship - barrel roll left_5: 7259810871309251937
+      player ship - barrel roll left_50: -3065256086173165200
+      player ship - barrel roll left_51: 964825569289063030
+      player ship - barrel roll left_52: 1057754440743006542
+      player ship - barrel roll left_53: -4985459586523271350
+      player ship - barrel roll left_54: -3545859081077670324
+      player ship - barrel roll left_55: -1921615172407705561
+      player ship - barrel roll left_56: -8088965963585250535
+      player ship - barrel roll left_57: 2350252511150750545
+      player ship - barrel roll left_58: -4499060587413726340
+      player ship - barrel roll left_59: 973093500222708684
+      player ship - barrel roll left_6: -2154228276960415936
+      player ship - barrel roll left_60: -3909531168847235720
+      player ship - barrel roll left_61: 6288904887372747982
+      player ship - barrel roll left_62: 4591952178471399974
+      player ship - barrel roll left_63: -2152325294140813259
+      player ship - barrel roll left_64: 7120687357000180023
+      player ship - barrel roll left_65: -2709900168197784594
+      player ship - barrel roll left_66: 5569981817966932440
+      player ship - barrel roll left_67: 1610962648684270925
+      player ship - barrel roll left_68: 5288450831676398742
+      player ship - barrel roll left_69: 6088039282254284745
+      player ship - barrel roll left_7: 3498433896504144655
+      player ship - barrel roll left_70: -5512856482518295264
+      player ship - barrel roll left_71: 7572935833174060684
+      player ship - barrel roll left_72: 3682199321373859074
+      player ship - barrel roll left_73: -877780947044303479
+      player ship - barrel roll left_74: 7475923972816570587
+      player ship - barrel roll left_75: 7706192339636513806
+      player ship - barrel roll left_76: 5359956922447887227
+      player ship - barrel roll left_77: 1896439064003743593
+      player ship - barrel roll left_78: 5353079574627533548
+      player ship - barrel roll left_79: -1355324696750053404
+      player ship - barrel roll left_8: -6732907891887790538
+      player ship - barrel roll left_80: -4163625309254973691
+      player ship - barrel roll left_81: -6020817023482927570
+      player ship - barrel roll left_82: -3361302469704068173
+      player ship - barrel roll left_83: -1285704656005317283
+      player ship - barrel roll left_84: 8764045799316897081
+      player ship - barrel roll left_85: 1887103723967591047
+      player ship - barrel roll left_86: 8995603472663127662
+      player ship - barrel roll left_87: 4782422408445778191
+      player ship - barrel roll left_88: 304747613959054142
+      player ship - barrel roll left_89: 3241153839624658231
+      player ship - barrel roll left_9: 91883237613852544
+      player ship - barrel roll left_90: 6030651843506416480
+      player ship - barrel roll left_91: -2672613100625620910
+      player ship - barrel roll left_92: -3123426183447796727
+      player ship - barrel roll left_93: 7566482806375500635
+      player ship - barrel roll left_94: 4676064461440439576
+      player ship - barrel roll left_95: -296852562508523321
+      player ship - barrel roll left_96: 3194969162561552055
+      player ship - barrel roll left_97: -3855529796265598957
+      player ship - barrel roll left_98: -4251304984362952067
+      player ship - barrel roll left_99: 1122581604118861070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

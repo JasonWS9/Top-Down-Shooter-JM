@@ -1,0 +1,5525 @@
+fileFormatVersion: 2
+guid: 5224ad4a7f349ac49931cadd92ee2008
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -206119929340748637
+    second: pilot hair_0
+  - first:
+      213: -8001761331710251354
+    second: pilot hair_1
+  - first:
+      213: 2741072242260102156
+    second: pilot hair_2
+  - first:
+      213: -292065744687141249
+    second: pilot hair_3
+  - first:
+      213: -4531793509941514135
+    second: pilot hair_4
+  - first:
+      213: 1393509647793420326
+    second: pilot hair_5
+  - first:
+      213: -1437371141231031457
+    second: pilot hair_6
+  - first:
+      213: 3530257783765143275
+    second: pilot hair_7
+  - first:
+      213: -5519179483916594560
+    second: pilot hair_8
+  - first:
+      213: -6435692483621973119
+    second: pilot hair_9
+  - first:
+      213: 5910182497378521133
+    second: pilot hair_10
+  - first:
+      213: 831328972843277553
+    second: pilot hair_11
+  - first:
+      213: 4321851158563875035
+    second: pilot hair_12
+  - first:
+      213: -2320496666950283587
+    second: pilot hair_13
+  - first:
+      213: 4485081850030286908
+    second: pilot hair_14
+  - first:
+      213: 2310969809605052785
+    second: pilot hair_15
+  - first:
+      213: -3399906641348634772
+    second: pilot hair_16
+  - first:
+      213: 6066647838676901883
+    second: pilot hair_17
+  - first:
+      213: -1499574958860074646
+    second: pilot hair_18
+  - first:
+      213: -5493449165772456857
+    second: pilot hair_19
+  - first:
+      213: -7543100105464425108
+    second: pilot hair_20
+  - first:
+      213: -5727695509285196681
+    second: pilot hair_21
+  - first:
+      213: -1693505943242535679
+    second: pilot hair_22
+  - first:
+      213: -520976812414195023
+    second: pilot hair_23
+  - first:
+      213: 7481633408406793817
+    second: pilot hair_24
+  - first:
+      213: -1604096328705982113
+    second: pilot hair_25
+  - first:
+      213: 7682332823044857784
+    second: pilot hair_26
+  - first:
+      213: 6333686437935737781
+    second: pilot hair_27
+  - first:
+      213: -9065511264929054033
+    second: pilot hair_28
+  - first:
+      213: 886133263767747413
+    second: pilot hair_29
+  - first:
+      213: -131912016103310676
+    second: pilot hair_30
+  - first:
+      213: 8874511692583596152
+    second: pilot hair_31
+  - first:
+      213: 4784925502036279493
+    second: pilot hair_32
+  - first:
+      213: -6046483248170553551
+    second: pilot hair_33
+  - first:
+      213: -8506198541741188980
+    second: pilot hair_34
+  - first:
+      213: 4121964961642085628
+    second: pilot hair_35
+  - first:
+      213: 6158119054046725038
+    second: pilot hair_36
+  - first:
+      213: -7473828974684756727
+    second: pilot hair_37
+  - first:
+      213: -4632212215113755588
+    second: pilot hair_38
+  - first:
+      213: -4193369335206591119
+    second: pilot hair_39
+  - first:
+      213: -6754523699277184058
+    second: pilot hair_40
+  - first:
+      213: 5592030431813504963
+    second: pilot hair_41
+  - first:
+      213: -3140115021916461115
+    second: pilot hair_42
+  - first:
+      213: -315786716460865383
+    second: pilot hair_43
+  - first:
+      213: -3038188516281071972
+    second: pilot hair_44
+  - first:
+      213: -5261241642150100979
+    second: pilot hair_45
+  - first:
+      213: -9198504247840864070
+    second: pilot hair_46
+  - first:
+      213: 7980512714836156551
+    second: pilot hair_47
+  - first:
+      213: -3645864411360835754
+    second: pilot hair_48
+  - first:
+      213: 6509284641254630474
+    second: pilot hair_49
+  - first:
+      213: 6511892167418891044
+    second: pilot hair_50
+  - first:
+      213: -9089722295310584857
+    second: pilot hair_51
+  - first:
+      213: -7262076364305397345
+    second: pilot hair_52
+  - first:
+      213: 4193224558521170435
+    second: pilot hair_53
+  - first:
+      213: 5766762532885692505
+    second: pilot hair_54
+  - first:
+      213: -1895778266994526564
+    second: pilot hair_55
+  - first:
+      213: -5057375837756291125
+    second: pilot hair_56
+  - first:
+      213: -3525130705547095645
+    second: pilot hair_57
+  - first:
+      213: 7539371712428071222
+    second: pilot hair_58
+  - first:
+      213: -623732902661752072
+    second: pilot hair_59
+  - first:
+      213: -1306854258541018408
+    second: pilot hair_60
+  - first:
+      213: 5698261796203191367
+    second: pilot hair_61
+  - first:
+      213: 229226765956465923
+    second: pilot hair_62
+  - first:
+      213: -8243619617315470755
+    second: pilot hair_63
+  - first:
+      213: -2981331800466524887
+    second: pilot hair_64
+  - first:
+      213: -1847186848883674140
+    second: pilot hair_65
+  - first:
+      213: -6960750090247109532
+    second: pilot hair_66
+  - first:
+      213: -8448749717837124719
+    second: pilot hair_67
+  - first:
+      213: 2311633182304815311
+    second: pilot hair_68
+  - first:
+      213: 2418385328003128403
+    second: pilot hair_69
+  - first:
+      213: 5703899955127238748
+    second: pilot hair_70
+  - first:
+      213: -4911958292787166467
+    second: pilot hair_71
+  - first:
+      213: -4108506239019445300
+    second: pilot hair_72
+  - first:
+      213: 8504545726636291928
+    second: pilot hair_73
+  - first:
+      213: 81299749030735127
+    second: pilot hair_74
+  - first:
+      213: 1456693494000323134
+    second: pilot hair_75
+  - first:
+      213: -1305532672651688783
+    second: pilot hair_76
+  - first:
+      213: 7260951568102621685
+    second: pilot hair_77
+  - first:
+      213: -5739988194094829819
+    second: pilot hair_78
+  - first:
+      213: 7787982973893682744
+    second: pilot hair_79
+  - first:
+      213: -5770116857887531326
+    second: pilot hair_80
+  - first:
+      213: 4807840033830122734
+    second: pilot hair_81
+  - first:
+      213: -212303134536045944
+    second: pilot hair_82
+  - first:
+      213: 7653538512429868907
+    second: pilot hair_83
+  - first:
+      213: -3836370616204250811
+    second: pilot hair_84
+  - first:
+      213: 8005406937818064844
+    second: pilot hair_85
+  - first:
+      213: -1208542021186717795
+    second: pilot hair_86
+  - first:
+      213: 1582350031778294185
+    second: pilot hair_87
+  - first:
+      213: 402251917177721359
+    second: pilot hair_88
+  - first:
+      213: -2424892532138074269
+    second: pilot hair_89
+  - first:
+      213: -9086117764205260651
+    second: pilot hair_90
+  - first:
+      213: 601048463343982035
+    second: pilot hair_91
+  - first:
+      213: -4160259604994382831
+    second: pilot hair_92
+  - first:
+      213: -4279188325447544600
+    second: pilot hair_93
+  - first:
+      213: -4451217564434034095
+    second: pilot hair_94
+  - first:
+      213: 3851656517557823601
+    second: pilot hair_95
+  - first:
+      213: 6301080960075214378
+    second: pilot hair_96
+  - first:
+      213: 3731263199852189156
+    second: pilot hair_97
+  - first:
+      213: 5697897208858924168
+    second: pilot hair_98
+  - first:
+      213: -1127446216137173881
+    second: pilot hair_99
+  - first:
+      213: -2447179126754192499
+    second: pilot hair_100
+  - first:
+      213: -8223084590717177239
+    second: pilot hair_101
+  - first:
+      213: -8008315313487866103
+    second: pilot hair_102
+  - first:
+      213: 4264179056888193032
+    second: pilot hair_103
+  - first:
+      213: 2308655351737315624
+    second: pilot hair_104
+  - first:
+      213: 7932332059694754541
+    second: pilot hair_105
+  - first:
+      213: -2964698944076802216
+    second: pilot hair_106
+  - first:
+      213: 650509283861140737
+    second: pilot hair_107
+  - first:
+      213: -992438673929895827
+    second: pilot hair_108
+  - first:
+      213: 5480636274913090909
+    second: pilot hair_109
+  - first:
+      213: 5019739243654028908
+    second: pilot hair_110
+  - first:
+      213: 1886435835895218468
+    second: pilot hair_111
+  - first:
+      213: 7262077271171886531
+    second: pilot hair_112
+  - first:
+      213: -2134773814476736710
+    second: pilot hair_113
+  - first:
+      213: 8521789300894708430
+    second: pilot hair_114
+  - first:
+      213: -4640097989369093607
+    second: pilot hair_115
+  - first:
+      213: -5729702415106188676
+    second: pilot hair_116
+  - first:
+      213: -3716102718279490189
+    second: pilot hair_117
+  - first:
+      213: 7917814330704755403
+    second: pilot hair_118
+  - first:
+      213: 8894464149615789238
+    second: pilot hair_119
+  - first:
+      213: 8093768918549451417
+    second: pilot hair_120
+  - first:
+      213: -3862666733744723001
+    second: pilot hair_121
+  - first:
+      213: -2852505668785900630
+    second: pilot hair_122
+  - first:
+      213: 7277361161907011984
+    second: pilot hair_123
+  - first:
+      213: -3896032619037690440
+    second: pilot hair_124
+  - first:
+      213: -669763194018433843
+    second: pilot hair_125
+  - first:
+      213: 2765441874402113054
+    second: pilot hair_126
+  - first:
+      213: -159374387538214768
+    second: pilot hair_127
+  - first:
+      213: 7423886015036269660
+    second: pilot hair_128
+  - first:
+      213: 201966079515088865
+    second: pilot hair_129
+  - first:
+      213: -1375173986200420139
+    second: pilot hair_130
+  - first:
+      213: 8402099631836383777
+    second: pilot hair_131
+  - first:
+      213: -8437653460585236640
+    second: pilot hair_132
+  - first:
+      213: 4213601907415646599
+    second: pilot hair_133
+  - first:
+      213: 6871157933482770527
+    second: pilot hair_134
+  - first:
+      213: -3171066190435190833
+    second: pilot hair_135
+  - first:
+      213: 7746729332619492060
+    second: pilot hair_136
+  - first:
+      213: -6031651144858785234
+    second: pilot hair_137
+  - first:
+      213: -4959127032963042315
+    second: pilot hair_138
+  - first:
+      213: -2860985876144096649
+    second: pilot hair_139
+  - first:
+      213: 6462331388280615424
+    second: pilot hair_140
+  - first:
+      213: -7335094689494132515
+    second: pilot hair_141
+  - first:
+      213: 6422251657456408449
+    second: pilot hair_142
+  - first:
+      213: 9134580552942865761
+    second: pilot hair_143
+  - first:
+      213: 4143569399517684594
+    second: pilot hair_144
+  - first:
+      213: 764067296453390353
+    second: pilot hair_145
+  - first:
+      213: 8823126768772730063
+    second: pilot hair_146
+  - first:
+      213: 5253385671525993975
+    second: pilot hair_147
+  - first:
+      213: 4007422542150074372
+    second: pilot hair_148
+  - first:
+      213: 580699792292024191
+    second: pilot hair_149
+  - first:
+      213: -5587196049734496873
+    second: pilot hair_150
+  - first:
+      213: -4740139049079574244
+    second: pilot hair_151
+  - first:
+      213: 7625757449163866893
+    second: pilot hair_152
+  - first:
+      213: 502760181221734796
+    second: pilot hair_153
+  - first:
+      213: 3685160891097787259
+    second: pilot hair_154
+  - first:
+      213: -5712122785497252415
+    second: pilot hair_155
+  - first:
+      213: 8922161588282546948
+    second: pilot hair_156
+  - first:
+      213: 8022356437409016080
+    second: pilot hair_157
+  - first:
+      213: 6868266154803978484
+    second: pilot hair_158
+  - first:
+      213: -5584604937180582646
+    second: pilot hair_159
+  - first:
+      213: 7799181078724714974
+    second: pilot hair_160
+  - first:
+      213: 775097137211543035
+    second: pilot hair_161
+  - first:
+      213: 5594741898010900130
+    second: pilot hair_162
+  - first:
+      213: 1089386793024137816
+    second: pilot hair_163
+  - first:
+      213: 7711032094124471385
+    second: pilot hair_164
+  - first:
+      213: 400482652801830985
+    second: pilot hair_165
+  - first:
+      213: 58899092497084657
+    second: pilot hair_166
+  - first:
+      213: 4114363840876326766
+    second: pilot hair_167
+  - first:
+      213: 208888133990767454
+    second: pilot hair_168
+  - first:
+      213: -4010714212831107283
+    second: pilot hair_169
+  - first:
+      213: -5100213010438371059
+    second: pilot hair_170
+  - first:
+      213: -5604666216716105830
+    second: pilot hair_171
+  - first:
+      213: 135149469238044719
+    second: pilot hair_172
+  - first:
+      213: -7957869711982570355
+    second: pilot hair_173
+  - first:
+      213: -1070609904162231267
+    second: pilot hair_174
+  - first:
+      213: -8138978459191516728
+    second: pilot hair_175
+  - first:
+      213: -2455404282189882851
+    second: pilot hair_176
+  - first:
+      213: 6172086972225128762
+    second: pilot hair_177
+  - first:
+      213: 5773277408311189612
+    second: pilot hair_178
+  - first:
+      213: 8182437938256270195
+    second: pilot hair_179
+  - first:
+      213: -7617628205684228947
+    second: pilot hair_180
+  - first:
+      213: 3890084784801373388
+    second: pilot hair_181
+  - first:
+      213: -6916418226219876838
+    second: pilot hair_182
+  - first:
+      213: 5820016330753019856
+    second: pilot hair_183
+  - first:
+      213: -2301430274374612048
+    second: pilot hair_184
+  - first:
+      213: -5673778984492125616
+    second: pilot hair_185
+  - first:
+      213: 184541081227206360
+    second: pilot hair_186
+  - first:
+      213: -3910209120896959515
+    second: pilot hair_187
+  - first:
+      213: -2252700410942714282
+    second: pilot hair_188
+  - first:
+      213: 2975964711965343815
+    second: pilot hair_189
+  - first:
+      213: -5994241890661915448
+    second: pilot hair_190
+  - first:
+      213: 4799413125845623197
+    second: pilot hair_191
+  - first:
+      213: 5413288604290567169
+    second: pilot hair_192
+  - first:
+      213: 2843436922327781675
+    second: pilot hair_193
+  - first:
+      213: 6235940412836703859
+    second: pilot hair_194
+  - first:
+      213: -7467818402332157662
+    second: pilot hair_195
+  - first:
+      213: -4695367792568794592
+    second: pilot hair_196
+  - first:
+      213: 151757960980090089
+    second: pilot hair_197
+  - first:
+      213: 1725770221729693902
+    second: pilot hair_198
+  - first:
+      213: 7985287455151515022
+    second: pilot hair_199
+  - first:
+      213: -672568669183808405
+    second: pilot hair_200
+  - first:
+      213: -1513265263002012725
+    second: pilot hair_201
+  - first:
+      213: -8837804449403842455
+    second: pilot hair_202
+  - first:
+      213: -2634699211044014251
+    second: pilot hair_203
+  - first:
+      213: 1537634080970857466
+    second: pilot hair_204
+  - first:
+      213: 4715583105525143928
+    second: pilot hair_205
+  - first:
+      213: 1039431787254318886
+    second: pilot hair_206
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pilot hair_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1061
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac148e2407b32df0800000000000000
+      internalID: -206119929340748637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1059
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae24f5c67804f090800000000000000
+      internalID: -8001761331710251354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1063
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0cc8977eae3a0620800000000000000
+      internalID: 2741072242260102156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1062
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7eecdca0cf52fbf0800000000000000
+      internalID: -292065744687141249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1072
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960f38c20d5db11c0800000000000000
+      internalID: -4531793509941514135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_5
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1061
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6287ecb34adb65310800000000000000
+      internalID: 1393509647793420326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_6
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1059
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc684009e6d0ce0800000000000000
+      internalID: -1437371141231031457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_7
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1063
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee01ee00cefdf030800000000000000
+      internalID: 3530257783765143275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1062
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0821781508fe763b0800000000000000
+      internalID: -5519179483916594560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1072
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1839f0ea8c3dfa6a0800000000000000
+      internalID: -6435692483621973119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_10
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 1061
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d205af9faaf250250800000000000000
+      internalID: 5910182497378521133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_11
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1059
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc50d5db49798b00800000000000000
+      internalID: 831328972843277553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_12
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1063
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd86f460bbc4afb30800000000000000
+      internalID: 4321851158563875035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_13
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1062
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe43ff6390fbcfd0800000000000000
+      internalID: -2320496666950283587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_14
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1072
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c386b9bfd263e3e30800000000000000
+      internalID: 4485081850030286908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1000
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179492c3cc6321020800000000000000
+      internalID: 2310969809605052785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_16
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 999
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c675ce45cea11d0d0800000000000000
+      internalID: -3399906641348634772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 995
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff5ab91110113450800000000000000
+      internalID: 6066647838676901883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 992
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61031f1580703be0800000000000000
+      internalID: -1499574958860074646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_19
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 997
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c777ad61953c3b0800000000000000
+      internalID: -5493449165772456857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_20
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1000
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65d49c4b66815790800000000000000
+      internalID: -7543100105464425108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_21
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 999
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ca47be7432380b0800000000000000
+      internalID: -5727695509285196681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_22
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 995
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d040431557f78e0800000000000000
+      internalID: -1693505943242535679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_23
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 992
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba26df695e15c8f0800000000000000
+      internalID: -520976812414195023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_24
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 997
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e28cf02f914d760800000000000000
+      internalID: 7481633408406793817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_25
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1000
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51c8fd43ea1db9e0800000000000000
+      internalID: -1604096328705982113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_26
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 999
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf99e3fff02d9a60800000000000000
+      internalID: 7682332823044857784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_27
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 995
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb6edb0246c5e750800000000000000
+      internalID: 6333686437935737781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_28
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 992
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa20a922985d03280800000000000000
+      internalID: -9065511264929054033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_29
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 997
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bb88a228d2c4c00800000000000000
+      internalID: 886133263767747413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_30
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 917
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa7e8268ba5b2ef0800000000000000
+      internalID: -131912016103310676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 899
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870fe7f7d59982b70800000000000000
+      internalID: 8874511692583596152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_32
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 900
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c084997468776240800000000000000
+      internalID: 4784925502036279493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_33
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 898
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fa17c7583961ca0800000000000000
+      internalID: -6046483248170553551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_34
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 904
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88129a7e79e3f980800000000000000
+      internalID: -8506198541741188980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_35
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 914
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc78432b49243930800000000000000
+      internalID: 4121964961642085628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_36
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 917
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3050d07a8067550800000000000000
+      internalID: 6158119054046725038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_37
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 899
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905a4e34520a74890800000000000000
+      internalID: -7473828974684756727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_38
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 900
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c345be9688317bfb0800000000000000
+      internalID: -4632212215113755588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_39
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 898
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175cefa9ec82ec5c0800000000000000
+      internalID: -4193369335206591119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_40
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 904
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c340a58b7c1342a0800000000000000
+      internalID: -6754523699277184058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_41
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 914
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf0b65cc02ea9d40800000000000000
+      internalID: 5592030431813504963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_42
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 917
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c72dcc46021c64d0800000000000000
+      internalID: -3140115021916461115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_43
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 899
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998209c87a91e9bf0800000000000000
+      internalID: -315786716460865383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_44
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 900
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96456634af26d5d0800000000000000
+      internalID: -3038188516281071972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_45
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 898
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00862a0a905cf6b0800000000000000
+      internalID: -5261241642150100979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_46
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 904
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab806825f19585080800000000000000
+      internalID: -9198504247840864070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_47
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 914
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7802c45180a70ce60800000000000000
+      internalID: 7980512714836156551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_48
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 836
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657499d62a9476dc0800000000000000
+      internalID: -3645864411360835754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 838
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4463efb4ef955a50800000000000000
+      internalID: 6509284641254630474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_50
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 820
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bc6aebc63ee5a50800000000000000
+      internalID: 6511892167418891044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_51
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 834
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e370195bb1dad180800000000000000
+      internalID: -9089722295310584857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_52
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 833
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9901d5d50ce73b90800000000000000
+      internalID: -7262076364305397345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_53
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 836
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a3912f483513a30800000000000000
+      internalID: 4193224558521170435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_54
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 838
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9500fa458f7a70050800000000000000
+      internalID: 5766762532885692505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_55
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 820
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96b2eed5b7d0b5e0800000000000000
+      internalID: -1895778266994526564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_56
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 834
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc784ee787790d9b0800000000000000
+      internalID: -5057375837756291125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_57
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 833
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a11b0ddc48341fc0800000000000000
+      internalID: -3525130705547095645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_58
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 836
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63957ec80aa31a860800000000000000
+      internalID: 7539371712428071222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_59
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 838
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa7f1eca3e0857f0800000000000000
+      internalID: -623732902661752072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_60
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 820
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2c472d9fe1ddde0800000000000000
+      internalID: -1306854258541018408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_61
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 834
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cded7b9ea441f40800000000000000
+      internalID: 5698261796203191367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_62
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 833
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305c8d577806e2300800000000000000
+      internalID: 229226765956465923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_63
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 771
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52487672a7c89d80800000000000000
+      internalID: -8243619617315470755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_64
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 759
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925fd93f58e20a6d0800000000000000
+      internalID: -2981331800466524887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_65
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 771
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3f38609597d56e0800000000000000
+      internalID: -1847186848883674140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_66
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 759
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4648d8c2ca2766f90800000000000000
+      internalID: -6960750090247109532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_67
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 771
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19be22025e200ca80800000000000000
+      internalID: -8448749717837124719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_68
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 759
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8c84ab122941020800000000000000
+      internalID: 2311633182304815311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_69
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 693
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c94a584a4df8120800000000000000
+      internalID: 2418385328003128403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_70
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 691
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50c9b3e9c2582f40800000000000000
+      internalID: 5703899955127238748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_71
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 695
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df203e615f735dbb0800000000000000
+      internalID: -4911958292787166467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_72
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 694
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc315c9e757abf6c0800000000000000
+      internalID: -4108506239019445300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_73
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 704
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857f8348747360670800000000000000
+      internalID: 8504545726636291928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_74
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 693
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d2e45e0b5d02100800000000000000
+      internalID: 81299749030735127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_75
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 691
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a0380d307373410800000000000000
+      internalID: 1456693494000323134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_76
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 695
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b40ee383f0d1ede0800000000000000
+      internalID: -1305532672651688783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_77
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 694
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f182142bf414c460800000000000000
+      internalID: 7260951568102621685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_78
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 704
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50faa0436277750b0800000000000000
+      internalID: -5739988194094829819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_79
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 693
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83629b39049741c60800000000000000
+      internalID: 7787982973893682744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_80
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 691
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cede150a4d6cefa0800000000000000
+      internalID: -5770116857887531326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_81
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 695
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4b859a901e8b240800000000000000
+      internalID: 4807840033830122734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_82
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 694
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ae6498c6fbd0df0800000000000000
+      internalID: -212303134536045944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_83
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 704
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6767241ab4d63a60800000000000000
+      internalID: 7653538512429868907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_84
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 632
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5413662204972cac0800000000000000
+      internalID: -3836370616204250811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_85
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 631
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7e71b023be81f60800000000000000
+      internalID: 8005406937818064844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_86
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 627
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9778035f656a3fe0800000000000000
+      internalID: -1208542021186717795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_87
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 624
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9297268f2a5f510800000000000000
+      internalID: 1582350031778294185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_88
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 629
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f021999ccf5159500800000000000000
+      internalID: 402251917177721359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_89
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 632
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f9963f61d095ed0800000000000000
+      internalID: -2424892532138074269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_90
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 631
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590dd25a800a7e180800000000000000
+      internalID: -9086117764205260651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_91
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 627
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d59966946a575800800000000000000
+      internalID: 601048463343982035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_92
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 624
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11427e66ee9c346c0800000000000000
+      internalID: -4160259604994382831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_93
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 629
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e053bed3e44d94c0800000000000000
+      internalID: -4279188325447544600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_94
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 632
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1521eed65391a32c0800000000000000
+      internalID: -4451217564434034095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_95
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 631
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1782add1235d37530800000000000000
+      internalID: 3851656517557823601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_96
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 627
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ea246afbfe17750800000000000000
+      internalID: 6301080960075214378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_97
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 624
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e55da67c1c18c330800000000000000
+      internalID: 3731263199852189156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_98
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 629
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884d9bc925ff21f40800000000000000
+      internalID: 5697897208858924168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_99
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 549
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78419cfc3a18a50f0800000000000000
+      internalID: -1127446216137173881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_100
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 531
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83d018cc8fd90ed0800000000000000
+      internalID: -2447179126754192499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_101
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 532
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962705ce12cb1ed80800000000000000
+      internalID: -8223084590717177239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_102
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 530
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9071c3af6afbcd090800000000000000
+      internalID: -8008315313487866103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_103
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 536
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8002b7872486d2b30800000000000000
+      internalID: 4264179056888193032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_104
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 546
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8217b158fcdf90020800000000000000
+      internalID: 2308655351737315624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_105
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 549
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea6c822bfd451e60800000000000000
+      internalID: 7932332059694754541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_106
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 531
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857935c94064bd6d0800000000000000
+      internalID: -2964698944076802216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_107
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 532
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10513a34fb2170900800000000000000
+      internalID: 650509283861140737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_108
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 530
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d608c03c8462a32f0800000000000000
+      internalID: -992438673929895827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_109
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 536
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d905587a12f0c40800000000000000
+      internalID: 5480636274913090909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_110
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 546
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e16131f32b9a540800000000000000
+      internalID: 5019739243654028908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_111
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 549
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4210a12e567fd2a10800000000000000
+      internalID: 1886435835895218468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_112
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 531
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd63af4dc418c460800000000000000
+      internalID: 7262077271171886531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_113
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 532
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37fe48b682cf52e0800000000000000
+      internalID: -2134773814476736710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_114
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 530
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2bd82083a734670800000000000000
+      internalID: 8521789300894708430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_115
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 536
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912a6a4867f0b9fb0800000000000000
+      internalID: -4640097989369093607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_116
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 546
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ad5eeb2020c70b0800000000000000
+      internalID: -5729702415106188676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_117
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 468
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37566183440cd6cc0800000000000000
+      internalID: -3716102718279490189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_118
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 470
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca7723fe2ab1ed60800000000000000
+      internalID: 7917814330704755403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_119
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 452
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4cb49e40c7f6b70800000000000000
+      internalID: 8894464149615789238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_120
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 466
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992dc34e2f7d25070800000000000000
+      internalID: 8093768918549451417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_121
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 465
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb6d69221d056ac0800000000000000
+      internalID: -3862666733744723001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_122
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 468
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa37a3c153dd968d0800000000000000
+      internalID: -2852505668785900630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_123
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 470
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09101bd6b616ef460800000000000000
+      internalID: 7277361161907011984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_124
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 452
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b57cec99f28ee9c0800000000000000
+      internalID: -3896032619037690440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_125
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 466
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc476e07ce584b6f0800000000000000
+      internalID: -669763194018433843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_126
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 465
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e167aba9bb2d06620800000000000000
+      internalID: 2765441874402113054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_127
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 468
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0904d74c6d9c9cdf0800000000000000
+      internalID: -159374387538214768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_128
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 470
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c542a3b4ff0f60760800000000000000
+      internalID: 7423886015036269660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_129
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 452
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7dc2a44178dc200800000000000000
+      internalID: 201966079515088865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_130
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 466
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d08a28ab866aece0800000000000000
+      internalID: -1375173986200420139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_131
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 465
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a4c0359114a9470800000000000000
+      internalID: 8402099631836383777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_132
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 403
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067b8f7d1ee67ea80800000000000000
+      internalID: -8437653460585236640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_133
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 391
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7810b643c98b97a30800000000000000
+      internalID: 4213601907415646599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_134
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 403
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5009dc4cb14b5f50800000000000000
+      internalID: 6871157933482770527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_135
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 391
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7fbdfc91c1ef3d0800000000000000
+      internalID: -3171066190435190833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_136
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 403
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda32e9b849e18b60800000000000000
+      internalID: 7746729332619492060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_137
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 391
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a2d95ad354b4ca0800000000000000
+      internalID: -6031651144858785234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_138
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 325
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f37334fc34ad2bb0800000000000000
+      internalID: -4959127032963042315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_139
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 323
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a7509f08cbb48d0800000000000000
+      internalID: -2860985876144096649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_140
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 327
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002b253a820dea950800000000000000
+      internalID: 6462331388280615424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_141
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 326
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd819de2e32843a90800000000000000
+      internalID: -7335094689494132515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_142
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 336
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1875adc1bdb602950800000000000000
+      internalID: 6422251657456408449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_143
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 325
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16dc956ad9c84ce70800000000000000
+      internalID: 9134580552942865761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_144
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 323
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2732e605a6ae08930800000000000000
+      internalID: 4143569399517684594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_145
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 327
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110f89d68238a9a00800000000000000
+      internalID: 764067296453390353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_146
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 326
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc40fc9c0b027a70800000000000000
+      internalID: 8823126768772730063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_147
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 336
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd0f634f66c7e840800000000000000
+      internalID: 5253385671525993975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_148
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 325
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4008fb1e1993d9730800000000000000
+      internalID: 4007422542150074372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_149
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 323
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f85b8626f0f0800800000000000000
+      internalID: 580699792292024191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_150
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 327
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d0c158bca4672b0800000000000000
+      internalID: -5587196049734496873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_151
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 326
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1177a136a4a73eb0800000000000000
+      internalID: -4740139049079574244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_152
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 336
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0383bc3ff124d960800000000000000
+      internalID: 7625757449163866893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_153
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 264
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89bee898b92af600800000000000000
+      internalID: 502760181221734796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_154
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 263
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bab0e3e42542330800000000000000
+      internalID: 3685160891097787259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_155
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 259
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd750937967ab0b0800000000000000
+      internalID: -5712122785497252415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_156
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 256
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b573261b2e1db70800000000000000
+      internalID: 8922161588282546948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_157
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 261
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0192551fca2255f60800000000000000
+      internalID: 8022356437409016080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_158
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 264
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0edeb9dabf05f50800000000000000
+      internalID: 6868266154803978484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_159
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 263
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d657ce56f7f72b0800000000000000
+      internalID: -5584604937180582646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_160
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 259
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1a5588ed14c3c60800000000000000
+      internalID: 7799181078724714974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_161
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 256
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd8ae95db2b1ca00800000000000000
+      internalID: 775097137211543035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_162
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 261
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a63fe03d1484ad40800000000000000
+      internalID: 5594741898010900130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_163
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 264
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85aa43534874e1f00800000000000000
+      internalID: 1089386793024137816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_164
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 263
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954fce5b5d6130b60800000000000000
+      internalID: 7711032094124471385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_165
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 259
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94095f2d9dcce8500800000000000000
+      internalID: 400482652801830985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_166
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 256
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0b1ed996041d000800000000000000
+      internalID: 58899092497084657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_167
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 261
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f252c4d18291930800000000000000
+      internalID: 4114363840876326766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_168
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 181
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b5050b6ae16e200800000000000000
+      internalID: 208888133990767454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_169
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 163
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2767905ca41758c0800000000000000
+      internalID: -4010714212831107283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_170
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 164
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09cef10a476839b0800000000000000
+      internalID: -5100213010438371059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_171
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 162
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97010c45c93832b0800000000000000
+      internalID: -5604666216716105830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_172
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 168
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f282489e9b520e100800000000000000
+      internalID: 135149469238044719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_173
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 178
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d845078d8a7ff8190800000000000000
+      internalID: -7957869711982570355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_174
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 181
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c2569e6fd6421f0800000000000000
+      internalID: -1070609904162231267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_175
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 163
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c16559a63a8c0f80800000000000000
+      internalID: -8138978459191516728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_176
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 164
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a591c80d6acedd0800000000000000
+      internalID: -2455404282189882851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_177
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 162
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a398b4e6668a7a550800000000000000
+      internalID: 6172086972225128762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_178
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 168
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c602d28f63dce1050800000000000000
+      internalID: 5773277408311189612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_179
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 178
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373d172d3fbdd8170800000000000000
+      internalID: 8182437938256270195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_180
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 181
+        width: 52
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacf131c18fb84690800000000000000
+      internalID: -7617628205684228947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_181
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 163
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccdc30508b5cf530800000000000000
+      internalID: 3890084784801373388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_182
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 164
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e702c9442f300a0800000000000000
+      internalID: -6916418226219876838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_183
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 162
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df818d540ad4c050800000000000000
+      internalID: 5820016330753019856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_184
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 168
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb4294eb5daf00e0800000000000000
+      internalID: -2301430274374612048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_185
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 178
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05235471310b241b0800000000000000
+      internalID: -5673778984492125616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_186
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 100
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de9309b22f9f8200800000000000000
+      internalID: 184541081227206360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_187
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebb17f85852cb9c0800000000000000
+      internalID: -3910209120896959515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_188
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 84
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e026c59ecccb0e0800000000000000
+      internalID: -2252700410942714282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_189
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 98
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740cac06320cc4920800000000000000
+      internalID: 2975964711965343815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_190
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 97
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4a45162cc20dca0800000000000000
+      internalID: -5994241890661915448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_191
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 100
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9120604fc0fa9240800000000000000
+      internalID: 4799413125845623197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_192
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 102
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cc8650e4ddf1b40800000000000000
+      internalID: 5413288604290567169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_193
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 84
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21d390d0dae57720800000000000000
+      internalID: 2843436922327781675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_194
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 98
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e62ab14c28a8650800000000000000
+      internalID: 6235940412836703859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_195
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 97
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229ddd1babafc5890800000000000000
+      internalID: -7467818402332157662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_196
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 100
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022802aaed3b6deb0800000000000000
+      internalID: -4695367792568794592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_197
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 102
+        width: 48
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec4e0cbf072b1200800000000000000
+      internalID: 151757960980090089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_198
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 84
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec045268fda23f710800000000000000
+      internalID: 1725770221729693902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_199
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 98
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8560b1f1a071de60800000000000000
+      internalID: 7985287455151515022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_200
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 97
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ced3adb5e8aa6f0800000000000000
+      internalID: -672568669183808405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_201
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 35
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3b3dbc24dcffae0800000000000000
+      internalID: -1513265263002012725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_202
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 23
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960daee8dafc95580800000000000000
+      internalID: -8837804449403842455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_203
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 35
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55738bbd60baf6bd0800000000000000
+      internalID: -2634699211044014251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_204
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 23
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb5dc6cc06c65510800000000000000
+      internalID: 1537634080970857466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_205
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 35
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879d8a9a9dd117140800000000000000
+      internalID: 4715583105525143928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilot hair_206
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 23
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6270b8f04bdcc6e00800000000000000
+      internalID: 1039431787254318886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pilot hair_0: -206119929340748637
+      pilot hair_1: -8001761331710251354
+      pilot hair_10: 5910182497378521133
+      pilot hair_100: -2447179126754192499
+      pilot hair_101: -8223084590717177239
+      pilot hair_102: -8008315313487866103
+      pilot hair_103: 4264179056888193032
+      pilot hair_104: 2308655351737315624
+      pilot hair_105: 7932332059694754541
+      pilot hair_106: -2964698944076802216
+      pilot hair_107: 650509283861140737
+      pilot hair_108: -992438673929895827
+      pilot hair_109: 5480636274913090909
+      pilot hair_11: 831328972843277553
+      pilot hair_110: 5019739243654028908
+      pilot hair_111: 1886435835895218468
+      pilot hair_112: 7262077271171886531
+      pilot hair_113: -2134773814476736710
+      pilot hair_114: 8521789300894708430
+      pilot hair_115: -4640097989369093607
+      pilot hair_116: -5729702415106188676
+      pilot hair_117: -3716102718279490189
+      pilot hair_118: 7917814330704755403
+      pilot hair_119: 8894464149615789238
+      pilot hair_12: 4321851158563875035
+      pilot hair_120: 8093768918549451417
+      pilot hair_121: -3862666733744723001
+      pilot hair_122: -2852505668785900630
+      pilot hair_123: 7277361161907011984
+      pilot hair_124: -3896032619037690440
+      pilot hair_125: -669763194018433843
+      pilot hair_126: 2765441874402113054
+      pilot hair_127: -159374387538214768
+      pilot hair_128: 7423886015036269660
+      pilot hair_129: 201966079515088865
+      pilot hair_13: -2320496666950283587
+      pilot hair_130: -1375173986200420139
+      pilot hair_131: 8402099631836383777
+      pilot hair_132: -8437653460585236640
+      pilot hair_133: 4213601907415646599
+      pilot hair_134: 6871157933482770527
+      pilot hair_135: -3171066190435190833
+      pilot hair_136: 7746729332619492060
+      pilot hair_137: -6031651144858785234
+      pilot hair_138: -4959127032963042315
+      pilot hair_139: -2860985876144096649
+      pilot hair_14: 4485081850030286908
+      pilot hair_140: 6462331388280615424
+      pilot hair_141: -7335094689494132515
+      pilot hair_142: 6422251657456408449
+      pilot hair_143: 9134580552942865761
+      pilot hair_144: 4143569399517684594
+      pilot hair_145: 764067296453390353
+      pilot hair_146: 8823126768772730063
+      pilot hair_147: 5253385671525993975
+      pilot hair_148: 4007422542150074372
+      pilot hair_149: 580699792292024191
+      pilot hair_15: 2310969809605052785
+      pilot hair_150: -5587196049734496873
+      pilot hair_151: -4740139049079574244
+      pilot hair_152: 7625757449163866893
+      pilot hair_153: 502760181221734796
+      pilot hair_154: 3685160891097787259
+      pilot hair_155: -5712122785497252415
+      pilot hair_156: 8922161588282546948
+      pilot hair_157: 8022356437409016080
+      pilot hair_158: 6868266154803978484
+      pilot hair_159: -5584604937180582646
+      pilot hair_16: -3399906641348634772
+      pilot hair_160: 7799181078724714974
+      pilot hair_161: 775097137211543035
+      pilot hair_162: 5594741898010900130
+      pilot hair_163: 1089386793024137816
+      pilot hair_164: 7711032094124471385
+      pilot hair_165: 400482652801830985
+      pilot hair_166: 58899092497084657
+      pilot hair_167: 4114363840876326766
+      pilot hair_168: 208888133990767454
+      pilot hair_169: -4010714212831107283
+      pilot hair_17: 6066647838676901883
+      pilot hair_170: -5100213010438371059
+      pilot hair_171: -5604666216716105830
+      pilot hair_172: 135149469238044719
+      pilot hair_173: -7957869711982570355
+      pilot hair_174: -1070609904162231267
+      pilot hair_175: -8138978459191516728
+      pilot hair_176: -2455404282189882851
+      pilot hair_177: 6172086972225128762
+      pilot hair_178: 5773277408311189612
+      pilot hair_179: 8182437938256270195
+      pilot hair_18: -1499574958860074646
+      pilot hair_180: -7617628205684228947
+      pilot hair_181: 3890084784801373388
+      pilot hair_182: -6916418226219876838
+      pilot hair_183: 5820016330753019856
+      pilot hair_184: -2301430274374612048
+      pilot hair_185: -5673778984492125616
+      pilot hair_186: 184541081227206360
+      pilot hair_187: -3910209120896959515
+      pilot hair_188: -2252700410942714282
+      pilot hair_189: 2975964711965343815
+      pilot hair_19: -5493449165772456857
+      pilot hair_190: -5994241890661915448
+      pilot hair_191: 4799413125845623197
+      pilot hair_192: 5413288604290567169
+      pilot hair_193: 2843436922327781675
+      pilot hair_194: 6235940412836703859
+      pilot hair_195: -7467818402332157662
+      pilot hair_196: -4695367792568794592
+      pilot hair_197: 151757960980090089
+      pilot hair_198: 1725770221729693902
+      pilot hair_199: 7985287455151515022
+      pilot hair_2: 2741072242260102156
+      pilot hair_20: -7543100105464425108
+      pilot hair_200: -672568669183808405
+      pilot hair_201: -1513265263002012725
+      pilot hair_202: -8837804449403842455
+      pilot hair_203: -2634699211044014251
+      pilot hair_204: 1537634080970857466
+      pilot hair_205: 4715583105525143928
+      pilot hair_206: 1039431787254318886
+      pilot hair_21: -5727695509285196681
+      pilot hair_22: -1693505943242535679
+      pilot hair_23: -520976812414195023
+      pilot hair_24: 7481633408406793817
+      pilot hair_25: -1604096328705982113
+      pilot hair_26: 7682332823044857784
+      pilot hair_27: 6333686437935737781
+      pilot hair_28: -9065511264929054033
+      pilot hair_29: 886133263767747413
+      pilot hair_3: -292065744687141249
+      pilot hair_30: -131912016103310676
+      pilot hair_31: 8874511692583596152
+      pilot hair_32: 4784925502036279493
+      pilot hair_33: -6046483248170553551
+      pilot hair_34: -8506198541741188980
+      pilot hair_35: 4121964961642085628
+      pilot hair_36: 6158119054046725038
+      pilot hair_37: -7473828974684756727
+      pilot hair_38: -4632212215113755588
+      pilot hair_39: -4193369335206591119
+      pilot hair_4: -4531793509941514135
+      pilot hair_40: -6754523699277184058
+      pilot hair_41: 5592030431813504963
+      pilot hair_42: -3140115021916461115
+      pilot hair_43: -315786716460865383
+      pilot hair_44: -3038188516281071972
+      pilot hair_45: -5261241642150100979
+      pilot hair_46: -9198504247840864070
+      pilot hair_47: 7980512714836156551
+      pilot hair_48: -3645864411360835754
+      pilot hair_49: 6509284641254630474
+      pilot hair_5: 1393509647793420326
+      pilot hair_50: 6511892167418891044
+      pilot hair_51: -9089722295310584857
+      pilot hair_52: -7262076364305397345
+      pilot hair_53: 4193224558521170435
+      pilot hair_54: 5766762532885692505
+      pilot hair_55: -1895778266994526564
+      pilot hair_56: -5057375837756291125
+      pilot hair_57: -3525130705547095645
+      pilot hair_58: 7539371712428071222
+      pilot hair_59: -623732902661752072
+      pilot hair_6: -1437371141231031457
+      pilot hair_60: -1306854258541018408
+      pilot hair_61: 5698261796203191367
+      pilot hair_62: 229226765956465923
+      pilot hair_63: -8243619617315470755
+      pilot hair_64: -2981331800466524887
+      pilot hair_65: -1847186848883674140
+      pilot hair_66: -6960750090247109532
+      pilot hair_67: -8448749717837124719
+      pilot hair_68: 2311633182304815311
+      pilot hair_69: 2418385328003128403
+      pilot hair_7: 3530257783765143275
+      pilot hair_70: 5703899955127238748
+      pilot hair_71: -4911958292787166467
+      pilot hair_72: -4108506239019445300
+      pilot hair_73: 8504545726636291928
+      pilot hair_74: 81299749030735127
+      pilot hair_75: 1456693494000323134
+      pilot hair_76: -1305532672651688783
+      pilot hair_77: 7260951568102621685
+      pilot hair_78: -5739988194094829819
+      pilot hair_79: 7787982973893682744
+      pilot hair_8: -5519179483916594560
+      pilot hair_80: -5770116857887531326
+      pilot hair_81: 4807840033830122734
+      pilot hair_82: -212303134536045944
+      pilot hair_83: 7653538512429868907
+      pilot hair_84: -3836370616204250811
+      pilot hair_85: 8005406937818064844
+      pilot hair_86: -1208542021186717795
+      pilot hair_87: 1582350031778294185
+      pilot hair_88: 402251917177721359
+      pilot hair_89: -2424892532138074269
+      pilot hair_9: -6435692483621973119
+      pilot hair_90: -9086117764205260651
+      pilot hair_91: 601048463343982035
+      pilot hair_92: -4160259604994382831
+      pilot hair_93: -4279188325447544600
+      pilot hair_94: -4451217564434034095
+      pilot hair_95: 3851656517557823601
+      pilot hair_96: 6301080960075214378
+      pilot hair_97: 3731263199852189156
+      pilot hair_98: 5697897208858924168
+      pilot hair_99: -1127446216137173881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

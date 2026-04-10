@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: e50e8c046b8098a499159e3ace7c7b4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6635147653872129705
+    second: player lives icons_0
+  - first:
+      213: -5153263958017581889
+    second: player lives icons_1
+  - first:
+      213: -8949640756383923887
+    second: player lives icons_2
+  - first:
+      213: -2755256157142794734
+    second: player lives icons_3
+  - first:
+      213: 7260735461987975468
+    second: player lives icons_4
+  - first:
+      213: -236268243248357616
+    second: player lives icons_5
+  - first:
+      213: -8846039937000711516
+    second: player lives icons_6
+  - first:
+      213: 4899024188998158384
+    second: player lives icons_7
+  - first:
+      213: 262202780860426885
+    second: player lives icons_8
+  - first:
+      213: -4079036132145351851
+    second: player lives icons_9
+  - first:
+      213: -6160615021635121024
+    second: player lives icons_10
+  - first:
+      213: 3251174403169112483
+    second: player lives icons_11
+  - first:
+      213: 3036050986131100934
+    second: player lives icons_12
+  - first:
+      213: -1050559382185511058
+    second: player lives icons_13
+  - first:
+      213: -2296457429901184793
+    second: player lives icons_14
+  - first:
+      213: -2662352403690352930
+    second: player lives icons_15
+  - first:
+      213: 1112776721910221096
+    second: player lives icons_16
+  - first:
+      213: -2236033545152021332
+    second: player lives icons_17
+  - first:
+      213: -3840880204696256200
+    second: player lives icons_18
+  - first:
+      213: -4177770803879031077
+    second: player lives icons_19
+  - first:
+      213: 1301182073582301904
+    second: player lives icons_20
+  - first:
+      213: -6576062054921076350
+    second: player lives icons_21
+  - first:
+      213: 6081906550487997411
+    second: player lives icons_22
+  - first:
+      213: 4877384521403392520
+    second: player lives icons_23
+  - first:
+      213: -9002565020489966887
+    second: player lives icons_24
+  - first:
+      213: -1640166726193630802
+    second: player lives icons_25
+  - first:
+      213: 5934856884721503457
+    second: player lives icons_26
+  - first:
+      213: -5594825122788091196
+    second: player lives icons_27
+  - first:
+      213: 5652983272546078679
+    second: player lives icons_28
+  - first:
+      213: 6948820440475673801
+    second: player lives icons_29
+  - first:
+      213: 62804335197948756
+    second: player lives icons_30
+  - first:
+      213: -3697106766546200621
+    second: player lives icons_31
+  - first:
+      213: 8880412660813986818
+    second: player lives icons_32
+  - first:
+      213: -1129590272673772975
+    second: player lives icons_33
+  - first:
+      213: 678597798035754508
+    second: player lives icons_34
+  - first:
+      213: -7710547630029178758
+    second: player lives icons_35
+  - first:
+      213: 4718798212513858693
+    second: player lives icons_36
+  - first:
+      213: 7299645962694965887
+    second: player lives icons_37
+  - first:
+      213: -8503322557281960682
+    second: player lives icons_38
+  - first:
+      213: -2103058205842333877
+    second: player lives icons_39
+  - first:
+      213: 7755261424395952960
+    second: player lives icons_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player lives icons_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 18
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6905df2a7c41c50800000000000000
+      internalID: 6635147653872129705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 255
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcd98cbbbdeb78b0800000000000000
+      internalID: -5153263958017581889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 239
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151c068362d7cc380800000000000000
+      internalID: -8949640756383923887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 245
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ebb408f1d53c9d0800000000000000
+      internalID: -2755256157142794734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 246
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2100e30f6053c460800000000000000
+      internalID: 7260735461987975468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 239
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fd979d84b98bcf0800000000000000
+      internalID: -236268243248357616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_6
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 223
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa572eab8d8c3580800000000000000
+      internalID: -8846039937000711516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 207
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03808433b84dcf340800000000000000
+      internalID: 4899024188998158384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 213
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a2e4c3a0883a300800000000000000
+      internalID: 262202780860426885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 214
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5533e7ddf3a5467c0800000000000000
+      internalID: -4079036132145351851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_10
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 207
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080d0853749118aa0800000000000000
+      internalID: -6160615021635121024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 191
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1dcbbe4ed7e1d20800000000000000
+      internalID: 3251174403169112483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 175
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60591544948322a20800000000000000
+      internalID: 3036050986131100934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 181
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67f069dec9ab61f0800000000000000
+      internalID: -1050559382185511058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 182
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0fee872285120e0800000000000000
+      internalID: -2296457429901184793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 175
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede0127389c6d0bd0800000000000000
+      internalID: -2662352403690352930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_16
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 159
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82948c76880617f00800000000000000
+      internalID: 1112776721910221096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 143
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac3b53765308f0e0800000000000000
+      internalID: -2236033545152021332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 149
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831004ebdc372bac0800000000000000
+      internalID: -3840880204696256200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 150
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdecac1b6939506c0800000000000000
+      internalID: -4177770803879031077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 143
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d2baf3b33abe0210800000000000000
+      internalID: 1301182073582301904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_21
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 127
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281018b07622db4a0800000000000000
+      internalID: -6576062054921076350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_22
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 111
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb55fac8c5476450800000000000000
+      internalID: 6081906550487997411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_23
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 117
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802ec377163ffa340800000000000000
+      internalID: 4877384521403392520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 118
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da965ebfc6701380800000000000000
+      internalID: -9002565020489966887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_25
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 111
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea130d07d05fc39e0800000000000000
+      internalID: -1640166726193630802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 95
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec4b9674e8dc5250800000000000000
+      internalID: 5934856884721503457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 79
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cad8c781303b52b0800000000000000
+      internalID: -5594825122788091196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_28
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 85
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df8559e55e637e40800000000000000
+      internalID: 5652983272546078679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_29
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 86
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4a68acf5b2f6060800000000000000
+      internalID: 6948820440475673801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_30
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 79
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b04d9c5302fd000800000000000000
+      internalID: 62804335197948756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_31
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d71253ebfc31bcc0800000000000000
+      internalID: -3697106766546200621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 47
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cf2bab3409d3b70800000000000000
+      internalID: 8880412660813986818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_33
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 53
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a0b8fb1a3e250f0800000000000000
+      internalID: -1129590272673772975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 54
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e88491a1dda6900800000000000000
+      internalID: 678597798035754508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_35
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 47
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78716068c1aef490800000000000000
+      internalID: -7710547630029178758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_36
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 31
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58403a719f98c7140800000000000000
+      internalID: 4718798212513858693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 15
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a3c80f35d8d4560800000000000000
+      internalID: 7299645962694965887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_38
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 21
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d74aacf212ef980800000000000000
+      internalID: -8503322557281960682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 22
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f1cca44bf60d2e0800000000000000
+      internalID: -2103058205842333877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player lives icons_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 15
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04329652d2930ab60800000000000000
+      internalID: 7755261424395952960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player lives icons_0: 6635147653872129705
+      player lives icons_1: -5153263958017581889
+      player lives icons_10: -6160615021635121024
+      player lives icons_11: 3251174403169112483
+      player lives icons_12: 3036050986131100934
+      player lives icons_13: -1050559382185511058
+      player lives icons_14: -2296457429901184793
+      player lives icons_15: -2662352403690352930
+      player lives icons_16: 1112776721910221096
+      player lives icons_17: -2236033545152021332
+      player lives icons_18: -3840880204696256200
+      player lives icons_19: -4177770803879031077
+      player lives icons_2: -8949640756383923887
+      player lives icons_20: 1301182073582301904
+      player lives icons_21: -6576062054921076350
+      player lives icons_22: 6081906550487997411
+      player lives icons_23: 4877384521403392520
+      player lives icons_24: -9002565020489966887
+      player lives icons_25: -1640166726193630802
+      player lives icons_26: 5934856884721503457
+      player lives icons_27: -5594825122788091196
+      player lives icons_28: 5652983272546078679
+      player lives icons_29: 6948820440475673801
+      player lives icons_3: -2755256157142794734
+      player lives icons_30: 62804335197948756
+      player lives icons_31: -3697106766546200621
+      player lives icons_32: 8880412660813986818
+      player lives icons_33: -1129590272673772975
+      player lives icons_34: 678597798035754508
+      player lives icons_35: -7710547630029178758
+      player lives icons_36: 4718798212513858693
+      player lives icons_37: 7299645962694965887
+      player lives icons_38: -8503322557281960682
+      player lives icons_39: -2103058205842333877
+      player lives icons_4: 7260735461987975468
+      player lives icons_40: 7755261424395952960
+      player lives icons_5: -236268243248357616
+      player lives icons_6: -8846039937000711516
+      player lives icons_7: 4899024188998158384
+      player lives icons_8: 262202780860426885
+      player lives icons_9: -4079036132145351851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
