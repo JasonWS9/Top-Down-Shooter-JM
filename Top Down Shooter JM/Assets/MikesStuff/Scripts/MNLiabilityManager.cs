@@ -4,6 +4,10 @@ using System;
 public class MNLiabilityManager : MonoBehaviour, IDamageable
 {
     public static MNLiabilityManager Instance;
+    
+    [Header("Planet Integrity")]
+    public int maxPlanetHealth = 0;
+    public int currentPlanetHealth = 0;
 
     [Header("Corporate Metrics")]
     public float maxLiabilityLimit = 1000000f; // 1 Million in damages gets you fired
@@ -27,6 +31,7 @@ public class MNLiabilityManager : MonoBehaviour, IDamageable
     public static event Action OnFired;
     public static event Action<float> OnEarningsUpdated;
     public static event Action<int> OnDestructionUpdated; // New event for UI
+    public static event Action<int, int> OnPlanetHealthUpdated;
 
     void Awake()
     {
@@ -147,5 +152,27 @@ public class MNLiabilityManager : MonoBehaviour, IDamageable
     {
         currentXP += amount;
         OnStatsUpdated?.Invoke(totalAlienKills, totalPenaltyKills, currentXP);
+    }
+    
+    // 1. Call this when a building or friendly NPC spawns
+    public void RegisterPlanetEntity(int healthAmount)
+    {
+        maxPlanetHealth += healthAmount;
+        currentPlanetHealth += healthAmount;
+        OnPlanetHealthUpdated?.Invoke(currentPlanetHealth, maxPlanetHealth);
+    }
+
+    // 2. Call this when a building or friendly NPC gets shot
+    public void DamagePlanetEntity(int damageAmount)
+    {
+        currentPlanetHealth -= damageAmount;
+        currentPlanetHealth = Mathf.Max(0, currentPlanetHealth); // Prevent going below zero
+        OnPlanetHealthUpdated?.Invoke(currentPlanetHealth, maxPlanetHealth);
+
+        if (currentPlanetHealth <= 0)
+        {
+            Debug.Log("CRITICAL FAILURE: The Planet has been completely destroyed!");
+            // Trigger your Game Over / Planet Destroyed sequence here
+        }
     }
 }

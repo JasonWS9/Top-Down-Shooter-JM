@@ -23,12 +23,19 @@ public class MNStructureController : MonoBehaviour, IDamageable
         
         currentHealth = data.maxHealth;
         UpdateVisuals();
+        
+        MNLiabilityManager.Instance.RegisterPlanetEntity(data.maxHealth);
     }
 
     // Implementing the IDamageable interface so bullets can hurt it
     public void TakeDamage(int damage, bool fromPlayer = false)
     {
         if (currentState == StructureState.Destroyed) return;
+        
+        // Calculate the actual damage taken (so an overkill bullet doesn't subtract extra from the planet)
+        int actualDamage = Mathf.Min(damage, currentHealth);
+        
+        MNLiabilityManager.Instance.DamagePlanetEntity(actualDamage);
 
         currentHealth -= damage;
 

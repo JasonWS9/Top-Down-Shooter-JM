@@ -36,6 +36,11 @@ public class MNEnemyController : MonoBehaviour, IDamageable
         {
             isBoltedToGround = true;
         }
+        
+        if ((enemyData.faction == FactionType.Defender || enemyData.faction == FactionType.Neutral) && MNLiabilityManager.Instance != null)
+        {
+            MNLiabilityManager.Instance.RegisterPlanetEntity(enemyData.maxHealth);
+        }
     }
 
     void InitializeBehavior()
@@ -140,8 +145,17 @@ public class MNEnemyController : MonoBehaviour, IDamageable
 
             if (enemyData.faction == FactionType.Alien)
             {
-                // Aliens prioritize shooting back at Defenders (Turrets) OR wrecking Structures
-                if (hit.CompareTag("Defender") || hit.CompareTag("Structure"))
+                // --- NEW: Specialized Targeting Logic ---
+                bool isStructure = hit.CompareTag("Structure");
+                bool isNPC = hit.CompareTag("Defender") || hit.CompareTag("Civilian");
+
+                bool isValidPriority = false;
+
+                if (enemyData.targetPreference == TargetPreference.Any && (isStructure || isNPC)) isValidPriority = true;
+                else if (enemyData.targetPreference == TargetPreference.StructuresOnly && isStructure) isValidPriority = true;
+                else if (enemyData.targetPreference == TargetPreference.NPCsOnly && isNPC) isValidPriority = true;
+
+                if (isValidPriority)
                 {
                     if (dist < closestDist || !foundPriorityTarget) 
                     {
@@ -150,7 +164,8 @@ public class MNEnemyController : MonoBehaviour, IDamageable
                         foundPriorityTarget = true;
                     }
                 }
-                else if (hit.CompareTag("Player") && !foundPriorityTarget)
+                // Only target the player if we haven't found our preferred target yet
+                else if (hit.CompareTag("Player") && !foundPriorityTarget) 
                 {
                     if (dist < closestDist)
                     {
@@ -284,6 +299,13 @@ public class MNEnemyController : MonoBehaviour, IDamageable
     // --- IDAMAGEABLE ---
     public void TakeDamage(int damage, bool fromPlayer = false)
     {
+        int actualDamage = Mathf.Min(damage, currentHealth);
+        
+        if ((enemyData.faction == FactionType.Defender || enemyData.faction == FactionType.Neutral) && MNLiabilityManager.Instance != null)
+        {
+            MNLiabilityManager.Instance.DamagePlanetEntity(actualDamage);
+        }
+        
         currentHealth -= damage;
 
         if (fromPlayer)

@@ -10,6 +10,7 @@ TagManager:
   - Defender
   - Alien
   - Structure
+  - Civilian
   layers:
   - Default
   - TransparentFX

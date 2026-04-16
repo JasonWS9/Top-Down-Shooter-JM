@@ -1358,6 +1358,8 @@ GameObject:
   - component: {fileID: 797839249}
   - component: {fileID: 797839250}
   - component: {fileID: 797839251}
+  - component: {fileID: 797839253}
+  - component: {fileID: 797839252}
   m_Layer: 0
   m_Name: SCS_Building_01_Blue_Nighttime_01_0
   m_TagString: Structure
@@ -1512,6 +1514,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &797839252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797839246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &797839253
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797839246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &814166940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1799,8 @@ GameObject:
   - component: {fileID: 1068736173}
   - component: {fileID: 1068736174}
   - component: {fileID: 1068736175}
+  - component: {fileID: 1068736177}
+  - component: {fileID: 1068736176}
   m_Layer: 0
   m_Name: SCS_Building_01_Red_Nighttime_01_0
   m_TagString: Structure
@@ -1915,6 +1955,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &1068736176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068736170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &1068736177
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068736170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1086341390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,6 +2095,8 @@ GameObject:
   - component: {fileID: 1091693550}
   - component: {fileID: 1091693549}
   - component: {fileID: 1091693548}
+  - component: {fileID: 1091693554}
+  - component: {fileID: 1091693553}
   m_Layer: 0
   m_Name: SCS_Building_01_Red_Nighttime_01_0 (1)
   m_TagString: Structure
@@ -2173,6 +2251,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091693553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091693547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &1091693554
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091693547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1111736717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,6 +2619,8 @@ GameObject:
   - component: {fileID: 1259944093}
   - component: {fileID: 1259944092}
   - component: {fileID: 1259944091}
+  - component: {fileID: 1259944097}
+  - component: {fileID: 1259944096}
   m_Layer: 0
   m_Name: SCS_Building_02_Blue_Daytime_01_0 (1)
   m_TagString: Structure
@@ -2659,6 +2775,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259944096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259944090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &1259944097
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259944090}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1332180562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,6 +3745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5fd21d2a61980448a7191c995aec8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MNLiabilityManager
+  maxPlanetHealth: 0
+  currentPlanetHealth: 0
   maxLiabilityLimit: 1000000
   currentLiability: 0
   earningsQuota: 0
@@ -4205,6 +4359,8 @@ GameObject:
   - component: {fileID: 1901660489}
   - component: {fileID: 1901660488}
   - component: {fileID: 1901660487}
+  - component: {fileID: 1901660493}
+  - component: {fileID: 1901660492}
   m_Layer: 0
   m_Name: SCS_Building_02_Blue_Daytime_01_0 (2)
   m_TagString: Structure
@@ -4359,6 +4515,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901660492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901660486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &1901660493
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901660486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1976862542
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,6 +4564,8 @@ GameObject:
   - component: {fileID: 1976862545}
   - component: {fileID: 1976862546}
   - component: {fileID: 1976862547}
+  - component: {fileID: 1976862549}
+  - component: {fileID: 1976862548}
   m_Layer: 0
   m_Name: SCS_Building_01_Green_Nighttime_01_0 (1)
   m_TagString: Structure
@@ -4526,6 +4720,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &1976862548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976862542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &1976862549
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976862542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2036943831
 GameObject:
   m_ObjectHideFlags: 0
@@ -4539,6 +4769,8 @@ GameObject:
   - component: {fileID: 2036943834}
   - component: {fileID: 2036943835}
   - component: {fileID: 2036943836}
+  - component: {fileID: 2036943838}
+  - component: {fileID: 2036943837}
   m_Layer: 0
   m_Name: SCS_Building_01_Nighttime_01_0
   m_TagString: Structure
@@ -4693,6 +4925,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &2036943837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036943831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &2036943838
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036943831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2068897613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +5065,8 @@ GameObject:
   - component: {fileID: 2098153996}
   - component: {fileID: 2098153997}
   - component: {fileID: 2098153998}
+  - component: {fileID: 2098154000}
+  - component: {fileID: 2098153999}
   m_Layer: 0
   m_Name: SCS_Building_02_Blue_Daytime_01_0
   m_TagString: Structure
@@ -4951,6 +5221,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.72, y: 2.37}
   m_EdgeRadius: 0
+--- !u!114 &2098153999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098153993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &2098154000
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098153993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2117143025
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,6 +5270,8 @@ GameObject:
   - component: {fileID: 2117143028}
   - component: {fileID: 2117143029}
   - component: {fileID: 2117143030}
+  - component: {fileID: 2117143032}
+  - component: {fileID: 2117143031}
   m_Layer: 0
   m_Name: SCS_Building_01_Green_Nighttime_01_0
   m_TagString: Structure
@@ -5118,6 +5426,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48, y: 1.25}
   m_EdgeRadius: 0
+--- !u!114 &2117143031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117143025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &2117143032
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117143025}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2118091635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,6 +5475,8 @@ GameObject:
   - component: {fileID: 2118091638}
   - component: {fileID: 2118091637}
   - component: {fileID: 2118091636}
+  - component: {fileID: 2118091642}
+  - component: {fileID: 2118091641}
   m_Layer: 0
   m_Name: SCS_Building_01_Blue_Nighttime_01_0 (1)
   m_TagString: Structure
@@ -5285,6 +5631,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118091641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118091635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59792efb12f92d74cb74bc2f8bde980e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MNStructureController
+  data: {fileID: 11400000, guid: 065ffc50fdd3d1b4e998e666aa689683, type: 2}
+  currentState: 0
+--- !u!95 &2118091642
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118091635}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2120070969
 GameObject:
   m_ObjectHideFlags: 0

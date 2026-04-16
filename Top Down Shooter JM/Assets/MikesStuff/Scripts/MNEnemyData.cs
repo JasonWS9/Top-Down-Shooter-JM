@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public enum FactionType { Alien, Defender, Rival, Neutral }
+public enum TargetPreference { Any, StructuresOnly, NPCsOnly }
 
 public enum EnemyBehaviorType 
 { 
@@ -24,6 +25,9 @@ public class MNEnemyData : ScriptableObject
     [Header("Faction & Targeting")]
     public FactionType faction;
     public float radarRange = 15f; 
+    // --- ADD THE PREFERENCE HERE ---
+    [Tooltip("What does this alien prioritize?")]
+    public TargetPreference targetPreference = TargetPreference.Any;
 
     [Header("Behavior Type")]
     public EnemyBehaviorType behaviorType;
