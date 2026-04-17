@@ -1,22 +1,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Events;
 using System;
 
 public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement Instance;
 
+    [Header("Speed & Projectiles")]
     public float speed;
-
     public float projectileSpeed;
+    [SerializeField] public GameObject projectile;
+    [SerializeField] public Transform firePoint;
+
+    [Header("X-Axis Parallax Boundaries")]
+    [Tooltip("Distance from screen edge where the world starts moving")]
+    public float screenMarginX = 2f; 
+    [Tooltip("Maximum distance the world can shift to the RIGHT")]
+    public float maxWorldX = 20f; 
+    [Tooltip("Maximum distance the world can shift to the LEFT")]
+    public float minWorldX = -20f;
+
+    // Tracks how far the "treadmill" has rolled horizontally
+    public float currentWorldX = 0f; 
 
     private InputAction moveAction;
     private InputAction shootAction;
 
-    [SerializeField] public GameObject projectile;
-    [SerializeField] public Transform firePoint;
-
+    // Events
+    public static event Action<Vector3> OnWorldShift;
     public static event Action onFireProjectile;
 
     void Start()
@@ -48,20 +59,73 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
-        if (moveInput.magnitude > 0.01)
+        if (moveInput.magnitude > 0.01f && AiUpdater.Instance != null)
         {
             AiUpdater.Instance.PlayerMoving();
         }
 
-        float moveX = moveInput.x;
-        float moveY = moveInput.y;
+        // Switched to fixedDeltaTime since this runs in FixedUpdate
+        Vector3 intendedMove = new Vector3(moveInput.x, moveInput.y, 0) * speed * Time.fixedDeltaTime;
+        Vector3 newPlayerPos = transform.position + intendedMove;
+        Vector3 worldShiftAmount = Vector3.zero;
 
-        Vector2 finalMove = new Vector2(moveX, moveY) * speed * Time.deltaTime;
-        transform.Translate(finalMove, Space.World);
+        Camera cam = Camera.main;
+        float camHeight = cam.orthographicSize;
+        float camWidth = camHeight * cam.aspect;
 
+        // ==========================================
+        // X-AXIS: TREADMILL WITH FALL-AWAY MARGIN
+        // ==========================================
+        float rightMargin = cam.transform.position.x + camWidth - screenMarginX;
+        float leftMargin = cam.transform.position.x - camWidth + screenMarginX;
+
+        // Moving Right
+        if (newPlayerPos.x > rightMargin)
+        {
+            float push = newPlayerPos.x - rightMargin;
+            float availableShift = maxWorldX - currentWorldX;
+
+            if (availableShift > 0)
+            {
+                float actualShift = Mathf.Min(push, availableShift);
+                worldShiftAmount.x = actualShift;
+                currentWorldX += actualShift;
+                newPlayerPos.x = rightMargin + (push - actualShift); 
+            }
+        }
+        // Moving Left
+        else if (newPlayerPos.x < leftMargin)
+        {
+            float push = newPlayerPos.x - leftMargin; 
+            float availableShift = minWorldX - currentWorldX; 
+
+            if (availableShift < 0)
+            {
+                float actualShift = Mathf.Max(push, availableShift); 
+                worldShiftAmount.x = actualShift;
+                currentWorldX += actualShift;
+                newPlayerPos.x = leftMargin + (push - actualShift);
+            }
+        }
+
+        // ==========================================
+        // Y-AXIS & HARD CLAMPS
+        // ==========================================
+        float edgePadding = 0.5f; 
+        newPlayerPos.x = Mathf.Clamp(newPlayerPos.x, cam.transform.position.x - camWidth + edgePadding, cam.transform.position.x + camWidth - edgePadding);
+        newPlayerPos.y = Mathf.Clamp(newPlayerPos.y, cam.transform.position.y - camHeight + edgePadding, cam.transform.position.y + camHeight - edgePadding);
+
+        // Assign the calculated position (replaces standard Translate logic)
+        transform.position = newPlayerPos;
+
+        // ==========================================
+        // SHIFT THE WORLD
+        // ==========================================
+        if (worldShiftAmount != Vector3.zero)
+        {
+            OnWorldShift?.Invoke(-worldShiftAmount);
+        }
     }
-
-
 
     void FireProjectile()
     {
@@ -72,6 +136,11 @@ public class PlayerMovement : MonoBehaviour
 
         bulletRB.AddForce(firePoint.up * projectileSpeed, ForceMode2D.Impulse);
 
-        AiUpdater.Instance.Fire();
+        if (AiUpdater.Instance != null)
+        {
+            AiUpdater.Instance.Fire();
+        }
+        
+        onFireProjectile?.Invoke();
     }
 }

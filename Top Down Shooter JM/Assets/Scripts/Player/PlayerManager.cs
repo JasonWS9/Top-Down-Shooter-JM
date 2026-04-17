@@ -1,4 +1,5 @@
 using UnityEngine;
+using System; // Required for the Action event
 
 public class PlayerManager : MonoBehaviour, IDamageable
 {
@@ -8,11 +9,20 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public int maxHealth;
     public int currentHealth;
 
+    // The event the UI is listening for
+    public static event Action<int, int> OnHealthUpdated;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         Instance = this;
         currentHealth = maxHealth;
+    }
+
+    void Start()
+    {
+        // Broadcast the starting health to the UI the moment the game loads
+        OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
     // Update is called once per frame
@@ -29,6 +39,9 @@ public class PlayerManager : MonoBehaviour, IDamageable
     public void TakeDamage(int damage, bool fromPlayer = false)
     {
         currentHealth -= damage;
+        
+        // Broadcast the new health to the UI every time the player gets hit
+        OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
     void TrackRegion()

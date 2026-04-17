@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 5090842518559534958}
   - component: {fileID: 4465412673301860091}
   - component: {fileID: 5186925854717994088}
+  - component: {fileID: -6844439512909975225}
   m_Layer: 10
   m_Name: Enemy1
   m_TagString: Alien
@@ -368,7 +369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0fc1ee36f997234cbaebafa186f99bd, type: 3}
   m_Name: 
@@ -381,10 +382,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88517c9f2bf08d641bbe2748c7018ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MNEndlessProp
   parallaxFactor: 1
   offScreenBuffer: 2
+--- !u!114 &-6844439512909975225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5768746880067106718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89917e8d148b67548b4204a8a3eb5728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  myData: {fileID: 0}
+  currentHealth: 0
+  currentSpeed: 0
+  currentDamage: 0
