@@ -140,8 +140,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   projectileSpeed: 50
-  projectile: {fileID: 905072091424754200, guid: 54ece688f8ae66649a761f9c211ae2ca, type: 3}
+  projectile: {fileID: 905072091424754200, guid: d3868cec0be7e974386c2f774a1b452b, type: 3}
   firePoint: {fileID: 2874791570593860516}
+  screenMarginX: 2
+  maxWorldX: 20
+  minWorldX: -20
+  currentWorldX: 0
 --- !u!61 &3768912828289323633
 BoxCollider2D:
   m_ObjectHideFlags: 0

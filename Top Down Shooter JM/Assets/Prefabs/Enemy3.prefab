@@ -43,8 +43,6 @@ GameObject:
   - component: {fileID: 1109017380143248667}
   - component: {fileID: 1544675107061266799}
   - component: {fileID: 5090842518559534958}
-  - component: {fileID: 4465412673301860091}
-  - component: {fileID: 5162808622926189542}
   m_Layer: 10
   m_Name: Enemy3
   m_TagString: Alien
@@ -200,30 +198,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4465412673301860091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0fc1ee36f997234cbaebafa186f99bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MNEnemyController
-  enemyData: {fileID: 11400000, guid: 6a1529d05f9e081498ba66801a85fe60, type: 2}
---- !u!114 &5162808622926189542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88517c9f2bf08d641bbe2748c7018ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MNEndlessProp
-  parallaxFactor: 1
-  offScreenBuffer: 2

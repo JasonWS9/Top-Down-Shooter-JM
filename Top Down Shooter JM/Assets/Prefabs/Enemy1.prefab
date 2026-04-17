@@ -41,14 +41,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4127088952364700853}
   - component: {fileID: 4530745428392365729}
-  - component: {fileID: 6104617598037126693}
   m_Layer: 10
   m_Name: RadarRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4127088952364700853
 Transform:
   m_ObjectHideFlags: 0
@@ -174,23 +173,6 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &6104617598037126693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5084436656708119122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 605976b3ad73e3e409acc997a8ffaf99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MNRadarVisualizer
-  segments: 50
-  lineWidth: 0.1
-  allyColor: {r: 0, g: 1, b: 0, a: 1}
-  neutralColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  enemyColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &5768746880067106718
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +185,6 @@ GameObject:
   - component: {fileID: 1109017380143248667}
   - component: {fileID: 1544675107061266799}
   - component: {fileID: 5090842518559534958}
-  - component: {fileID: 4465412673301860091}
-  - component: {fileID: 5186925854717994088}
   - component: {fileID: -6844439512909975225}
   m_Layer: 10
   m_Name: Enemy1
@@ -350,7 +330,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -362,33 +342,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4465412673301860091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0fc1ee36f997234cbaebafa186f99bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MNEnemyController
-  enemyData: {fileID: 11400000, guid: 919b8afb1567ba24c8fb069e739124b9, type: 2}
---- !u!114 &5186925854717994088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5768746880067106718}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88517c9f2bf08d641bbe2748c7018ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MNEndlessProp
-  parallaxFactor: 1
-  offScreenBuffer: 2
 --- !u!114 &-6844439512909975225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,3 +358,5 @@ MonoBehaviour:
   currentHealth: 0
   currentSpeed: 0
   currentDamage: 0
+  spawnDelay: 1
+  enemyAnimator: {fileID: 0}

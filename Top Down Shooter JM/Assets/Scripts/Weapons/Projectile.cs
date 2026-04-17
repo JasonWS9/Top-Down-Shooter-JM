@@ -2,17 +2,20 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [Header("Projectile Settings")]
+    public int damage;
+    [Tooltip("Check this if the player fires it. Uncheck for enemy projectiles.")]
+    public bool isPlayerProjectile = true;
+    
     private float deleteTime = 4f;
     private float timer;
-
-    public int damage;
     
-    // 1. Create a reference to the Rigidbody
+    // Create a reference to the Rigidbody
     private Rigidbody2D rb; 
 
     void Awake()
     {
-        // 2. Grab the Rigidbody right as the bullet spawns
+        // Grab the Rigidbody right as the bullet spawns
         rb = GetComponent<Rigidbody2D>(); 
     }
 
@@ -35,25 +38,26 @@ public class Projectile : MonoBehaviour
         IDamageable damageable = collision.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            // Tell the enemy the player shot them!
-            damageable.TakeDamage(damage, true); 
+            // Tell the target they got hit, and whether it was the player who shot them!
+            damageable.TakeDamage(damage, isPlayerProjectile); 
         }
+        
         Destroy(gameObject);
     }
     
     void OnEnable()
     {
-        MNPlayerMovement.OnWorldShift += ShiftWithTreadmill;
+        PlayerMovement.OnWorldShift += ShiftWithTreadmill;
     }
 
     void OnDisable()
     {
-        MNPlayerMovement.OnWorldShift -= ShiftWithTreadmill;
+        PlayerMovement.OnWorldShift -= ShiftWithTreadmill;
     }
 
     void ShiftWithTreadmill(Vector3 shiftAmount)
     {
-        // 3. Shift the physics body directly instead of the Transform
+        // Shift the physics body directly instead of the Transform
         if (rb != null)
         {
             rb.position += (Vector2)shiftAmount;
