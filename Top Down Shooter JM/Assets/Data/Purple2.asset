@@ -15,10 +15,27 @@ MonoBehaviour:
   enemyName: PurpleShoty
   enemyType: 1
   faction: 0
+  basePrefab: {fileID: 5768746880067106718, guid: 0eaf3cae8e0850d48938755464c73f4f, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 20
   attackRange: 10
-  projectilePrefab: {fileID: 905072091424754200, guid: a0c5873cc8ef99b489ccf78e4ed42fcb, type: 3}
+  projectilePrefab: {fileID: 7379541087006839324, guid: c3407f2b059103643a8b5c8bc9d0a04f, type: 3}
   projectileSpeed: 10
   fireRate: 2
+  evolutionTiers:
+  - requiredLevel: 2
+    evolutionSprite: {fileID: 21300000, guid: a378fe7cac7d08c40b82f9e93811f96a, type: 2}
+    evolutionAnimator: {fileID: 0}
+    healthMultiplier: 2
+    speedMultiplier: 2
+    damageMultiplier: 2
+    unlockedAbility: 1
+  - requiredLevel: 3
+    evolutionSprite: {fileID: 21300000, guid: 3e5783976fd492b4eb16da0a0a16f641, type: 2}
+    evolutionAnimator: {fileID: 0}
+    healthMultiplier: 5
+    speedMultiplier: 5
+    damageMultiplier: 5
+    unlockedAbility: 1
+  minionPrefab: {fileID: 0}

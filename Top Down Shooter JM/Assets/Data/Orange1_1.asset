@@ -12,26 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39635d715d94a8e4ba61635f3ad3498d, type: 3}
   m_Name: Orange1_1
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyName: Sniper
-  enemyType: 0
+  enemyName: Shoty
+  enemyType: 1
   faction: 1
+  basePrefab: {fileID: 5768746880067106718, guid: 5bd1f31b89847114f86b25cee839f0b6, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 20
   attackRange: 10
-  projectilePrefab: {fileID: 905072091424754200, guid: a0c5873cc8ef99b489ccf78e4ed42fcb, type: 3}
+  projectilePrefab: {fileID: 7379541087006839324, guid: c3407f2b059103643a8b5c8bc9d0a04f, type: 3}
   projectileSpeed: 10
   fireRate: 2
   evolutionTiers:
   - requiredLevel: 2
-    evolutionSprite: {fileID: 0}
+    evolutionSprite: {fileID: 21300000, guid: a37fe89aef0aa6941ba5b4ff2862a48f, type: 2}
     evolutionAnimator: {fileID: 0}
     healthMultiplier: 2
     speedMultiplier: 2
     damageMultiplier: 2
     unlockedAbility: 1
   - requiredLevel: 3
-    evolutionSprite: {fileID: 0}
+    evolutionSprite: {fileID: 21300000, guid: 1618cb6e285b47c4fa86630e34632122, type: 2}
     evolutionAnimator: {fileID: 0}
     healthMultiplier: 3
     speedMultiplier: 5

@@ -15,6 +15,7 @@ MonoBehaviour:
   enemyName: PurpleSniper
   enemyType: 0
   faction: 0
+  basePrefab: {fileID: 5768746880067106718, guid: ca636ece2aa0e1a4bb60c07a75293d71, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 20
@@ -22,3 +23,19 @@ MonoBehaviour:
   projectilePrefab: {fileID: 905072091424754200, guid: a0c5873cc8ef99b489ccf78e4ed42fcb, type: 3}
   projectileSpeed: 10
   fireRate: 2
+  evolutionTiers:
+  - requiredLevel: 2
+    evolutionSprite: {fileID: 21300000, guid: d53eb2717d66132478f46ff11d1d2899, type: 2}
+    evolutionAnimator: {fileID: 0}
+    healthMultiplier: 2
+    speedMultiplier: 2
+    damageMultiplier: 2
+    unlockedAbility: 0
+  - requiredLevel: 3
+    evolutionSprite: {fileID: 21300000, guid: 3428968fa4aa08a4eb54b6ca75386e79, type: 2}
+    evolutionAnimator: {fileID: 0}
+    healthMultiplier: 5
+    speedMultiplier: 5
+    damageMultiplier: 5
+    unlockedAbility: 1
+  minionPrefab: {fileID: 0}

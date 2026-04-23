@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawning Settings")]
-    public GameObject baseEnemyPrefab;
     [Tooltip("Drag all your EnemyData ScriptableObjects here!")]
     public EnemyData[] possibleEnemies; 
     
@@ -27,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemyOnScreen()
     {
-        if (baseEnemyPrefab == null || possibleEnemies.Length == 0) return;
+        if (possibleEnemies.Length == 0) return;
         if (PlayerMovement.Instance == null) return;
 
         // Determine the Faction based on the map position
@@ -63,8 +62,16 @@ public class EnemySpawner : MonoBehaviour
         Vector3 spawnPos = Camera.main.ViewportToWorldPoint(new Vector3(randomX, randomY, Camera.main.nearClipPlane));
         spawnPos.z = 0f;
 
-        // Instantiate the generic enemy shell and inject the data
-        GameObject newEnemy = Instantiate(baseEnemyPrefab, spawnPos, Quaternion.identity);
+        // --- THE NEW PREFAB LOGIC ---
+        // Double check that we actually assigned a base prefab in the data
+        if (randomData.basePrefab == null)
+        {
+            Debug.LogError($"The EnemyData '{randomData.name}' is missing its basePrefab! Cannot spawn.");
+            return;
+        }
+
+        // Instantiate the SPECIFIC prefab attached to this EnemyData
+        GameObject newEnemy = Instantiate(randomData.basePrefab, spawnPos, Quaternion.identity);
         EnemyController controller = newEnemy.GetComponent<EnemyController>();
         
         if (controller != null)
@@ -81,12 +88,9 @@ public class EnemySpawner : MonoBehaviour
         float maxX = PlayerMovement.Instance.maxWorldX;
 
         // Normalize the position between 0 and 1
-        // (0 is the far left minX edge, 0.5 is center, 1 is the far right maxX edge)
         float mapPositionPercentage = Mathf.InverseLerp(minX, maxX, currentX);
 
         // Define our probabilities based on the requested ratios
-        // 1:20 ratio = 1 Orange per 20 Purple (1 out of 21 chance)
-        // 20:1 ratio = 20 Orange per 1 Purple (20 out of 21 chance)
         float minOrangeChance = 1f / 21f; 
         float maxOrangeChance = 20f / 21f; 
 

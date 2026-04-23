@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7803472211803675497}
   - component: {fileID: 5715473877147069095}
   m_Layer: 7
-  m_Name: AlienProjectile
+  m_Name: AlienProjectile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,4 +180,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   damage: 10
-  isPlayerProjectile: 0

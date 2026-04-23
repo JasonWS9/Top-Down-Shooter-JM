@@ -18,6 +18,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     private bool isSpawning = true;
     public Animator enemyAnimator;
     
+    [Header("Effects")]
+    public GameObject explosionPrefab;
+    
     public static event System.Action<EnemyFaction, int> OnEnemyKilled;
     public int enemyLevel = 1; // Tie this to your ScriptableObject later!
 
@@ -97,21 +100,59 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (myData.evolutionTiers == null || myData.evolutionTiers.Count == 0) return;
 
+        Sprite newSprite = null; 
+        RuntimeAnimatorController newAnimator = null; // Track the new animator
+        
+        // Track the highest multipliers to avoid them stacking infinitely
+        float finalHealthMult = 1f;
+        float finalSpeedMult = 1f;
+        float finalDamageMult = 1f;
+
         foreach (EvolutionTier tier in myData.evolutionTiers)
         {
             // If the enemy's spawn level is high enough to unlock this tier
             if (currentLevel >= tier.requiredLevel)
             {
-                currentHealth *= tier.healthMultiplier;
-                currentSpeed *= tier.speedMultiplier;
-                currentDamage *= tier.damageMultiplier;
+                // Overwrite the multipliers with the highest unlocked tier
+                finalHealthMult = tier.healthMultiplier;
+                finalSpeedMult = tier.speedMultiplier;
+                finalDamageMult = tier.damageMultiplier;
                 
                 // Overwrite the ability with the highest unlocked tier
                 if (tier.unlockedAbility != SpecialAbility.None)
                 {
                     currentAbility = tier.unlockedAbility;
                 }
+
+                // If a sprite is assigned in the inspector for this tier, remember it
+                if (tier.evolutionSprite != null)
+                {
+                    newSprite = tier.evolutionSprite;
+                }
+
+                // If an animator is assigned in the inspector for this tier, remember it
+                if (tier.evolutionAnimator != null)
+                {
+                    newAnimator = tier.evolutionAnimator;
+                }
             }
+        }
+
+        // Apply the math ONCE using the final highest multipliers
+        currentHealth *= finalHealthMult;
+        currentSpeed *= finalSpeedMult;
+        currentDamage *= finalDamageMult;
+
+        // Apply the highest unlocked sprite
+        if (newSprite != null && spriteRenderer != null)
+        {
+            spriteRenderer.sprite = newSprite;
+        }
+
+        // Swap the Animator Controller if a new one was unlocked
+        if (newAnimator != null && enemyAnimator != null)
+        {
+            enemyAnimator.runtimeAnimatorController = newAnimator;
         }
     }
 
@@ -242,6 +283,11 @@ public class EnemyController : MonoBehaviour, IDamageable
                 Debug.Log($"[{gameObject.name}] spawns minions on death!");
                 Instantiate(myData.minionPrefab, transform.position + new Vector3(1, 1, 0), Quaternion.identity);
                 Instantiate(myData.minionPrefab, transform.position + new Vector3(-1, -1, 0), Quaternion.identity);
+            }
+            
+            if (explosionPrefab != null)
+            {
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             }
 
             if (fromPlayer) 

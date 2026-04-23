@@ -34,6 +34,10 @@ public class EnemyData : ScriptableObject
     public string enemyName;
     public EnemyType enemyType;
     public EnemyFaction faction;
+    
+    [Header("Base Setup")]
+    // The specific prefab (Rammer, SingleShot, etc.) for this enemy
+    public GameObject basePrefab;
 
     [Header("Base Stats (Level 1)")]
     public float baseHealth = 50f;
