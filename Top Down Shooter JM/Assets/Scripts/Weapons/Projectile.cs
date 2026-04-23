@@ -41,9 +41,20 @@ public class Projectile : MonoBehaviour
         IDamageable damageable = collision.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            damageable.TakeDamage(damage, isPlayerProjectile); 
+            int finalDamage = damage;
+
+            // If the player fired this, calculate the leveled-up damage
+            if (isPlayerProjectile && PlayerMovement.Instance != null)
+            {
+                float multiplier = PlayerMovement.Instance.GetDamageMultiplier();
+                finalDamage = Mathf.RoundToInt(damage * multiplier);
+            }
+
+            damageable.TakeDamage(finalDamage, isPlayerProjectile); 
+            
             if (isPlayerProjectile) OnShotResolved?.Invoke(true); // HIT!
         }
+        
         Destroy(gameObject);
     }
     

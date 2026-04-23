@@ -5,7 +5,14 @@ using System;
 public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement Instance;
+    
+    [Header("Leveling Settings")]
+    public float speedGrowthFactor = 0.15f; 
+    public float damageGrowthFactor = 0.25f;
 
+    private float baseSpeed;
+    private float baseProjectileSpeed;
+    
     [Header("Speed & Projectiles")]
     public float speed;
     public float projectileSpeed;
@@ -35,6 +42,28 @@ public class PlayerMovement : MonoBehaviour
         Instance = this;
         moveAction = InputSystem.actions.FindAction("Move");
         shootAction = InputSystem.actions.FindAction("Shoot");
+        
+        // Save base stats for scaling
+        baseSpeed = speed;
+        baseProjectileSpeed = projectileSpeed;
+    }
+    
+    void OnEnable()
+    {
+        GameManager.OnPlayerLevelUp += HandleLevelUp;
+    }
+
+    void OnDisable()
+    {
+        GameManager.OnPlayerLevelUp -= HandleLevelUp;
+    }
+    
+    void HandleLevelUp(int newLevel)
+    {
+        // Apply Logarithmic formula to speeds
+        float speedMultiplier = 1f + (speedGrowthFactor * Mathf.Log(newLevel));
+        speed = baseSpeed * speedMultiplier;
+        projectileSpeed = baseProjectileSpeed * speedMultiplier;
     }
 
     // Update is called once per frame
@@ -142,5 +171,12 @@ public class PlayerMovement : MonoBehaviour
         }
         
         onFireProjectile?.Invoke();
+    }
+    
+    // Projectiles will call this right before hitting an enemy
+    public float GetDamageMultiplier()
+    {
+        if (GameManager.Instance == null) return 1f;
+        return 1f + (damageGrowthFactor * Mathf.Log(GameManager.Instance.playerLevel));
     }
 }

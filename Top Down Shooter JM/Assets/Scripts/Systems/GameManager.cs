@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     [Header("Faction Levels")]
     public int purpleLevel = 1;
     public int orangeLevel = 1;
+    
+    [Header("Player Leveling")]
+    public int playerLevel = 1;
+    public int pointsPerLevel = 2000;
+    public static event System.Action<int> OnPlayerLevelUp;
 
     // Events to broadcast to the UI Manager
     public static event Action<int> OnScoreUpdated;
@@ -85,13 +90,24 @@ public class GameManager : MonoBehaviour
     {
         int basePoints = 100;
         float comboMultiplier = 1f + (comboCount * 0.1f);
-        float timeMultiplier = 1f + (timeSurvived / 60f); // Earn more points the longer you survive
-        float accuracyMultiplier = (consecutiveHits >= 10) ? 2f : 1f; // Double points if on a streak!
+        float timeMultiplier = 1f + (timeSurvived / 60f); 
+        float accuracyMultiplier = (consecutiveHits >= 10) ? 2f : 1f; 
 
         int pointsEarned = Mathf.RoundToInt(basePoints * level * comboMultiplier * timeMultiplier * accuracyMultiplier);
         currentScore += pointsEarned;
 
         OnScoreUpdated?.Invoke(currentScore);
+
+        // Level Up Check
+        // Integer division automatically handles the threshold mapping
+        int calculatedLevel = (currentScore / pointsPerLevel) + 1; 
+
+        if (calculatedLevel > playerLevel)
+        {
+            playerLevel = calculatedLevel;
+            Debug.Log($"PLAYER LEVELED UP TO {playerLevel}!");
+            OnPlayerLevelUp?.Invoke(playerLevel);
+        }
     }
 
     void UpdateEvolutionMeter(EnemyFaction faction)

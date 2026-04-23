@@ -6,8 +6,14 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     public static PlayerManager Instance;
 
+    [Header("Health Stats")]
     public int maxHealth;
     public int currentHealth;
+    private int baseMaxHealth;
+    
+    [Header("Leveling Settings")]
+    [Tooltip("How sharply health increases. 0.2 is a good baseline.")]
+    public float healthGrowthFactor = 0.2f;
 
     // The event the UI is listening for
     public static event Action<int, int> OnHealthUpdated;
@@ -17,7 +23,18 @@ public class PlayerManager : MonoBehaviour, IDamageable
     void Awake()
     {
         Instance = this;
+        baseMaxHealth = maxHealth;
         currentHealth = maxHealth;
+    }
+    
+    void OnEnable()
+    {
+        GameManager.OnPlayerLevelUp += HandleLevelUp;
+    }
+
+    void OnDisable()
+    {
+        GameManager.OnPlayerLevelUp -= HandleLevelUp;
     }
 
     void Start()
@@ -43,6 +60,19 @@ public class PlayerManager : MonoBehaviour, IDamageable
         if (currentHealth <= 0) return; 
 
         currentHealth -= damage;
+        OnHealthUpdated?.Invoke(currentHealth, maxHealth);
+    }
+    
+    void HandleLevelUp(int newLevel)
+    {
+        // Apply Logarithmic formula
+        float multiplier = 1f + (healthGrowthFactor * Mathf.Log(newLevel));
+        maxHealth = Mathf.RoundToInt(baseMaxHealth * multiplier);
+        
+        // Give the player a small 20% heal as a reward for leveling up!
+        currentHealth += Mathf.RoundToInt(baseMaxHealth * 0.2f);
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+
         OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
