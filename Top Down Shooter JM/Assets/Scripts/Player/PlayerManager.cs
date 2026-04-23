@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     // The event the UI is listening for
     public static event Action<int, int> OnHealthUpdated;
+    public static event Action OnPlayerDeath;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -38,22 +39,23 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage, bool fromPlayer = false)
     {
+        // Prevent taking more damage if already dead
+        if (currentHealth <= 0) return; 
+
         currentHealth -= damage;
-        
-        // Broadcast the new health to the UI every time the player gets hit
         OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
     void TrackRegion()
     {
-        //Checks the player's position in the viewport (0 to 1)
+        // Checks the player's position in the viewport (0 to 1)
         Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
 
-        //Finds the player's distance from the center (0 to 0.5)
+        // Finds the player's distance from the center (0 to 0.5)
         float distanceFromCenterX = Mathf.Abs(viewportPos.x - 0.5f);
         float distanceFromCenterY = Mathf.Abs(viewportPos.y - 0.5f);
 
-        //Threshold for the player to be considered outside the middle (inner 10% of screen per 0.05)
+        // Threshold for the player to be considered outside the middle (inner 10% of screen per 0.05)
         float distanceThreshold = 0.2f; //0.2f is the inner 40% of the screen
 
         if (distanceFromCenterX < distanceThreshold && distanceFromCenterY < distanceThreshold)
@@ -62,7 +64,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
             return;
         }
 
-        //If the player isnt in the center checks which region they are in
+        // If the player isn't in the center checks which region they are in
         if (viewportPos.x > 0.5)
         {
             if (viewportPos.y > 0.5)
@@ -89,5 +91,11 @@ public class PlayerManager : MonoBehaviour, IDamageable
     void PlayerDeath()
     {
         Debug.Log("Dead");
+        
+        // Announce the death to the LevelManager
+        OnPlayerDeath?.Invoke(); 
+        
+        // Turn off the sprite so Player disappears
+        gameObject.SetActive(false); 
     }
 }

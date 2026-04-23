@@ -4,22 +4,29 @@ public class EnemyController : MonoBehaviour, IDamageable
 {
     [Header("Assigned Data")]
     public EnemyData myData;
+    public int currentLevel = 1;
 
     [Header("Live Stats (Calculated)")]
     public float currentHealth;
+    public float maxHealth;
     public float currentSpeed;
     public float currentDamage;
+    public SpecialAbility currentAbility = SpecialAbility.None;
 
     [Header("Spawn Settings")]
     public float spawnDelay = 1f;
     private bool isSpawning = true;
     public Animator enemyAnimator;
+    
+    public static event System.Action<EnemyFaction, int> OnEnemyKilled;
+    public int enemyLevel = 1; // Tie this to your ScriptableObject later!
 
     private SpriteRenderer spriteRenderer;
     private Transform playerTarget;
     
     // Timer to control how often the enemy attacks
     private float fireTimer;
+    private bool hasFiredLowHealthCannon = false;
 
     // 1. Subscribe to the treadmill event so enemies shift with the world!
     void OnEnable()
@@ -38,9 +45,10 @@ public class EnemyController : MonoBehaviour, IDamageable
         transform.position += shiftAmount;
     }
 
-    public void Initialize(EnemyData data)
+    public void Initialize(EnemyData data, int spawnLevel)
     {
         myData = data;
+        currentLevel = spawnLevel;
         spriteRenderer = GetComponent<SpriteRenderer>();
         
         if (PlayerManager.Instance != null)
@@ -54,9 +62,11 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
 
         ApplyDataAndFactionModifiers();
+        ApplyEvolutionModifiers();
         
         // Initialize the fire timer so they don't shoot the exact frame they wake up
         fireTimer = myData.fireRate;
+        maxHealth = currentHealth;
         
         Debug.Log($"[{gameObject.name}] Initialized! Faction: {myData.faction}, Type: {myData.enemyType}. Waiting {spawnDelay}s to spawn.");
     }
@@ -80,6 +90,28 @@ public class EnemyController : MonoBehaviour, IDamageable
                 currentDamage *= 1.2f;     
                 if (spriteRenderer != null) spriteRenderer.color = new Color(1f, 0.5f, 0f); 
                 break;
+        }
+    }
+    
+    void ApplyEvolutionModifiers()
+    {
+        if (myData.evolutionTiers == null || myData.evolutionTiers.Count == 0) return;
+
+        foreach (EvolutionTier tier in myData.evolutionTiers)
+        {
+            // If the enemy's spawn level is high enough to unlock this tier
+            if (currentLevel >= tier.requiredLevel)
+            {
+                currentHealth *= tier.healthMultiplier;
+                currentSpeed *= tier.speedMultiplier;
+                currentDamage *= tier.damageMultiplier;
+                
+                // Overwrite the ability with the highest unlocked tier
+                if (tier.unlockedAbility != SpecialAbility.None)
+                {
+                    currentAbility = tier.unlockedAbility;
+                }
+            }
         }
     }
 
@@ -189,11 +221,34 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (isSpawning) return; 
 
         currentHealth -= damage;
-        Debug.Log($"[{gameObject.name}] took {damage} damage! Remaining Health: {currentHealth}");
         
+        // SPECIAL ABILITY: Cannon at Low Health (70%)
+        if (currentAbility == SpecialAbility.CannonAtLowHealth && !hasFiredLowHealthCannon)
+        {
+            if (currentHealth <= maxHealth * 0.7f)
+            {
+                Debug.Log($"[{gameObject.name}] triggers CANNON SHOT!");
+                hasFiredLowHealthCannon = true;
+                // You can reuse your spread shot logic, but beef it up!
+                FireProjectile(5, 10f); 
+            }
+        }
+
         if (currentHealth <= 0)
         {
-            Debug.Log($"[{gameObject.name}] destroyed!");
+            // SPECIAL ABILITY: Spawn Minions on Death
+            if (currentAbility == SpecialAbility.SpawnMinionsOnDeath && myData.minionPrefab != null)
+            {
+                Debug.Log($"[{gameObject.name}] spawns minions on death!");
+                Instantiate(myData.minionPrefab, transform.position + new Vector3(1, 1, 0), Quaternion.identity);
+                Instantiate(myData.minionPrefab, transform.position + new Vector3(-1, -1, 0), Quaternion.identity);
+            }
+
+            if (fromPlayer) 
+            {
+                // Send the exact level to the GameManager so it can multiply the score!
+                OnEnemyKilled?.Invoke(myData.faction, currentLevel);
+            }
             Destroy(gameObject);
         }
     }

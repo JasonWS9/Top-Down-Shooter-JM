@@ -30,10 +30,10 @@ public class EnemySpawner : MonoBehaviour
         if (baseEnemyPrefab == null || possibleEnemies.Length == 0) return;
         if (PlayerMovement.Instance == null) return;
 
-        // 1. Determine the Faction based on the map position
+        // Determine the Faction based on the map position
         EnemyFaction chosenFaction = DetermineFactionWeight();
 
-        // 2. Filter the possible enemies to ONLY include the chosen faction
+        // Filter the possible enemies to ONLY include the chosen faction
         List<EnemyData> factionSpecificEnemies = new List<EnemyData>();
         foreach (EnemyData data in possibleEnemies)
         {
@@ -50,23 +50,26 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
-        // 3. Pick a random EnemyData asset from the filtered list
+        // Pick a random EnemyData asset from the filtered list
         EnemyData randomData = factionSpecificEnemies[Random.Range(0, factionSpecificEnemies.Count)];
+        
+        // Find out what level this faction currently is
+        int spawnLevel = (randomData.faction == EnemyFaction.Purple) ? GameManager.Instance.purpleLevel : GameManager.Instance.orangeLevel;
 
-        // 4. Calculate a random position within the camera's viewport
+        // Calculate a random position within the camera's viewport
         float randomX = Random.Range(edgeBuffer, 1f - edgeBuffer);
         float randomY = Random.Range(edgeBuffer, 1f - edgeBuffer);
         
         Vector3 spawnPos = Camera.main.ViewportToWorldPoint(new Vector3(randomX, randomY, Camera.main.nearClipPlane));
         spawnPos.z = 0f;
 
-        // 5. Instantiate the generic enemy shell and inject the data
+        // Instantiate the generic enemy shell and inject the data
         GameObject newEnemy = Instantiate(baseEnemyPrefab, spawnPos, Quaternion.identity);
         EnemyController controller = newEnemy.GetComponent<EnemyController>();
         
         if (controller != null)
         {
-            controller.Initialize(randomData);
+            controller.Initialize(randomData, spawnLevel);
         }
     }
 

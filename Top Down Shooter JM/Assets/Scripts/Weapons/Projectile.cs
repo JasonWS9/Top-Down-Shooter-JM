@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
     
     // Create a reference to the Rigidbody
     private Rigidbody2D rb; 
+    
+    public static event System.Action<bool> OnShotResolved;
 
     void Awake()
     {
@@ -29,6 +31,7 @@ public class Projectile : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer < 0)
         {
+            if (isPlayerProjectile) OnShotResolved?.Invoke(false); // MISS!
             Destroy(gameObject);
         }
     }
@@ -38,10 +41,9 @@ public class Projectile : MonoBehaviour
         IDamageable damageable = collision.GetComponent<IDamageable>();
         if (damageable != null)
         {
-            // Tell the target they got hit, and whether it was the player who shot them!
             damageable.TakeDamage(damage, isPlayerProjectile); 
+            if (isPlayerProjectile) OnShotResolved?.Invoke(true); // HIT!
         }
-        
         Destroy(gameObject);
     }
     
