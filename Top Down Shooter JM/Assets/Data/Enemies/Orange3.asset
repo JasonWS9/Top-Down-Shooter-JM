@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39635d715d94a8e4ba61635f3ad3498d, type: 3}
-  m_Name: Purple2
+  m_Name: Orange3
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  enemyName: PurpleShoty
-  enemyType: 1
-  faction: 0
-  basePrefab: {fileID: 5768746880067106718, guid: 0eaf3cae8e0850d48938755464c73f4f, type: 3}
+  enemyName: Orange_Rammer
+  enemyType: 2
+  faction: 1
+  basePrefab: {fileID: 5768746880067106718, guid: 896ecadbe848a86459b5dbbcc5475d4a, type: 3}
   baseHealth: 50
   baseSpeed: 3
-  attackDamage: 20
-  attackRange: 10
-  projectilePrefab: {fileID: 7379541087006839324, guid: c3407f2b059103643a8b5c8bc9d0a04f, type: 3}
+  attackDamage: 12
+  attackRange: 3
+  projectilePrefab: {fileID: 0}
   projectileSpeed: 10
   fireRate: 2
   evolutionTiers:
   - requiredLevel: 2
-    evolutionSprite: {fileID: 21300000, guid: a378fe7cac7d08c40b82f9e93811f96a, type: 2}
+    evolutionSprite: {fileID: 21300000, guid: ac0fcfb4d2f0c2e45a9d18af85e2af47, type: 2}
     evolutionAnimator: {fileID: 0}
     healthMultiplier: 2
     speedMultiplier: 2
     damageMultiplier: 2
-    unlockedAbility: 1
+    unlockedAbility: 2
   - requiredLevel: 3
-    evolutionSprite: {fileID: 21300000, guid: 3e5783976fd492b4eb16da0a0a16f641, type: 2}
+    evolutionSprite: {fileID: 21300000, guid: 533ce38535232fe4bab6d945871b4ae7, type: 2}
     evolutionAnimator: {fileID: 0}
-    healthMultiplier: 5
+    healthMultiplier: 3
     speedMultiplier: 5
-    damageMultiplier: 5
-    unlockedAbility: 1
-  minionPrefab: {fileID: 0}
+    damageMultiplier: 3
+    unlockedAbility: 2
+  minionPrefab: {fileID: 5768746880067106718, guid: 896ecadbe848a86459b5dbbcc5475d4a, type: 3}

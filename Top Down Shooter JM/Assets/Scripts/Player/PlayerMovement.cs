@@ -12,19 +12,27 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public GameObject projectile;
     [SerializeField] public Transform firePoint;
 
+    [Header("Leveling Settings")]
+    public float speedGrowthFactor = 0.15f; 
+    public float damageGrowthFactor = 0.25f;
+    private float baseSpeed;
+    private float baseProjectileSpeed;
+
     [Header("X-Axis Parallax Boundaries")]
-    [Tooltip("Distance from screen edge where the world starts moving")]
     public float screenMarginX = 2f; 
-    [Tooltip("Maximum distance the world can shift to the RIGHT")]
     public float maxWorldX = 20f; 
-    [Tooltip("Maximum distance the world can shift to the LEFT")]
     public float minWorldX = -20f;
+    public float currentWorldX = 0f;
+    
+    [Header("RailGun Power-Up")]
+    public float railGunAmmo = 0f;
+    private float forcedFireTimer = 0f; // Keeps the laser on for the minimum 0.5s per click
+    public GameObject railGunBeamVisual; // Drag your laser child object here
 
-    // Tracks how far the "treadmill" has rolled horizontally
-    public float currentWorldX = 0f; 
-
+    // Input Actions & APM Tracking
     private InputAction moveAction;
     private InputAction shootAction;
+    private Vector2 lastMoveDirection;
 
     // Events
     public static event Action<Vector3> OnWorldShift;
@@ -35,18 +43,63 @@ public class PlayerMovement : MonoBehaviour
         Instance = this;
         moveAction = InputSystem.actions.FindAction("Move");
         shootAction = InputSystem.actions.FindAction("Shoot");
+
+        baseSpeed = speed;
+        baseProjectileSpeed = projectileSpeed;
     }
 
-    // Update is called once per frame
+    void OnEnable()
+    {
+        GameManager.OnPlayerLevelUp += HandleLevelUp;
+    }
+
+    void OnDisable()
+    {
+        GameManager.OnPlayerLevelUp -= HandleLevelUp;
+    }
+
     void Update()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y);
         transform.up = direction;
 
-        if (shootAction.WasPressedThisFrame())
+        // RAILGUN FIRING LOGIC
+        if (railGunAmmo > 0f)
         {
-            FireProjectile();
+            // Initial click: Instantly deduct 0.5 ammo and force the beam on for 0.5 seconds
+            if (shootAction.WasPressedThisFrame())
+            {
+                railGunAmmo -= 0.5f;
+                forcedFireTimer = 0.5f;
+                if (railGunBeamVisual != null) railGunBeamVisual.SetActive(true);
+                if (GameManager.Instance != null) GameManager.Instance.RegisterAction();
+            }
+            // Continuous holding: Once the initial 0.5s penalty is over, drain smoothly
+            else if (shootAction.IsPressed())
+            {
+                if (forcedFireTimer <= 0f) railGunAmmo -= Time.deltaTime;
+            }
+            // Released: Turn off the beam once the 0.5s penalty finishes
+            else
+            {
+                if (forcedFireTimer <= 0f && railGunBeamVisual != null) railGunBeamVisual.SetActive(false);
+            }
+
+            // Tick down the forced fire timer
+            if (forcedFireTimer > 0f) forcedFireTimer -= Time.deltaTime;
+
+            // Turn off RailGun when completely empty
+            if (railGunAmmo <= 0f && forcedFireTimer <= 0f)
+            {
+                railGunAmmo = 0f;
+                if (railGunBeamVisual != null) railGunBeamVisual.SetActive(false);
+            }
+        }
+        else 
+        {
+            // NORMAL FIRING LOGIC
+            if (shootAction.WasPressedThisFrame()) FireProjectile();
         }
     }
 
@@ -59,12 +112,13 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 moveInput = moveAction.ReadValue<Vector2>();
 
-        if (moveInput.magnitude > 0.01f && AiUpdater.Instance != null)
+        // [DDA] Check if the player is actively changing directions (weaving/dodging)
+        if (moveInput.magnitude > 0.1f && Vector2.Distance(moveInput, lastMoveDirection) > 0.5f)
         {
-            AiUpdater.Instance.PlayerMoving();
+            lastMoveDirection = moveInput;
+            if (GameManager.Instance != null) GameManager.Instance.RegisterAction();
         }
 
-        // Switched to fixedDeltaTime since this runs in FixedUpdate
         Vector3 intendedMove = new Vector3(moveInput.x, moveInput.y, 0) * speed * Time.fixedDeltaTime;
         Vector3 newPlayerPos = transform.position + intendedMove;
         Vector3 worldShiftAmount = Vector3.zero;
@@ -73,13 +127,10 @@ public class PlayerMovement : MonoBehaviour
         float camHeight = cam.orthographicSize;
         float camWidth = camHeight * cam.aspect;
 
-        // ==========================================
         // X-AXIS: TREADMILL WITH FALL-AWAY MARGIN
-        // ==========================================
         float rightMargin = cam.transform.position.x + camWidth - screenMarginX;
         float leftMargin = cam.transform.position.x - camWidth + screenMarginX;
 
-        // Moving Right
         if (newPlayerPos.x > rightMargin)
         {
             float push = newPlayerPos.x - rightMargin;
@@ -93,7 +144,6 @@ public class PlayerMovement : MonoBehaviour
                 newPlayerPos.x = rightMargin + (push - actualShift); 
             }
         }
-        // Moving Left
         else if (newPlayerPos.x < leftMargin)
         {
             float push = newPlayerPos.x - leftMargin; 
@@ -108,19 +158,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        // ==========================================
         // Y-AXIS & HARD CLAMPS
-        // ==========================================
         float edgePadding = 0.5f; 
         newPlayerPos.x = Mathf.Clamp(newPlayerPos.x, cam.transform.position.x - camWidth + edgePadding, cam.transform.position.x + camWidth - edgePadding);
         newPlayerPos.y = Mathf.Clamp(newPlayerPos.y, cam.transform.position.y - camHeight + edgePadding, cam.transform.position.y + camHeight - edgePadding);
 
-        // Assign the calculated position (replaces standard Translate logic)
         transform.position = newPlayerPos;
 
-        // ==========================================
-        // SHIFT THE WORLD
-        // ==========================================
         if (worldShiftAmount != Vector3.zero)
         {
             OnWorldShift?.Invoke(-worldShiftAmount);
@@ -129,18 +173,31 @@ public class PlayerMovement : MonoBehaviour
 
     void FireProjectile()
     {
-        Debug.Log("firing");
+        if (GameManager.Instance != null) GameManager.Instance.RegisterAction();
+
         GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-
         Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
-
         bulletRB.AddForce(firePoint.up * projectileSpeed, ForceMode2D.Impulse);
-
-        if (AiUpdater.Instance != null)
-        {
-            AiUpdater.Instance.Fire();
-        }
         
         onFireProjectile?.Invoke();
+    }
+
+    void HandleLevelUp(int newLevel)
+    {
+        float speedMultiplier = 1f + (speedGrowthFactor * Mathf.Log(newLevel));
+        speed = baseSpeed * speedMultiplier;
+        projectileSpeed = baseProjectileSpeed * speedMultiplier;
+    }
+    
+    public void ActivateRailGun()
+    {
+        railGunAmmo = 2f; // Gives exactly 2 seconds of total fire time
+        Debug.Log("RAILGUN ARMED!");
+    }
+
+    public float GetDamageMultiplier()
+    {
+        if (GameManager.Instance == null) return 1f;
+        return 1f + (damageGrowthFactor * Mathf.Log(GameManager.Instance.playerLevel));
     }
 }

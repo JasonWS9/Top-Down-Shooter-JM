@@ -1,101 +1,172 @@
 using UnityEngine;
-using System; // Required for the Action event
+using System;
 
 public class PlayerManager : MonoBehaviour, IDamageable
 {
-
     public static PlayerManager Instance;
 
+    [Header("Health Stats")]
     public int maxHealth;
     public int currentHealth;
+    private int baseMaxHealth; 
 
-    // The event the UI is listening for
+    [Header("Leveling Settings")]
+    public float healthGrowthFactor = 0.2f; 
+
+    [Header("Invincibility Frames (I-Frames)")]
+    public float invincibilityDuration = 1f;
+    private bool isInvincible = false;
+    private float invincibilityTimer = 0f;
+    
+    [Header("Power-Ups")]
+    public bool hasShield = false;
+    public bool isGodMode = false;
+    private float godModeTimer = 0f;
+
+    public GameObject normalShieldVisual;
+    public GameObject godModeShieldVisual;
+    
+    // We use this to make the player flash when hit
+    private SpriteRenderer spriteRenderer; 
+
     public static event Action<int, int> OnHealthUpdated;
-    public static event Action OnPlayerDeath;
+    public static event Action OnPlayerDeath; 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         Instance = this;
+        baseMaxHealth = maxHealth;
         currentHealth = maxHealth;
+        
+        // Grab the sprite renderer (whether it's on this object or a child object)
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>(); 
+    }
+
+    void OnEnable()
+    {
+        GameManager.OnPlayerLevelUp += HandleLevelUp;
+    }
+
+    void OnDisable()
+    {
+        GameManager.OnPlayerLevelUp -= HandleLevelUp;
     }
 
     void Start()
     {
-        // Broadcast the starting health to the UI the moment the game loads
         OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
-    // Update is called once per frame
     void Update()
     {
         TrackRegion();
+        HandleInvincibility();
 
-        if (currentHealth <= 0)
+        // Tick down God Mode
+        if (isGodMode)
         {
-            PlayerDeath();
+            godModeTimer -= Time.deltaTime;
+            if (godModeTimer <= 0f)
+            {
+                isGodMode = false;
+                if (godModeShieldVisual != null) godModeShieldVisual.SetActive(false);
+            }
+        }
+
+        if (currentHealth <= 0) PlayerDeath();
+    }
+
+    void HandleInvincibility()
+    {
+        if (isInvincible)
+        {
+            invincibilityTimer -= Time.deltaTime;
+
+            // Flash the sprite to show invincibility
+            if (spriteRenderer != null)
+            {
+                // Toggles the sprite completely invisible/visible rapidly
+                spriteRenderer.enabled = Mathf.PingPong(Time.time * 15f, 1f) > 0.5f;
+            }
+
+            // Once the timer hits 0, turn off invincibility and ensure the sprite is visible
+            if (invincibilityTimer <= 0f)
+            {
+                isInvincible = false;
+                if (spriteRenderer != null) spriteRenderer.enabled = true;
+            }
         }
     }
 
     public void TakeDamage(int damage, bool fromPlayer = false)
     {
-        // Prevent taking more damage if already dead
-        if (currentHealth <= 0) return; 
+        if (currentHealth <= 0 || isInvincible || isGodMode) return; 
+
+        // If it's a negative number (healing from a health pack), ignore shields and just heal
+        if (damage < 0)
+        {
+            currentHealth -= damage; // Subtracting a negative = adding
+            if (currentHealth > maxHealth) currentHealth = maxHealth;
+            OnHealthUpdated?.Invoke(currentHealth, maxHealth);
+            return;
+        }
+
+        // Standard damage processing
+        if (hasShield)
+        {
+            hasShield = false;
+            if (normalShieldVisual != null) normalShieldVisual.SetActive(false);
+            
+            // Give them brief I-Frames after shield breaks so they don't get double-hit instantly
+            isInvincible = true;
+            invincibilityTimer = invincibilityDuration;
+            return; 
+        }
 
         currentHealth -= damage;
+        OnHealthUpdated?.Invoke(currentHealth, maxHealth);
+
+        isInvincible = true;
+        invincibilityTimer = invincibilityDuration;
+    }
+
+    void HandleLevelUp(int newLevel)
+    {
+        float multiplier = 1f + (healthGrowthFactor * Mathf.Log(newLevel));
+        maxHealth = Mathf.RoundToInt(baseMaxHealth * multiplier);
+        
+        currentHealth += Mathf.RoundToInt(baseMaxHealth * 0.2f);
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+
         OnHealthUpdated?.Invoke(currentHealth, maxHealth);
     }
 
     void TrackRegion()
     {
-        // Checks the player's position in the viewport (0 to 1)
         Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
-
-        // Finds the player's distance from the center (0 to 0.5)
         float distanceFromCenterX = Mathf.Abs(viewportPos.x - 0.5f);
         float distanceFromCenterY = Mathf.Abs(viewportPos.y - 0.5f);
+        float distanceThreshold = 0.2f; 
 
-        // Threshold for the player to be considered outside the middle (inner 10% of screen per 0.05)
-        float distanceThreshold = 0.2f; //0.2f is the inner 40% of the screen
-
-        if (distanceFromCenterX < distanceThreshold && distanceFromCenterY < distanceThreshold)
-        {
-            Debug.Log("player is near the middle");
-            return;
-        }
-
-        // If the player isn't in the center checks which region they are in
-        if (viewportPos.x > 0.5)
-        {
-            if (viewportPos.y > 0.5)
-            {
-                Debug.Log("player is in top right");
-            }
-            else
-            {
-                Debug.Log("player is in bottom right");
-            }
-        }
-        else
-        {
-            if (viewportPos.y > 0.5)
-            {
-                Debug.Log("player is in top left");
-            }
-            else
-            {
-                Debug.Log("player is in bottom left");
-            }
-        }
+        if (distanceFromCenterX < distanceThreshold && distanceFromCenterY < distanceThreshold) return;
     }
+    
+    public void ActivateShield()
+    {
+        hasShield = true;
+        if (normalShieldVisual != null) normalShieldVisual.SetActive(true);
+    }
+
+    public void ActivateGodMode(float duration)
+    {
+        isGodMode = true;
+        godModeTimer = duration;
+        if (godModeShieldVisual != null) godModeShieldVisual.SetActive(true);
+    }
+
     void PlayerDeath()
     {
-        Debug.Log("Dead");
-        
-        // Announce the death to the LevelManager
         OnPlayerDeath?.Invoke(); 
-        
-        // Turn off the sprite so Player disappears
         gameObject.SetActive(false); 
     }
 }

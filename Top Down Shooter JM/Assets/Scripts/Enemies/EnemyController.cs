@@ -1,7 +1,10 @@
 using UnityEngine;
+using System;
 
 public class EnemyController : MonoBehaviour, IDamageable
 {
+    public static event Action<EnemyFaction, int> OnEnemyKilled;
+
     [Header("Assigned Data")]
     public EnemyData myData;
     public int currentLevel = 1;
@@ -12,26 +15,30 @@ public class EnemyController : MonoBehaviour, IDamageable
     public float currentSpeed;
     public float currentDamage;
     public SpecialAbility currentAbility = SpecialAbility.None;
+    
+    private bool hasFiredLowHealthCannon = false;
+    private Color factionColor; // NEW: Store their original color so we can reset it after they flash!
 
     [Header("Spawn Settings")]
     public float spawnDelay = 1f;
     private bool isSpawning = true;
     public Animator enemyAnimator;
-    
-    [Header("Effects")]
-    public GameObject explosionPrefab;
-    
-    public static event System.Action<EnemyFaction, int> OnEnemyKilled;
-    public int enemyLevel = 1; // Tie this to your ScriptableObject later!
 
     private SpriteRenderer spriteRenderer;
     private Transform playerTarget;
-    
-    // Timer to control how often the enemy attacks
     private float fireTimer;
-    private bool hasFiredLowHealthCannon = false;
 
-    // 1. Subscribe to the treadmill event so enemies shift with the world!
+    [Header("Movement States")]
+    private Vector2 wanderDirection;
+    private float wanderTimer;
+    private bool isAggroed = false; 
+    private bool isDashing = false; 
+    
+    // --- NEW: Rammer Wind-Up Variables ---
+    private bool isWindingUp = false;
+    private float windUpTimer = 0f;
+    private Vector2 dashDirection;
+
     void OnEnable()
     {
         PlayerMovement.OnWorldShift += ShiftWithWorld;
@@ -44,7 +51,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     void ShiftWithWorld(Vector3 shiftAmount)
     {
-        // When the player pushes the world left, push the enemy left too
         transform.position += shiftAmount;
     }
 
@@ -57,6 +63,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (PlayerManager.Instance != null)
         {
             playerTarget = PlayerManager.Instance.transform;
+            transform.up = (playerTarget.position - transform.position).normalized;
         }
 
         if (enemyAnimator != null)
@@ -67,11 +74,9 @@ public class EnemyController : MonoBehaviour, IDamageable
         ApplyDataAndFactionModifiers();
         ApplyEvolutionModifiers();
         
-        // Initialize the fire timer so they don't shoot the exact frame they wake up
+        maxHealth = currentHealth; 
         fireTimer = myData.fireRate;
-        maxHealth = currentHealth;
-        
-        Debug.Log($"[{gameObject.name}] Initialized! Faction: {myData.faction}, Type: {myData.enemyType}. Waiting {spawnDelay}s to spawn.");
+        wanderTimer = 0f; 
     }
 
     void ApplyDataAndFactionModifiers()
@@ -94,65 +99,38 @@ public class EnemyController : MonoBehaviour, IDamageable
                 if (spriteRenderer != null) spriteRenderer.color = new Color(1f, 0.5f, 0f); 
                 break;
         }
+        
+        // Save the color so we know what to revert to after flashing
+        if (spriteRenderer != null) factionColor = spriteRenderer.color; 
     }
-    
+
     void ApplyEvolutionModifiers()
     {
         if (myData.evolutionTiers == null || myData.evolutionTiers.Count == 0) return;
 
-        Sprite newSprite = null; 
-        RuntimeAnimatorController newAnimator = null; // Track the new animator
-        
-        // Track the highest multipliers to avoid them stacking infinitely
-        float finalHealthMult = 1f;
-        float finalSpeedMult = 1f;
-        float finalDamageMult = 1f;
-
         foreach (EvolutionTier tier in myData.evolutionTiers)
         {
-            // If the enemy's spawn level is high enough to unlock this tier
             if (currentLevel >= tier.requiredLevel)
             {
-                // Overwrite the multipliers with the highest unlocked tier
-                finalHealthMult = tier.healthMultiplier;
-                finalSpeedMult = tier.speedMultiplier;
-                finalDamageMult = tier.damageMultiplier;
+                currentHealth *= tier.healthMultiplier;
+                currentSpeed *= tier.speedMultiplier;
+                currentDamage *= tier.damageMultiplier;
                 
-                // Overwrite the ability with the highest unlocked tier
                 if (tier.unlockedAbility != SpecialAbility.None)
                 {
                     currentAbility = tier.unlockedAbility;
                 }
 
-                // If a sprite is assigned in the inspector for this tier, remember it
-                if (tier.evolutionSprite != null)
+                if (tier.evolutionSprite != null && spriteRenderer != null)
                 {
-                    newSprite = tier.evolutionSprite;
+                    spriteRenderer.sprite = tier.evolutionSprite;
                 }
-
-                // If an animator is assigned in the inspector for this tier, remember it
-                if (tier.evolutionAnimator != null)
+                
+                if (tier.evolutionAnimator != null && enemyAnimator != null)
                 {
-                    newAnimator = tier.evolutionAnimator;
+                    enemyAnimator.runtimeAnimatorController = tier.evolutionAnimator;
                 }
             }
-        }
-
-        // Apply the math ONCE using the final highest multipliers
-        currentHealth *= finalHealthMult;
-        currentSpeed *= finalSpeedMult;
-        currentDamage *= finalDamageMult;
-
-        // Apply the highest unlocked sprite
-        if (newSprite != null && spriteRenderer != null)
-        {
-            spriteRenderer.sprite = newSprite;
-        }
-
-        // Swap the Animator Controller if a new one was unlocked
-        if (newAnimator != null && enemyAnimator != null)
-        {
-            enemyAnimator.runtimeAnimatorController = newAnimator;
         }
     }
 
@@ -161,23 +139,41 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (isSpawning)
         {
             spawnDelay -= Time.deltaTime;
-            
-            if (spawnDelay <= 0f)
-            {
-                isSpawning = false;
-                Debug.Log($"[{gameObject.name}] Finished spawning! Waking up and hunting player.");
-            }
+            if (spawnDelay <= 0f) isSpawning = false;
             return; 
         }
 
         if (playerTarget == null || myData == null) return;
 
+        if (fireTimer > 0f) fireTimer -= Time.deltaTime;
+
         float distanceToPlayer = Vector2.Distance(transform.position, playerTarget.position);
 
-        // State Machine Logic
-        if (distanceToPlayer > myData.attackRange)
+        switch (myData.enemyType)
         {
-            MoveTowardsPlayer();
+            case EnemyType.SingleShot:
+                HandleSingleShot(distanceToPlayer);
+                break;
+            case EnemyType.BurstShot:
+                HandleBurstShot(distanceToPlayer);
+                break;
+            case EnemyType.Rammer:
+                HandleRammer(distanceToPlayer);
+                break;
+        }
+    }
+
+    // ==========================================
+    // UNIQUE ENEMY BEHAVIORS
+    // ==========================================
+
+    void HandleSingleShot(float distance)
+    {
+        transform.up = (playerTarget.position - transform.position).normalized;
+
+        if (distance > myData.attackRange)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, currentSpeed * Time.deltaTime);
         }
         else
         {
@@ -185,75 +181,208 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    void MoveTowardsPlayer()
+    void HandleBurstShot(float distance)
     {
-        transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, currentSpeed * Time.deltaTime);
-        
-        // Aim at player
-        Vector2 direction = (playerTarget.position - transform.position).normalized;
-        transform.up = direction;
+        float aggroRadius = myData.attackRange * 1.5f;
+
+        if (distance <= aggroRadius) isAggroed = true; 
+        else if (distance > aggroRadius * 1.5f) isAggroed = false; 
+
+        if (isAggroed)
+        {
+            transform.up = (playerTarget.position - transform.position).normalized;
+
+            if (distance > myData.attackRange)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, playerTarget.position, currentSpeed * Time.deltaTime);
+            }
+            else
+            {
+                AttackBehavior();
+            }
+        }
+        else
+        {
+            WanderTowardsCenter(straightLine: true);
+        }
+    }
+
+    void HandleRammer(float distance)
+    {
+        if (isDashing)
+        {
+            // State 3: Launch!
+            transform.position += (Vector3)(dashDirection * currentSpeed * 3.5f * Time.deltaTime);
+
+            Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
+            
+            if (viewportPos.x <= -0.1f || viewportPos.x >= 1.1f || viewportPos.y <= -0.1f || viewportPos.y >= 1.1f)
+            {
+                isDashing = false;
+                wanderTimer = 0f; 
+            }
+        }
+        else if (isWindingUp)
+        {
+            // State 2: Wind-up / Telegraphing!
+            windUpTimer -= Time.deltaTime;
+            
+            // Rapidly flash white to warn the player!
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = Color.Lerp(factionColor, Color.white, Mathf.PingPong(Time.time * 20f, 1f));
+            }
+
+            // Once the timer hits 0, execute the dash
+            if (windUpTimer <= 0f)
+            {
+                isWindingUp = false;
+                isDashing = true;
+                
+                // Reset their color back to normal
+                if (spriteRenderer != null) spriteRenderer.color = factionColor;
+            }
+        }
+        else
+        {
+            // State 1: Hunting
+            if (distance <= myData.attackRange) 
+            {
+                AttackBehavior(); 
+            }
+            else
+            {
+                WanderTowardsCenter(straightLine: false);
+            }
+        }
+    }
+
+    // ==========================================
+    // WANDERING & ATTACKING
+    // ==========================================
+
+    void WanderTowardsCenter(bool straightLine)
+    {
+        wanderTimer -= Time.deltaTime;
+
+        if (wanderTimer <= 0f)
+        {
+            wanderTimer = UnityEngine.Random.Range(2f, 4f);
+            wanderDirection = GetBiasedWanderDirection();
+        }
+
+        if (straightLine)
+        {
+            transform.position += (Vector3)(wanderDirection * currentSpeed * 0.6f * Time.deltaTime);
+            transform.up = wanderDirection;
+        }
+        else
+        {
+            Vector3 forwardMove = wanderDirection * currentSpeed * 0.8f * Time.deltaTime;
+            Vector2 perpDir = new Vector2(-wanderDirection.y, wanderDirection.x);
+            float sinOffset = Mathf.Sin(Time.time * 6f) * 2.5f; 
+            Vector3 snakeMove = perpDir * sinOffset * Time.deltaTime;
+
+            transform.position += forwardMove + snakeMove;
+            transform.up = wanderDirection; 
+        }
+    }
+
+    Vector2 GetBiasedWanderDirection()
+    {
+        Vector3 vp = Camera.main.WorldToViewportPoint(transform.position);
+        Vector2 randomDir = UnityEngine.Random.insideUnitCircle.normalized;
+
+        if (vp.x > 0.2f && vp.x < 0.8f && vp.y > 0.2f && vp.y < 0.8f)
+        {
+            return randomDir;
+        }
+        else
+        {
+            Vector2 toCenter = ((Vector2)Camera.main.transform.position - (Vector2)transform.position).normalized;
+            return (randomDir + toCenter * 2f).normalized; 
+        }
     }
 
     void AttackBehavior()
     {
-        // 1. Keep aiming at the player even while standing still to shoot
-        Vector2 direction = (playerTarget.position - transform.position).normalized;
-        transform.up = direction;
-
-        // 2. Tick down the attack timer
-        fireTimer -= Time.deltaTime;
-
         if (fireTimer <= 0f)
         {
-            Debug.Log($"[{gameObject.name}] is attacking! (Type: {myData.enemyType})");
-            
-            // 3. Execute the actual attack based on type
             switch (myData.enemyType)
             {
                 case EnemyType.SingleShot:
                     FireProjectile(1, 0f);
                     break;
                 case EnemyType.BurstShot:
-                    FireProjectile(3, 15f); // 3 bullets with a 15-degree spread
+                    FireProjectile(3, 15f); 
                     break;
                 case EnemyType.Rammer:
-                    Debug.Log($"[{gameObject.name}] triggered Ram Attack! Dealing {currentDamage} damage.");
-                    // Deal damage directly if close enough, or lunge forward
-                    if (Vector2.Distance(transform.position, playerTarget.position) <= 2f)
-                    {
-                        PlayerManager.Instance.TakeDamage(Mathf.RoundToInt(currentDamage));
-                    }
+                    // --- NEW: Trigger the Wind-Up instead of dashing instantly! ---
+                    isWindingUp = true;
+                    windUpTimer = 0.5f; // Wait half a second before striking
+                    
+                    // Lock onto the player's CURRENT position
+                    dashDirection = (playerTarget.position - transform.position).normalized;
+                    transform.up = dashDirection; 
                     break;
             }
-            
-            // 4. Reset the timer
             fireTimer = myData.fireRate;
         }
     }
 
     void FireProjectile(int amountOfBullets, float spreadAngle)
     {
-        if (myData.projectilePrefab == null)
-        {
-            Debug.LogWarning($"[{gameObject.name}] tried to shoot but has no projectilePrefab assigned in its EnemyData!");
-            return;
-        }
+        if (myData.projectilePrefab == null) return;
 
-        // Calculate the starting angle if we are firing a spread
         float startingAngle = (amountOfBullets > 1) ? -spreadAngle * (amountOfBullets - 1) / 2f : 0f;
 
         for (int i = 0; i < amountOfBullets; i++)
         {
-            // Rotate the bullet according to its place in the spread
             Quaternion rotation = transform.rotation * Quaternion.Euler(0, 0, startingAngle + (spreadAngle * i));
-            
             GameObject bullet = Instantiate(myData.projectilePrefab, transform.position, rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             
-            if (rb != null)
+            if (rb != null) rb.AddForce(bullet.transform.up * myData.projectileSpeed, ForceMode2D.Impulse);
+        }
+    }
+
+    // ==========================================
+    // COLLISIONS & DAMAGE
+    // ==========================================
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (isSpawning) return;
+
+        PlayerManager player = collision.gameObject.GetComponent<PlayerManager>();
+        if (player != null)
+        {
+            // GOD MODE CHECK
+            if (player.isGodMode)
             {
-                rb.AddForce(bullet.transform.up * myData.projectileSpeed, ForceMode2D.Impulse);
+                TakeDamage(99999, true); // Instant Death
+                return;
             }
+
+            player.TakeDamage(Mathf.RoundToInt(currentDamage));
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (isSpawning) return;
+
+        PlayerManager player = collision.gameObject.GetComponent<PlayerManager>();
+        if (player != null)
+        {
+            // GOD MODE CHECK
+            if (player.isGodMode)
+            {
+                TakeDamage(99999, true); // Instant Death
+                return;
+            }
+
+            player.TakeDamage(Mathf.RoundToInt(currentDamage));
         }
     }
 
@@ -263,37 +392,34 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         currentHealth -= damage;
         
-        // SPECIAL ABILITY: Cannon at Low Health (70%)
         if (currentAbility == SpecialAbility.CannonAtLowHealth && !hasFiredLowHealthCannon)
         {
             if (currentHealth <= maxHealth * 0.7f)
             {
-                Debug.Log($"[{gameObject.name}] triggers CANNON SHOT!");
                 hasFiredLowHealthCannon = true;
-                // You can reuse your spread shot logic, but beef it up!
                 FireProjectile(5, 10f); 
             }
         }
 
         if (currentHealth <= 0)
         {
-            // SPECIAL ABILITY: Spawn Minions on Death
-            if (currentAbility == SpecialAbility.SpawnMinionsOnDeath && myData.minionPrefab != null)
+            if (currentAbility == SpecialAbility.SpawnMinionsOnDeath && EnemySpawner.Instance != null)
             {
-                Debug.Log($"[{gameObject.name}] spawns minions on death!");
-                Instantiate(myData.minionPrefab, transform.position + new Vector3(1, 1, 0), Quaternion.identity);
-                Instantiate(myData.minionPrefab, transform.position + new Vector3(-1, -1, 0), Quaternion.identity);
-            }
-            
-            if (explosionPrefab != null)
-            {
-                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+                EnemySpawner.Instance.SpawnSpecificEnemyAtLocation(myData, 1, transform.position + new Vector3(1, 1, 0));
+                EnemySpawner.Instance.SpawnSpecificEnemyAtLocation(myData, 1, transform.position + new Vector3(-1, -1, 0));
             }
 
             if (fromPlayer) 
             {
-                // Send the exact level to the GameManager so it can multiply the score!
                 OnEnemyKilled?.Invoke(myData.faction, currentLevel);
+                
+                // --- NEW: Try to drop a power-up before dying! ---
+                // We only drop loot if the PLAYER killed them, to prevent exploiting minions!
+                PowerUpDropper dropper = GetComponent<PowerUpDropper>();
+                if (dropper != null)
+                {
+                    dropper.TryDrop(currentLevel); // Pass their current level into the math!
+                }
             }
             Destroy(gameObject);
         }
