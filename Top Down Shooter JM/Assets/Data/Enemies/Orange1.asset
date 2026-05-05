@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: Sniper
   enemyType: 0
   faction: 1
-  basePrefab: {fileID: 5768746880067106718, guid: 5bd1f31b89847114f86b25cee839f0b6, type: 3}
+  basePrefab: {fileID: 4680238906087695542, guid: b9d0aaa0c3ef61f4f964a1bd3146bca5, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 17

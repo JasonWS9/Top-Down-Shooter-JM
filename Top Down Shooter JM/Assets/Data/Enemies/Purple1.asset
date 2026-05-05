@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: PurpleShoty
   enemyType: 1
   faction: 0
-  basePrefab: {fileID: 5768746880067106718, guid: ca636ece2aa0e1a4bb60c07a75293d71, type: 3}
+  basePrefab: {fileID: 99289814253550485, guid: a130927ec1d8d3b4c879cd3ca0f1fb48, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 7

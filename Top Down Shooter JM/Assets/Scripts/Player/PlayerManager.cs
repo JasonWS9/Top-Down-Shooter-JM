@@ -128,6 +128,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
         isInvincible = true;
         invincibilityTimer = invincibilityDuration;
+        
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.playerTakeDamageSound);
     }
 
     void HandleLevelUp(int newLevel)
@@ -139,6 +141,8 @@ public class PlayerManager : MonoBehaviour, IDamageable
         if (currentHealth > maxHealth) currentHealth = maxHealth;
 
         OnHealthUpdated?.Invoke(currentHealth, maxHealth);
+        
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.levelUpSound);
     }
 
     void TrackRegion()

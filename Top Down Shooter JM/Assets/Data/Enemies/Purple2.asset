@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: PurpleSniper
   enemyType: 0
   faction: 0
-  basePrefab: {fileID: 5768746880067106718, guid: 0eaf3cae8e0850d48938755464c73f4f, type: 3}
+  basePrefab: {fileID: 2044879730761950557, guid: f72b9fd1bbf558a4c8c6f162979c441d, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 17

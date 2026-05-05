@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: Orange_Rammer
   enemyType: 2
   faction: 1
-  basePrefab: {fileID: 5768746880067106718, guid: 896ecadbe848a86459b5dbbcc5475d4a, type: 3}
+  basePrefab: {fileID: 1487567294438166982, guid: 6e4eb00446b8b0847be20fba61d073cf, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 12

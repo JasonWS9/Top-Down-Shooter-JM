@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: PurpleRammy
   enemyType: 2
   faction: 0
-  basePrefab: {fileID: 5768746880067106718, guid: 2dbdfbac8eb5e524e861f16ac5dc2281, type: 3}
+  basePrefab: {fileID: 6834207703548399375, guid: 6e9794a52899d7043a514298e78398c1, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 12

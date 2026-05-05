@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: Shoty
   enemyType: 1
   faction: 1
-  basePrefab: {fileID: 5768746880067106718, guid: 51a6e794b5102f74f91f28472691e996, type: 3}
+  basePrefab: {fileID: 4347910996270413848, guid: 31cd14e175366624a943809abb236cdb, type: 3}
   baseHealth: 50
   baseSpeed: 3
   attackDamage: 7

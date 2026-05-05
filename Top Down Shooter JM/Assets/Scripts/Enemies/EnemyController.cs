@@ -17,12 +17,18 @@ public class EnemyController : MonoBehaviour, IDamageable
     public SpecialAbility currentAbility = SpecialAbility.None;
     
     private bool hasFiredLowHealthCannon = false;
-    private Color factionColor; // NEW: Store their original color so we can reset it after they flash!
+    private Color factionColor; 
 
-    [Header("Spawn Settings")]
+    [Header("Spawn Settings & Visuals")]
     public float spawnDelay = 1f;
     private bool isSpawning = true;
     public Animator enemyAnimator;
+    
+    // --- NEW: Visual Wrappers ---
+    [Tooltip("Drag your Art_Visual child object here")]
+    public GameObject artVisual; 
+    [Tooltip("Drag your animated Spawn Portal child object here")]
+    public GameObject spawnIndicator; 
 
     private SpriteRenderer spriteRenderer;
     private Transform playerTarget;
@@ -34,7 +40,6 @@ public class EnemyController : MonoBehaviour, IDamageable
     private bool isAggroed = false; 
     private bool isDashing = false; 
     
-    // --- NEW: Rammer Wind-Up Variables ---
     private bool isWindingUp = false;
     private float windUpTimer = 0f;
     private Vector2 dashDirection;
@@ -58,17 +63,22 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         myData = data;
         currentLevel = spawnLevel;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        // Because the SpriteRenderer is now on the child object, we need to grab it from there
+        if (artVisual != null) spriteRenderer = artVisual.GetComponent<SpriteRenderer>();
+        
+        // --- NEW: Spawn Portal Logic ---
+        // Turn OFF the actual ship art, and turn ON the swirling portal
+        if (artVisual != null) artVisual.SetActive(false);
+        if (spawnIndicator != null) spawnIndicator.SetActive(true);
+
+        // --- AUDIO: Play Spawn Warning Sound ---
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemySpawnSound, 0.7f);
         
         if (PlayerManager.Instance != null)
         {
             playerTarget = PlayerManager.Instance.transform;
             transform.up = (playerTarget.position - transform.position).normalized;
-        }
-
-        if (enemyAnimator != null)
-        {
-            enemyAnimator.SetTrigger("PlayPortal");
         }
 
         ApplyDataAndFactionModifiers();
@@ -100,7 +110,6 @@ public class EnemyController : MonoBehaviour, IDamageable
                 break;
         }
         
-        // Save the color so we know what to revert to after flashing
         if (spriteRenderer != null) factionColor = spriteRenderer.color; 
     }
 
@@ -139,7 +148,16 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (isSpawning)
         {
             spawnDelay -= Time.deltaTime;
-            if (spawnDelay <= 0f) isSpawning = false;
+            
+            // --- NEW: Portal Swap! ---
+            if (spawnDelay <= 0f) 
+            {
+                isSpawning = false;
+                
+                // Turn OFF the portal, turn ON the ship!
+                if (spawnIndicator != null) spawnIndicator.SetActive(false);
+                if (artVisual != null) artVisual.SetActive(true);
+            }
             return; 
         }
 
@@ -211,11 +229,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (isDashing)
         {
-            // State 3: Launch!
             transform.position += (Vector3)(dashDirection * currentSpeed * 3.5f * Time.deltaTime);
 
             Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
-            
             if (viewportPos.x <= -0.1f || viewportPos.x >= 1.1f || viewportPos.y <= -0.1f || viewportPos.y >= 1.1f)
             {
                 isDashing = false;
@@ -224,42 +240,26 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
         else if (isWindingUp)
         {
-            // State 2: Wind-up / Telegraphing!
             windUpTimer -= Time.deltaTime;
             
-            // Rapidly flash white to warn the player!
             if (spriteRenderer != null)
             {
                 spriteRenderer.color = Color.Lerp(factionColor, Color.white, Mathf.PingPong(Time.time * 20f, 1f));
             }
 
-            // Once the timer hits 0, execute the dash
             if (windUpTimer <= 0f)
             {
                 isWindingUp = false;
                 isDashing = true;
-                
-                // Reset their color back to normal
                 if (spriteRenderer != null) spriteRenderer.color = factionColor;
             }
         }
         else
         {
-            // State 1: Hunting
-            if (distance <= myData.attackRange) 
-            {
-                AttackBehavior(); 
-            }
-            else
-            {
-                WanderTowardsCenter(straightLine: false);
-            }
+            if (distance <= myData.attackRange) AttackBehavior(); 
+            else WanderTowardsCenter(straightLine: false);
         }
     }
-
-    // ==========================================
-    // WANDERING & ATTACKING
-    // ==========================================
 
     void WanderTowardsCenter(bool straightLine)
     {
@@ -293,10 +293,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         Vector3 vp = Camera.main.WorldToViewportPoint(transform.position);
         Vector2 randomDir = UnityEngine.Random.insideUnitCircle.normalized;
 
-        if (vp.x > 0.2f && vp.x < 0.8f && vp.y > 0.2f && vp.y < 0.8f)
-        {
-            return randomDir;
-        }
+        if (vp.x > 0.2f && vp.x < 0.8f && vp.y > 0.2f && vp.y < 0.8f) return randomDir;
         else
         {
             Vector2 toCenter = ((Vector2)Camera.main.transform.position - (Vector2)transform.position).normalized;
@@ -311,17 +308,20 @@ public class EnemyController : MonoBehaviour, IDamageable
             switch (myData.enemyType)
             {
                 case EnemyType.SingleShot:
+                    // --- AUDIO: Single Shot ---
+                    if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.singleShotSound);
                     FireProjectile(1, 0f);
                     break;
                 case EnemyType.BurstShot:
+                    // --- AUDIO: Burst Shot ---
+                    if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.burstShotSound);
                     FireProjectile(3, 15f); 
                     break;
                 case EnemyType.Rammer:
-                    // --- NEW: Trigger the Wind-Up instead of dashing instantly! ---
+                    // --- AUDIO: Rammer Dash ---
+                    if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.rammerDashSound);
                     isWindingUp = true;
-                    windUpTimer = 0.5f; // Wait half a second before striking
-                    
-                    // Lock onto the player's CURRENT position
+                    windUpTimer = 0.5f; 
                     dashDirection = (playerTarget.position - transform.position).normalized;
                     transform.up = dashDirection; 
                     break;
@@ -357,10 +357,9 @@ public class EnemyController : MonoBehaviour, IDamageable
         PlayerManager player = collision.gameObject.GetComponent<PlayerManager>();
         if (player != null)
         {
-            // GOD MODE CHECK
             if (player.isGodMode)
             {
-                TakeDamage(99999, true); // Instant Death
+                TakeDamage(99999, true); 
                 return;
             }
 
@@ -375,10 +374,9 @@ public class EnemyController : MonoBehaviour, IDamageable
         PlayerManager player = collision.gameObject.GetComponent<PlayerManager>();
         if (player != null)
         {
-            // GOD MODE CHECK
             if (player.isGodMode)
             {
-                TakeDamage(99999, true); // Instant Death
+                TakeDamage(99999, true); 
                 return;
             }
 
@@ -392,6 +390,9 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         currentHealth -= damage;
         
+        // --- AUDIO: Enemy Hit ---
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyHitSound, 0.5f);
+        
         if (currentAbility == SpecialAbility.CannonAtLowHealth && !hasFiredLowHealthCannon)
         {
             if (currentHealth <= maxHealth * 0.7f)
@@ -403,6 +404,9 @@ public class EnemyController : MonoBehaviour, IDamageable
 
         if (currentHealth <= 0)
         {
+            // --- AUDIO: Enemy Death ---
+            if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyDeathExplosionSound);
+            
             if (currentAbility == SpecialAbility.SpawnMinionsOnDeath && EnemySpawner.Instance != null)
             {
                 EnemySpawner.Instance.SpawnSpecificEnemyAtLocation(myData, 1, transform.position + new Vector3(1, 1, 0));
@@ -413,12 +417,10 @@ public class EnemyController : MonoBehaviour, IDamageable
             {
                 OnEnemyKilled?.Invoke(myData.faction, currentLevel);
                 
-                // --- NEW: Try to drop a power-up before dying! ---
-                // We only drop loot if the PLAYER killed them, to prevent exploiting minions!
                 PowerUpDropper dropper = GetComponent<PowerUpDropper>();
                 if (dropper != null)
                 {
-                    dropper.TryDrop(currentLevel); // Pass their current level into the math!
+                    dropper.TryDrop(currentLevel); 
                 }
             }
             Destroy(gameObject);
