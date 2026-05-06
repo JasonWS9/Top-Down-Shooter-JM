@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
         healthAtStartOfWindow = PlayerManager.Instance.currentHealth;
         evaluationTimer = evaluationWindow;
     }
