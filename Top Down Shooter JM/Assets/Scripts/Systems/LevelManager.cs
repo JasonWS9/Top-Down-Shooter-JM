@@ -35,8 +35,10 @@ public class LevelManager : MonoBehaviour
         // Trigger whatever UI panels or particle effects you set up in the Inspector
         onGameOver?.Invoke(); 
         
+        UIManager.Instance.ToggleGameOverUI(true);
+
         // Wait a couple of seconds so the player can see their score, then reload
-        Invoke(nameof(ReloadScene), delayBeforeRestart);
+        //Invoke(nameof(ReloadScene), delayBeforeRestart);
     }
 
     // Switched to 'string' so you can easily call this from UI Buttons

@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [Header("UI Elements")]
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gameOverScoreText;
     public TextMeshProUGUI levelText; // NEW: The UI text for the player's level
     public Slider evolutionSlider; // Set Min=0, Max=1, Value=0.5 in Inspector
 
@@ -17,6 +18,9 @@ public class UIManager : MonoBehaviour
     
     private InputAction pauseAction;
     private bool isPaused = false;
+    private bool isGameOver = false;
+
+    public GameObject gameOverUI;
 
     void OnEnable()
     {
@@ -46,7 +50,9 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         pauseUI.SetActive(false);
+        gameOverUI.SetActive(false);
         isPaused = false;
+        ToggleGameOverUI(false);
 
         // Set defaults
         UpdateScoreUI(0);
@@ -56,7 +62,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        if (pauseAction.WasPressedThisFrame())
+        if (pauseAction.WasPressedThisFrame() && !isGameOver)
         {
             if (isPaused)
             {
@@ -82,6 +88,11 @@ public class UIManager : MonoBehaviour
         {
             scoreText.text = $"SCORE: {newScore}";
         }
+
+        if (gameOverScoreText != null)
+        {
+            gameOverScoreText.text = "Score: " + newScore;
+        }
     }
 
     void UpdateEvolutionUI(float normalizedValue)
@@ -103,7 +114,7 @@ public class UIManager : MonoBehaviour
 
     public void PauseGame()
     {
-        //Play pausing sound effect
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.pauseSound);
         isPaused = true;
         pauseUI.SetActive(true);
         Time.timeScale = 0;
@@ -111,9 +122,15 @@ public class UIManager : MonoBehaviour
 
     public void UnpauseGame()
     {
-        //Play unpausing sound effect
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.unPauseSound, 1.4f);
         isPaused = false;
         pauseUI.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void ToggleGameOverUI(bool value)
+    {
+        isGameOver = value;
+        gameOverUI.SetActive(value);
     }
 }

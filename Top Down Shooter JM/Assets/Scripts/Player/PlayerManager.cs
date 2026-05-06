@@ -73,7 +73,11 @@ public class PlayerManager : MonoBehaviour, IDamageable
             }
         }
 
-        if (currentHealth <= 0) PlayerDeath();
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            PlayerDeath(); 
+        } 
     }
 
     void HandleInvincibility()
@@ -129,7 +133,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
         isInvincible = true;
         invincibilityTimer = invincibilityDuration;
         
-        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.playerTakeDamageSound);
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayPitchShiftSFX(AudioManager.Instance.playerTakeDamageSound);
     }
 
     void HandleLevelUp(int newLevel)
@@ -170,6 +174,7 @@ public class PlayerManager : MonoBehaviour, IDamageable
 
     void PlayerDeath()
     {
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.deathSound, 2.5f);
         OnPlayerDeath?.Invoke(); 
         gameObject.SetActive(false); 
     }

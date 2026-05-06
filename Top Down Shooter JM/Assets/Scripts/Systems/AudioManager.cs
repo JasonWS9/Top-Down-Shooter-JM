@@ -15,7 +15,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip playerShootSound;
     public AudioClip playerTakeDamageSound;
     public AudioClip railgunSound;
-
+    public AudioClip deathSound;
+    
     [Header("Enemy SFX")]
     public AudioClip singleShotSound;
     public AudioClip burstShotSound;
@@ -27,6 +28,9 @@ public class AudioManager : MonoBehaviour
     [Header("Misc SFX")]
     public AudioClip powerupPickupSound;
     public AudioClip levelUpSound;
+    public AudioClip pauseSound;
+    public AudioClip unPauseSound;
+
 
     void Awake()
     {

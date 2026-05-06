@@ -27,14 +27,14 @@ MonoBehaviour:
   - requiredLevel: 2
     evolutionSprite: {fileID: 21300000, guid: ac0fcfb4d2f0c2e45a9d18af85e2af47, type: 2}
     evolutionAnimator: {fileID: 0}
-    healthMultiplier: 2
+    healthMultiplier: 1.5
     speedMultiplier: 2
-    damageMultiplier: 2
+    damageMultiplier: 1.5
     unlockedAbility: 2
   - requiredLevel: 3
     evolutionSprite: {fileID: 21300000, guid: 533ce38535232fe4bab6d945871b4ae7, type: 2}
     evolutionAnimator: {fileID: 0}
-    healthMultiplier: 3
+    healthMultiplier: 2.5
     speedMultiplier: 5
     damageMultiplier: 3
     unlockedAbility: 2

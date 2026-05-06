@@ -27,15 +27,15 @@ MonoBehaviour:
   - requiredLevel: 2
     evolutionSprite: {fileID: 21300000, guid: a37fe89aef0aa6941ba5b4ff2862a48f, type: 2}
     evolutionAnimator: {fileID: 0}
-    healthMultiplier: 2
+    healthMultiplier: 1.5
     speedMultiplier: 2
-    damageMultiplier: 2
+    damageMultiplier: 1.5
     unlockedAbility: 1
   - requiredLevel: 3
     evolutionSprite: {fileID: 21300000, guid: 1618cb6e285b47c4fa86630e34632122, type: 2}
     evolutionAnimator: {fileID: 0}
-    healthMultiplier: 3
+    healthMultiplier: 2.5
     speedMultiplier: 5
     damageMultiplier: 3
-    unlockedAbility: 2
+    unlockedAbility: 1
   minionPrefab: {fileID: 5768746880067106718, guid: 5bd1f31b89847114f86b25cee839f0b6, type: 3}
