@@ -271,6 +271,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &188492881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1769803963633387322, guid: 1030e5446a86ffc4c9196d65931379c4, type: 3}
+  m_PrefabInstance: {fileID: 196060062958103010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &188492886 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7663704918833570531, guid: 1030e5446a86ffc4c9196d65931379c4, type: 3}
+  m_PrefabInstance: {fileID: 196060062958103010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &188492888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188492881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899a61723f5dd194d9a656970c94072e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementTrail
+  targetSpriteRenderer: {fileID: 188492886}
+  timeBetweenSpawns: 0.05
+  ghostStartingAlpha: 0.4
+  fadeSpeed: 3
+  forceSpawnWhenIdle: 1
+  backgroundDriftSpeed: {x: 0, y: 0}
 --- !u!1 &309120104
 GameObject:
   m_ObjectHideFlags: 0
@@ -87157,6 +87185,7 @@ MonoBehaviour:
   scoreText: {fileID: 309120107}
   levelText: {fileID: 1846616726}
   evolutionSlider: {fileID: 1439822403}
+  pauseUI: {fileID: 0}
 --- !u!114 &1461602033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87803,6 +87832,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1769803963633387322, guid: 1030e5446a86ffc4c9196d65931379c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 188492888}
     - targetCorrespondingSourceObject: {fileID: 2549855246265803577, guid: 1030e5446a86ffc4c9196d65931379c4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1949110026}

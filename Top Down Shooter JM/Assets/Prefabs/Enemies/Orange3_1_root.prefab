@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 5928267659378780044}
   - component: {fileID: 8867998412558375072}
   - component: {fileID: 6378893562337031109}
+  - component: {fileID: -7848511813477607952}
   m_Layer: 10
   m_Name: Orange3_1_root
   m_TagString: Enemy
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89917e8d148b67548b4204a8a3eb5728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  myData: {fileID: 11400000, guid: 9207e3458fc238b40b45e5c2e38eb171, type: 2}
+  myData: {fileID: 11400000, guid: 7aa39a41861043d4c846d45d1cc77a37, type: 2}
   currentLevel: 1
   currentHealth: 0
   maxHealth: 0
@@ -266,6 +267,24 @@ MonoBehaviour:
   - {fileID: 1766212160805203100, guid: ff17394c5dd55764fbd6b9d6223c7c70, type: 3}
   baseDropChance: 5
   bonusChancePerLevel: 2.5
+--- !u!114 &-7848511813477607952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487567294438166982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899a61723f5dd194d9a656970c94072e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementTrail
+  targetSpriteRenderer: {fileID: 5362543826921445394}
+  timeBetweenSpawns: 0.05
+  ghostStartingAlpha: 0.4
+  fadeSpeed: 3
+  forceSpawnWhenIdle: 1
+  backgroundDriftSpeed: {x: 0, y: 0}
 --- !u!1 &3504270206172128237
 GameObject:
   m_ObjectHideFlags: 0
