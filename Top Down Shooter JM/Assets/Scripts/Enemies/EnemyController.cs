@@ -391,7 +391,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         currentHealth -= damage;
         
         // --- AUDIO: Enemy Hit ---
-        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyHitSound, 0.5f);
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayPitchShiftSFX(AudioManager.Instance.enemyHitSound, 0.5f);
         
         if (currentAbility == SpecialAbility.CannonAtLowHealth && !hasFiredLowHealthCannon)
         {

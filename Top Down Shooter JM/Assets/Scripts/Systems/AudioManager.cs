@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     [Tooltip("Dedicated source for sound effects")]
     public AudioSource sfxSource;
-
+  [Tooltip("Dedicated source for pitch shifted sound effects")]
+    public AudioSource pitchShiftedSFXSource;
     [Header("Player SFX")]
     public AudioClip playerShootSound;
     public AudioClip playerTakeDamageSound;
@@ -44,8 +45,18 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
         if (clip != null && sfxSource != null)
-        {
+        {          
             sfxSource.PlayOneShot(clip, volume);
         }
     }
+
+    public void PlayPitchShiftSFX(AudioClip clip, float volume = 1f)
+    {
+        if (clip != null && pitchShiftedSFXSource != null)
+        {
+            pitchShiftedSFXSource.pitch = Random.Range(0.8f, 1.2f);
+            pitchShiftedSFXSource.PlayOneShot(clip, volume);
+        }
+    }
+
 }

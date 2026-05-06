@@ -122,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
     void FireWeaponLevel()
     {
         onFireProjectile?.Invoke();
-        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.playerShootSound, 0.5f);
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayPitchShiftSFX(AudioManager.Instance.playerShootSound, 0.5f);
 
         // Geometry Wars Style Upgrades!
         switch (weaponLevel)
