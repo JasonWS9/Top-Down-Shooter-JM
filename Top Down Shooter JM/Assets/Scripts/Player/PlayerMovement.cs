@@ -89,13 +89,23 @@ public class PlayerMovement : MonoBehaviour
         // Tick down the normal fire timer
         if (fireTimer > 0f) fireTimer -= Time.deltaTime;
 
-        // FIRING LOGIC ROUTER
-        if (railGunAmmo > 0f)
+        // =====================================
+        // UPDATED FIRING LOGIC ROUTER
+        // =====================================
+        
+        // Keep running the RailGun logic if we have ammo OR if the final shot is still fading out
+        if (railGunAmmo > 0f || forcedFireTimer > 0f)
         {
             HandleRailGunFiring();
         }
         else 
         {
+            // SAFETY NET: The millisecond we switch back to normal weapons, guarantee the laser is OFF.
+            if (railGunBeamVisual != null && railGunBeamVisual.activeSelf)
+            {
+                railGunBeamVisual.SetActive(false);
+            }
+            
             HandleNormalFiring();
         }
     }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 
 public class EnemyController : MonoBehaviour, IDamageable
 {
@@ -24,7 +25,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     private bool isSpawning = true;
     public Animator enemyAnimator;
     
-    // --- NEW: Visual Wrappers ---
+    // Visual Wrappers
     [Tooltip("Drag your Art_Visual child object here")]
     public GameObject artVisual; 
     [Tooltip("Drag your animated Spawn Portal child object here")]
@@ -67,12 +68,12 @@ public class EnemyController : MonoBehaviour, IDamageable
         // Because the SpriteRenderer is now on the child object, we need to grab it from there
         if (artVisual != null) spriteRenderer = artVisual.GetComponent<SpriteRenderer>();
         
-        // --- NEW: Spawn Portal Logic ---
+        // Spawn Portal Logic
         // Turn OFF the actual ship art, and turn ON the swirling portal
         if (artVisual != null) artVisual.SetActive(false);
         if (spawnIndicator != null) spawnIndicator.SetActive(true);
 
-        // --- AUDIO: Play Spawn Warning Sound ---
+        // AUDIO: Play Spawn Warning Sound
         if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemySpawnSound, 0.7f);
         
         if (PlayerManager.Instance != null)
@@ -149,12 +150,12 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             spawnDelay -= Time.deltaTime;
             
-            // --- NEW: Portal Swap! ---
+            // Portal Swap
             if (spawnDelay <= 0f) 
             {
                 isSpawning = false;
                 
-                // Turn OFF the portal, turn ON the ship!
+                // Turn OFF the portal, turn ON the ship
                 if (spawnIndicator != null) spawnIndicator.SetActive(false);
                 if (artVisual != null) artVisual.SetActive(true);
             }
@@ -308,17 +309,17 @@ public class EnemyController : MonoBehaviour, IDamageable
             switch (myData.enemyType)
             {
                 case EnemyType.SingleShot:
-                    // --- AUDIO: Single Shot ---
+                    // AUDIO: Single Shot
                     if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.singleShotSound);
                     FireProjectile(1, 0f);
                     break;
                 case EnemyType.BurstShot:
-                    // --- AUDIO: Burst Shot ---
+                    // AUDIO: Burst Shot
                     if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.burstShotSound);
                     FireProjectile(3, 15f); 
                     break;
                 case EnemyType.Rammer:
-                    // --- AUDIO: Rammer Dash ---
+                    // AUDIO: Rammer Dash
                     if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.rammerDashSound);
                     isWindingUp = true;
                     windUpTimer = 0.5f; 
@@ -330,16 +331,21 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    void FireProjectile(int amountOfBullets, float spreadAngle)
+    void FireProjectile(int amountOfBullets, float spreadAngle, GameObject overridePrefab = null)
     {
-        if (myData.projectilePrefab == null) return;
+        // Decide which prefab to use (Use the override if provided, otherwise use default)
+        GameObject bulletToFire = (overridePrefab != null) ? overridePrefab : myData.projectilePrefab;
+
+        if (bulletToFire == null) return;
 
         float startingAngle = (amountOfBullets > 1) ? -spreadAngle * (amountOfBullets - 1) / 2f : 0f;
 
         for (int i = 0; i < amountOfBullets; i++)
         {
             Quaternion rotation = transform.rotation * Quaternion.Euler(0, 0, startingAngle + (spreadAngle * i));
-            GameObject bullet = Instantiate(myData.projectilePrefab, transform.position, rotation);
+            
+            // Instantiate 'bulletToFire'
+            GameObject bullet = Instantiate(bulletToFire, transform.position, rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             
             if (rb != null) rb.AddForce(bullet.transform.up * myData.projectileSpeed, ForceMode2D.Impulse);
@@ -393,18 +399,20 @@ public class EnemyController : MonoBehaviour, IDamageable
         // --- AUDIO: Enemy Hit ---
         if (AudioManager.Instance != null) AudioManager.Instance.PlayPitchShiftSFX(AudioManager.Instance.enemyHitSound, 0.5f);
         
+        // --- VISUAL: Trigger the Damage Flash ---
+        StartCoroutine(DamageFlashRoutine()); // <-- ADD THIS LINE
+        
         if (currentAbility == SpecialAbility.CannonAtLowHealth && !hasFiredLowHealthCannon)
         {
             if (currentHealth <= maxHealth * 0.7f)
             {
                 hasFiredLowHealthCannon = true;
-                FireProjectile(5, 10f); 
+                FireProjectile(5, 10f, myData.specialProjectilePrefab); 
             }
         }
 
         if (currentHealth <= 0)
         {
-            // --- AUDIO: Enemy Death ---
             if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyDeathExplosionSound);
             
             if (currentAbility == SpecialAbility.SpawnMinionsOnDeath && EnemySpawner.Instance != null)
@@ -424,6 +432,27 @@ public class EnemyController : MonoBehaviour, IDamageable
                 }
             }
             Destroy(gameObject);
+        }
+    }
+    
+    // ==========================================
+    // VISUAL EFFECTS
+    // ==========================================
+    private IEnumerator DamageFlashRoutine()
+    {
+        if (spriteRenderer != null)
+        {
+            // Flash pure white
+            spriteRenderer.color = Color.white;
+            
+            // Wait for a tiny fraction of a second
+            yield return new WaitForSeconds(0.05f);
+            
+            // Return to their normal Faction Color (unless they are a Rammer winding up!)
+            if (!isWindingUp) 
+            {
+                spriteRenderer.color = factionColor;
+            }
         }
     }
 }

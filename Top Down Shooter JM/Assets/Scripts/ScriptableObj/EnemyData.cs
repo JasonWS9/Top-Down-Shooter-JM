@@ -48,7 +48,9 @@ public class EnemyData : ScriptableObject
     [Header("Combat Settings")]
     public GameObject projectilePrefab; 
     public float projectileSpeed = 10f;
-    public float fireRate = 2f; 
+    public float fireRate = 2f;
+    [Tooltip("Optional: A unique projectile for the CannonAtLowHealth ability!")]
+    public GameObject specialProjectilePrefab;
 
     [Header("Evolutions")]
     public List<EvolutionTier> evolutionTiers;

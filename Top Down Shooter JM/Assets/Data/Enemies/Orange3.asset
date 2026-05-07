@@ -17,18 +17,19 @@ MonoBehaviour:
   faction: 1
   basePrefab: {fileID: 1487567294438166982, guid: 6e4eb00446b8b0847be20fba61d073cf, type: 3}
   baseHealth: 50
-  baseSpeed: 3
+  baseSpeed: 4.5
   attackDamage: 12
-  attackRange: 3
+  attackRange: 5
   projectilePrefab: {fileID: 0}
   projectileSpeed: 10
   fireRate: 2
+  specialProjectilePrefab: {fileID: 0}
   evolutionTiers:
   - requiredLevel: 2
     evolutionSprite: {fileID: 21300000, guid: ac0fcfb4d2f0c2e45a9d18af85e2af47, type: 2}
     evolutionAnimator: {fileID: 0}
     healthMultiplier: 1.5
-    speedMultiplier: 2
+    speedMultiplier: 3
     damageMultiplier: 1.5
     unlockedAbility: 2
   - requiredLevel: 3
@@ -38,4 +39,4 @@ MonoBehaviour:
     speedMultiplier: 5
     damageMultiplier: 3
     unlockedAbility: 2
-  minionPrefab: {fileID: 5768746880067106718, guid: 896ecadbe848a86459b5dbbcc5475d4a, type: 3}
+  minionPrefab: {fileID: 1487567294438166982, guid: 6e4eb00446b8b0847be20fba61d073cf, type: 3}
