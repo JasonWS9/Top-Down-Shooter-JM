@@ -164,6 +164,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 8000141226475526925}
   spawnIndicator: {fileID: 5611109022437854940}
+  deathExplosionPrefab: {fileID: 6428579892751831030, guid: 155c4217aef56c34c999a4267b1acd52, type: 3}
 --- !u!114 &807950161653198981
 MonoBehaviour:
   m_ObjectHideFlags: 0

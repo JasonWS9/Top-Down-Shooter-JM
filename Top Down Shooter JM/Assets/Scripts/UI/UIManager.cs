@@ -11,8 +11,12 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverScoreText;
-    public TextMeshProUGUI levelText; // NEW: The UI text for the player's level
+    public TextMeshProUGUI levelText; // The UI text for the player's level
+    
     public Slider evolutionSlider; // Set Min=0, Max=1, Value=0.5 in Inspector
+    public Image evolutionFillImage; 
+    public Color purpleFactionColor = new Color(0.6f, 0f, 1f); 
+    public Color orangeFactionColor = new Color(1f, 0.5f, 0f);
 
     public GameObject pauseUI;
     
@@ -101,9 +105,16 @@ public class UIManager : MonoBehaviour
         {
             evolutionSlider.value = normalizedValue;
         }
+
+        // Update the color of the fill bar
+        if (evolutionFillImage != null)
+        {
+            // At 0.0 it's Purple, at 1.0 it's Orange
+            evolutionFillImage.color = Color.Lerp(purpleFactionColor, orangeFactionColor, normalizedValue);
+        }
     }
 
-    // NEW: Method to update the level text
+    // Method to update the level text
     void UpdateLevelUI(int level)
     {
         if (levelText != null)

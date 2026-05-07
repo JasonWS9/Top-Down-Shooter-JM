@@ -44,6 +44,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     private bool isWindingUp = false;
     private float windUpTimer = 0f;
     private Vector2 dashDirection;
+    
+    [Tooltip("Drag your Explosion Prefab here!")]
+    public GameObject deathExplosionPrefab;
 
     void OnEnable()
     {
@@ -230,8 +233,29 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (isDashing)
         {
-            transform.position += (Vector3)(dashDirection * currentSpeed * 3.5f * Time.deltaTime);
+            // Calculate exactly how far we want to move this frame
+            float dashSpeed = currentSpeed * 3.5f;
+            float distanceThisFrame = dashSpeed * Time.deltaTime;
+            Vector3 intendedMove = dashDirection * distanceThisFrame;
 
+            // Shoot an invisible laser ahead to see if we are about to teleport through the player
+            // (We use a LayerMask to make sure the laser only hits the "Player" layer to save performance)
+            int playerLayerMask = LayerMask.GetMask("Player"); 
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dashDirection, distanceThisFrame, playerLayerMask);
+
+            if (hit.collider != null)
+            {
+                // We are going to hit the player this frame! 
+                // Snap exactly to their edge and let the normal OnCollision/OnTrigger handle the damage.
+                transform.position = hit.point;
+            }
+            else
+            {
+                // Safe to move normally without tunneling
+                transform.position += intendedMove;
+            }
+
+            // Keep your existing screen bounds check
             Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
             if (viewportPos.x <= -0.1f || viewportPos.x >= 1.1f || viewportPos.y <= -0.1f || viewportPos.y >= 1.1f)
             {
@@ -431,6 +455,12 @@ public class EnemyController : MonoBehaviour, IDamageable
                     dropper.TryDrop(currentLevel); 
                 }
             }
+            
+            if (deathExplosionPrefab != null)
+            {
+                Instantiate(deathExplosionPrefab, transform.position, Quaternion.identity);
+            }
+
             Destroy(gameObject);
         }
     }
