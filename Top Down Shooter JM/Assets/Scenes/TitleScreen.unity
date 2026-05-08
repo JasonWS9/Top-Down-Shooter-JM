@@ -596,6 +596,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 390130061}
   spawnIndicator: {fileID: 973949673}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!212 &390130065
 SpriteRenderer:
   serializedVersion: 2
@@ -1164,6 +1165,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 556505611}
   spawnIndicator: {fileID: 997460286}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!212 &556505615
 SpriteRenderer:
   serializedVersion: 2
@@ -1679,7 +1681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Binary Adaption
+  m_text: Dual Adaptation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cc6fca3c19a3dc45886413a55a1ab10, type: 2}
   m_sharedMaterial: {fileID: 6990705283298908537, guid: 7cc6fca3c19a3dc45886413a55a1ab10, type: 2}
@@ -1839,6 +1841,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 728899846}
   spawnIndicator: {fileID: 2114831229}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!212 &728899850
 SpriteRenderer:
   serializedVersion: 2
@@ -89684,6 +89687,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 2112117928}
   spawnIndicator: {fileID: 1425728019}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!212 &2112117932
 SpriteRenderer:
   serializedVersion: 2
@@ -90428,6 +90432,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746881224329886}
   spawnIndicator: {fileID: 8509745692524463382}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!114 &2378932523073753592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90451,6 +90456,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746881077204769}
   spawnIndicator: {fileID: 6192626479196193160}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!114 &2378932523225312796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90474,6 +90480,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746881461479621}
   spawnIndicator: {fileID: 5648865860298568348}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!114 &2378932523612538585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90497,6 +90504,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746880533790720}
   spawnIndicator: {fileID: 7339899820572640274}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!114 &2378932523783652761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90520,6 +90528,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746880769917760}
   spawnIndicator: {fileID: 9076431799410607548}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!114 &2378932524501888058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90543,6 +90552,7 @@ MonoBehaviour:
   enemyAnimator: {fileID: 26678557442811193, guid: e0569a168a97e2549bf7f918aa91d37e, type: 3}
   artVisual: {fileID: 5768746879510538979}
   spawnIndicator: {fileID: 7262489733199355583}
+  deathExplosionPrefab: {fileID: 0}
 --- !u!4 &3148001311547335910
 Transform:
   m_ObjectHideFlags: 0
